@@ -23,19 +23,11 @@ public partial class MainMenu : NodeWithInput
     [Export]
     public int NonMenuItemsFirst = 1;
 
-    /// <summary>
-    ///   Needs to be a collection of <see cref="Texture2D"/>
-    /// </summary>
-    [Export]
-    public Array<Texture2D> MenuBackgrounds = null!;
-
-    /// <summary>
-    ///   Needs to be a collection of paths to scenes
-    /// </summary>
-    [Export]
-    public Array<string> Menu3DBackgroundScenes = null!;
-
     private const string MainWebsiteLink = "https://revolutionarygamesstudio.com";
+
+    private const double AnimationLength = 6;
+
+    private const float AnimationLengthInverse = 1 / (float)AnimationLength;
 
 #pragma warning disable CA2213
     private TextureRect background = null!;
@@ -79,6 +71,18 @@ public partial class MainMenu : NodeWithInput
 
     [Export]
     private LicensesDisplay licensesDisplay = null!;
+
+    [Export]
+    private Control MainMenuContainer = null!;
+
+    [Export]
+    private Control ToolsContainer = null!;
+
+    [Export]
+    private Control ExtrasContainer = null!;
+
+    [Export]
+    private Control BenchmarkContainer = null!;
 
     [Export]
     private Button freebuildButton = null!;
@@ -132,7 +136,10 @@ public partial class MainMenu : NodeWithInput
     private PermanentlyDismissibleDialog thanksDialog = null!;
 
     [Export]
-    private CenterContainer menus = null!;
+    private Control menus = null!;
+
+    [Export]
+    private Camera3D camera = null!;
 #pragma warning restore CA2213
 
     private Array<Node>? menuArray;
@@ -154,6 +161,8 @@ public partial class MainMenu : NodeWithInput
     private string storeDisplayName = "ERROR";
 
     private double averageFrameRate;
+
+    private double animationTime = 0;
 
     /// <summary>
     ///   Time tracking related to performance. Note that this is reset when performance tracking is restarted.
@@ -183,23 +192,9 @@ public partial class MainMenu : NodeWithInput
         PauseManager.Instance.ForceClear();
         MouseCaptureManager.ForceDisableCapture();
 
+        camera.GlobalPosition = new Vector3(0, 0, -10);
+
         RunMenuSetup();
-
-        // Start the intro video
-        if (Settings.Instance.PlayIntroVideo && LaunchOptions.VideosEnabled && !IsReturningToMenu &&
-            SafeModeStartupHandler.AreVideosAllowed())
-        {
-            // Hide menu buttons to prevent them grabbing focus during intro video
-            GetCurrentMenu()?.Hide();
-
-            SafeModeStartupHandler.ReportBeforeVideoPlaying();
-            TransitionManager.Instance.AddSequence(
-                TransitionManager.Instance.CreateCutscene("res://assets/videos/intro.ogv"), OnIntroEnded);
-        }
-        else
-        {
-            OnIntroEnded();
-        }
 
         // Let all suppressed deletions happen (if we came back directly from the editor that was loaded from a save)
         TemporaryLoadedNodeDeleter.Instance.ReleaseAllHolds();
@@ -219,7 +214,6 @@ public partial class MainMenu : NodeWithInput
     {
         base._EnterTree();
 
-        Settings.Instance.Menu3DBackgroundEnabled.OnChanged += OnMenuBackgroundTypeChanged;
         ThriveopediaManager.Instance.OnPageOpenedHandler += OnThriveopediaOpened;
         Localization.Instance.OnTranslationsChanged += OnTranslationsChanged;
     }
@@ -228,7 +222,6 @@ public partial class MainMenu : NodeWithInput
     {
         base._ExitTree();
 
-        Settings.Instance.Menu3DBackgroundEnabled.OnChanged -= OnMenuBackgroundTypeChanged;
         ThriveopediaManager.Instance.OnPageOpenedHandler -= OnThriveopediaOpened;
         Localization.Instance.OnTranslationsChanged -= OnTranslationsChanged;
     }
@@ -236,6 +229,18 @@ public partial class MainMenu : NodeWithInput
     public override void _Process(double delta)
     {
         base._Process(delta);
+
+        if (!introVideoPassed)
+        {
+            animationTime += delta;
+
+            var fraction = animationTime / AnimationLength;
+
+            camera.GlobalPosition += new Vector3(0, 0, (400 - camera.GlobalPosition.Z) * (float)delta * AnimationLengthInverse);
+
+            if (animationTime >= AnimationLength)
+                introVideoPassed = true;
+        }
 
         // Do startup success only after the intro video is played or skipped (and this is the first time in this run
         // that we are in the menu)
@@ -324,34 +329,37 @@ public partial class MainMenu : NodeWithInput
     /// </summary>
     /// <param name="index">Index of the menu. Set to <see cref="uint.MaxValue"/> to hide all menus</param>
     /// <param name="slide">If false then the menu slide animation will not be played</param>
-    public void SetCurrentMenu(uint index, bool slide = true)
+    public void SetCurrentMenu(Control menuToShow, bool hideAll = false)
     {
+        thriveLogo.Hide();
+        feedPositioner.Hide();
+
         if (menuArray == null)
             throw new InvalidOperationException("Main menu has not been initialized");
 
-        // Hide the website button container whenever anything else is pressed, and only display the social media icons
-        // if a menu is visible
+        // Hide stuff
         websiteButtonsContainer.Visible = false;
-        socialMediaContainer.Visible = index != uint.MaxValue;
-        feedPositioner.Visible = index != uint.MaxValue;
+        feedPositioner.Visible = false;
 
-        // Allow disabling all the menus for going to the options menu
-        if (index > menuArray.Count - 1 && index != uint.MaxValue)
+        foreach (var menu in menus.GetChildren())
         {
-            GD.PrintErr("Selected menu index is out of range!");
-            return;
-        }
+            if (menu is Control control)
+            {
+                if (control == menuToShow && !hideAll)
+                {
+                    control.Show();
 
-        CurrentMenuIndex = index;
+                    if (menuToShow == MainMenuContainer)
+                        thriveLogo.Show();
 
-        if (slide)
-        {
-            PlayGUIAnimation("MenuSlide");
-        }
-        else
-        {
-            // Just switch the menu
-            SwitchMenu();
+                    if (menuToShow == ExtrasContainer)
+                        feedPositioner.Show();
+                }
+                else
+                {
+                    control.Hide();
+                }
+            }
         }
     }
 
@@ -365,7 +373,7 @@ public partial class MainMenu : NodeWithInput
         // In a sub menu (that doesn't have its own class)
         if (CurrentMenuIndex != 0 && CurrentMenuIndex < uint.MaxValue)
         {
-            SetCurrentMenu(0);
+            SetCurrentMenu(MainMenuContainer);
 
             // Handled, stop here.
             return true;
@@ -386,7 +394,6 @@ public partial class MainMenu : NodeWithInput
     /// </summary>
     private void RunMenuSetup()
     {
-        background = GetNode<TextureRect>("Background");
         guiAnimations = GetNode<AnimationPlayer>("GUIAnimations");
         menuArray?.Clear();
 
@@ -403,9 +410,6 @@ public partial class MainMenu : NodeWithInput
         newGameSettings = GetNode<NewGameSettings>("NewGameSettings");
         saves = GetNode<SaveManagerGUI>("SaveManagerGUI");
         thriveopedia = GetNode<Thriveopedia>("Thriveopedia");
-
-        // Set initial menu
-        SwitchMenu();
 
         // Easter egg message
         thriveLogo.RegisterToolTipForControl("thriveLogoEasterEgg", "mainMenu");
@@ -426,88 +430,6 @@ public partial class MainMenu : NodeWithInput
             ShowPatchInfoIfPossible();
         }
     }
-
-    /// <summary>
-    ///   Randomizes background images.
-    /// </summary>
-    private void RandomizeBackground()
-    {
-        var random = new XoShiRo128starstar();
-
-        // Some of the 3D backgrounds render very incorrectly in opengl so they are disabled (even with Godot 4 this
-        // hasn't improved a lot)
-        if (Settings.Instance.Menu3DBackgroundEnabled &&
-            FeatureInformation.GetVideoDriver() != OS.RenderingDriver.Opengl3)
-        {
-            SetBackgroundScene(Menu3DBackgroundScenes.Random(random));
-        }
-        else
-        {
-            var chosenBackground = MenuBackgrounds.Random(random);
-
-            SetBackground(chosenBackground);
-        }
-    }
-
-    private void SetBackground(Texture2D backgroundImage)
-    {
-        background.Visible = true;
-        background.Texture = backgroundImage;
-
-        if (created3DBackground != null)
-        {
-            created3DBackground.DetachAndQueueFree();
-            created3DBackground = null;
-        }
-    }
-
-    private void SetBackgroundScene(string path)
-    {
-        var backgroundScene = GD.Load<PackedScene>(path);
-
-        if (backgroundScene == null)
-        {
-            GD.PrintErr("Failed to load menu background: ", path);
-            return;
-        }
-
-        // We can get by waiting one frame before the missing background is visible, this slightly reduces the lag
-        // lag spike when loading the main menu
-        Invoke.Instance.Queue(() =>
-        {
-            // These are done here to ensure there isn't a weird single frame with a grey menu background
-            background.Visible = false;
-            if (created3DBackground != null)
-            {
-                created3DBackground.DetachAndQueueFree();
-                created3DBackground = null;
-            }
-
-            created3DBackground = backgroundScene.Instantiate<Node3D>();
-            AddChild(created3DBackground);
-        });
-    }
-
-    /// <summary>
-    ///   Returns the container for the current menu.
-    /// </summary>
-    /// <returns>Null if we aren't in any available menu or the menu container if there is one.</returns>
-    /// <exception cref="System.InvalidOperationException">The main menu hasn't been initialized.</exception>
-    private Control? GetCurrentMenu()
-    {
-        if (menuArray == null)
-            throw new InvalidOperationException("Main menu has not been initialized");
-        if (menuArray.Count <= 0)
-            throw new InvalidOperationException("Main menu has no menus");
-
-        return CurrentMenuIndex == uint.MaxValue ? null : menus.GetChild<Control>((int)CurrentMenuIndex);
-    }
-
-    private void OnMenuBackgroundTypeChanged(bool value)
-    {
-        RandomizeBackground();
-    }
-
     private void UpdateStoreVersionStatus()
     {
         if (!IsReturningToMenu)
@@ -602,26 +524,6 @@ public partial class MainMenu : NodeWithInput
         guiAnimations.Play(animation);
     }
 
-    /// <summary>
-    ///   Switches the displayed menu
-    /// </summary>
-    private void SwitchMenu()
-    {
-        thriveLogo.Hide();
-
-        // Hide other menus and only show the one of the current index
-        foreach (var menu in menuArray!.OfType<Control>())
-        {
-            menu.Hide();
-
-            if (menu.GetIndex() - NonMenuItemsFirst == CurrentMenuIndex)
-            {
-                menu.Show();
-                thriveLogo.Show();
-            }
-        }
-    }
-
     private void CheckModFailures()
     {
         var errors = ModLoader.Instance.GetAndClearModErrors();
@@ -635,20 +537,8 @@ public partial class MainMenu : NodeWithInput
 
     private void OnIntroEnded()
     {
-        TransitionManager.Instance.AddSequence(ScreenFade.FadeType.FadeIn, IsReturningToMenu ? 0.5f : 1.0f, null,
-            false);
-
         // Start music after the video
         StartMusic();
-
-        introVideoPassed = true;
-
-        // Display menu buttons that were hidden to prevent them grabbing focus during intro video
-        GetCurrentMenu()?.Show();
-
-        // Load the menu background only here as the 3D ones are performance intensive so they aren't very nice to
-        // consume power unnecessarily while showing the video
-        RandomizeBackground();
 
         // Report to cache that we are in the main menu and that it'd be a good time to clean stuff without affecting
         // game performance
@@ -757,24 +647,22 @@ public partial class MainMenu : NodeWithInput
         GUICommon.Instance.PlayButtonPressSound();
 
         // Hide all the other menus
-        SetCurrentMenu(uint.MaxValue, false);
+        SetCurrentMenu(MainMenuContainer, true);
 
         // Show the options
         newGameSettings.OpenFromMainMenu();
-
-        thriveLogo.Hide();
     }
 
     private void ToolsPressed()
     {
         GUICommon.Instance.PlayButtonPressSound();
-        SetCurrentMenu(1);
+        SetCurrentMenu(ToolsContainer);
     }
 
     private void ExtrasPressed()
     {
         GUICommon.Instance.PlayButtonPressSound();
-        SetCurrentMenu(2);
+        SetCurrentMenu(ExtrasContainer);
     }
 
     private void FreebuildEditorPressed()
@@ -836,7 +724,7 @@ public partial class MainMenu : NodeWithInput
     private void BackFromToolsPressed()
     {
         GUICommon.Instance.PlayButtonPressSound();
-        SetCurrentMenu(0);
+        SetCurrentMenu(MainMenuContainer);
     }
 
     private void ViewSourceCodePressed()
@@ -870,7 +758,7 @@ public partial class MainMenu : NodeWithInput
         GUICommon.Instance.PlayButtonPressSound();
 
         // Hide all the other menus
-        SetCurrentMenu(uint.MaxValue, false);
+        SetCurrentMenu(MainMenuContainer, true);
 
         // Show the options
         options.OpenFromMainMenu();
@@ -879,7 +767,7 @@ public partial class MainMenu : NodeWithInput
     private void OnReturnFromOptions()
     {
         options.Visible = false;
-        SetCurrentMenu(0, false);
+        SetCurrentMenu(MainMenuContainer);
 
         // In case news settings are changed, update that state
         UpdateFeedVisibilities();
@@ -890,9 +778,7 @@ public partial class MainMenu : NodeWithInput
     {
         newGameSettings.Visible = false;
 
-        SetCurrentMenu(0, false);
-
-        thriveLogo.Show();
+        SetCurrentMenu(MainMenuContainer);
     }
 
     private void OnRedirectedToOptionsMenuFromNewGameSettings()
@@ -905,7 +791,7 @@ public partial class MainMenu : NodeWithInput
     private void OnReturnFromThriveopedia()
     {
         thriveopedia.Visible = false;
-        SetCurrentMenu(0, false);
+        SetCurrentMenu(MainMenuContainer);
     }
 
     private void LoadGamePressed()
@@ -913,7 +799,7 @@ public partial class MainMenu : NodeWithInput
         GUICommon.Instance.PlayButtonPressSound();
 
         // Hide all the other menus
-        SetCurrentMenu(uint.MaxValue, false);
+        SetCurrentMenu(MainMenuContainer, true);
 
         // Show the options
         saves.Visible = true;
@@ -922,7 +808,7 @@ public partial class MainMenu : NodeWithInput
     private void OnReturnFromLoadGame()
     {
         saves.Visible = false;
-        SetCurrentMenu(0, false);
+        SetCurrentMenu(MainMenuContainer);
     }
 
     private void CreditsPressed()
@@ -930,7 +816,7 @@ public partial class MainMenu : NodeWithInput
         GUICommon.Instance.PlayButtonPressSound();
 
         // Hide all the other menus
-        SetCurrentMenu(uint.MaxValue, false);
+        SetCurrentMenu(MainMenuContainer, true);
 
         // Show the credits view
         credits.Restart();
@@ -942,7 +828,7 @@ public partial class MainMenu : NodeWithInput
         creditsContainer.Visible = false;
         credits.Pause();
 
-        SetCurrentMenu(0, false);
+        SetCurrentMenu(MainMenuContainer);
     }
 
     private void ThriveopediaPressed()
@@ -950,7 +836,7 @@ public partial class MainMenu : NodeWithInput
         GUICommon.Instance.PlayButtonPressSound();
 
         // Hide all the other menus
-        SetCurrentMenu(uint.MaxValue, false);
+        SetCurrentMenu(MainMenuContainer, true);
 
         // Show the Thriveopedia
         thriveopedia.OpenFromMainMenu();
@@ -967,7 +853,7 @@ public partial class MainMenu : NodeWithInput
         GUICommon.Instance.PlayButtonPressSound();
 
         // Hide all the other menus
-        SetCurrentMenu(uint.MaxValue, false);
+        SetCurrentMenu(MainMenuContainer, true);
 
         // Show the licenses view
         licensesDisplay.PopupCenteredShrink();
@@ -975,7 +861,7 @@ public partial class MainMenu : NodeWithInput
 
     private void OnReturnFromLicenses()
     {
-        SetCurrentMenu(2, false);
+        SetCurrentMenu(ExtrasContainer, false);
     }
 
     private void ModsPressed()
@@ -983,7 +869,7 @@ public partial class MainMenu : NodeWithInput
         GUICommon.Instance.PlayButtonPressSound();
 
         // Hide all the other menus
-        SetCurrentMenu(uint.MaxValue, false);
+        SetCurrentMenu(MainMenuContainer, true);
 
         // Show the mods view
         modManager.Visible = true;
@@ -992,13 +878,13 @@ public partial class MainMenu : NodeWithInput
     private void OnReturnFromMods()
     {
         modManager.Visible = false;
-        SetCurrentMenu(0, false);
+        SetCurrentMenu(MainMenuContainer);
     }
 
     private void ArtGalleryPressed()
     {
         GUICommon.Instance.PlayButtonPressSound();
-        SetCurrentMenu(uint.MaxValue, false);
+        SetCurrentMenu(MainMenuContainer, true);
         galleryViewer.OpenFullRect();
         Jukebox.Instance.PlayCategory("ArtGallery");
 
@@ -1012,7 +898,7 @@ public partial class MainMenu : NodeWithInput
 
     private void OnReturnFromArtGallery()
     {
-        SetCurrentMenu(2, false);
+        SetCurrentMenu(ExtrasContainer);
         Jukebox.Instance.PlayCategory("Menu");
 
         if (created3DBackground != null)
@@ -1038,14 +924,14 @@ public partial class MainMenu : NodeWithInput
     {
         GUICommon.Instance.PlayButtonPressSound();
 
-        SetCurrentMenu(3, true);
+        SetCurrentMenu(BenchmarkContainer, true);
     }
 
     private void OnReturnFromBenchmarks()
     {
         GUICommon.Instance.PlayButtonPressSound();
 
-        SetCurrentMenu(1, true);
+        SetCurrentMenu(ToolsContainer, true);
     }
 
     private void MicrobeBenchmarkPressed()
