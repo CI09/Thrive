@@ -204,9 +204,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -639.5
-offset_top = -110.5
+offset_top = -260.0
 offset_right = 639.5
-offset_bottom = 110.5
+offset_bottom = 140.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -1040,7 +1040,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 400)
 environment = SubResource("Environment_sqoi3")
 
 [node name="DNA" type="Node3D" parent="Background"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -405, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -250, -405, -160)
 
 [node name="DNAPart" parent="Background/DNA" instance=ExtResource("66_np7pl")]
 
@@ -1120,6 +1120,255 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 720, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 750, 0)
 
 [node name="DNAPart27" parent="Background/DNA" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 780, 0)
+
+[node name="DNA2" type="Node3D" parent="Background"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 250, -405, -160)
+
+[node name="DNAPart" parent="Background/DNA2" instance=ExtResource("66_np7pl")]
+
+[node name="DNAPart2" parent="Background/DNA2" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 30, 0)
+
+[node name="DNAPart3" parent="Background/DNA2" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 60, 0)
+
+[node name="DNAPart4" parent="Background/DNA2" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 90, 0)
+
+[node name="DNAPart5" parent="Background/DNA2" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 120, 0)
+
+[node name="DNAPart6" parent="Background/DNA2" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 150, 0)
+
+[node name="DNAPart7" parent="Background/DNA2" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 180, 0)
+
+[node name="DNAPart8" parent="Background/DNA2" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 210, 0)
+
+[node name="DNAPart9" parent="Background/DNA2" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 240, 0)
+
+[node name="DNAPart10" parent="Background/DNA2" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 270, 0)
+
+[node name="DNAPart11" parent="Background/DNA2" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 300, 0)
+
+[node name="DNAPart12" parent="Background/DNA2" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 330, 0)
+
+[node name="DNAPart13" parent="Background/DNA2" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 360, 0)
+
+[node name="DNAPart14" parent="Background/DNA2" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 390, 0)
+
+[node name="DNAPart15" parent="Background/DNA2" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 420, 0)
+
+[node name="DNAPart16" parent="Background/DNA2" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 450, 0)
+
+[node name="DNAPart17" parent="Background/DNA2" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 480, 0)
+
+[node name="DNAPart18" parent="Background/DNA2" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 510, 0)
+
+[node name="DNAPart19" parent="Background/DNA2" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 540, 0)
+
+[node name="DNAPart20" parent="Background/DNA2" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 570, 0)
+
+[node name="DNAPart21" parent="Background/DNA2" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 600, 0)
+
+[node name="DNAPart22" parent="Background/DNA2" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 630, 0)
+
+[node name="DNAPart23" parent="Background/DNA2" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 660, 0)
+
+[node name="DNAPart24" parent="Background/DNA2" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 690, 0)
+
+[node name="DNAPart25" parent="Background/DNA2" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 720, 0)
+
+[node name="DNAPart26" parent="Background/DNA2" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 750, 0)
+
+[node name="DNAPart27" parent="Background/DNA2" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 780, 0)
+
+[node name="DNA3" type="Node3D" parent="Background"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 200, -407.365, 40)
+
+[node name="DNAPart" parent="Background/DNA3" instance=ExtResource("66_np7pl")]
+
+[node name="DNAPart2" parent="Background/DNA3" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 30, 0)
+
+[node name="DNAPart3" parent="Background/DNA3" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 60, 0)
+
+[node name="DNAPart4" parent="Background/DNA3" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 90, 0)
+
+[node name="DNAPart5" parent="Background/DNA3" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 120, 0)
+
+[node name="DNAPart6" parent="Background/DNA3" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 150, 0)
+
+[node name="DNAPart7" parent="Background/DNA3" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 180, 0)
+
+[node name="DNAPart8" parent="Background/DNA3" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 210, 0)
+
+[node name="DNAPart9" parent="Background/DNA3" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 240, 0)
+
+[node name="DNAPart10" parent="Background/DNA3" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 270, 0)
+
+[node name="DNAPart11" parent="Background/DNA3" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 300, 0)
+
+[node name="DNAPart12" parent="Background/DNA3" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 330, 0)
+
+[node name="DNAPart13" parent="Background/DNA3" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 360, 0)
+
+[node name="DNAPart14" parent="Background/DNA3" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 390, 0)
+
+[node name="DNAPart15" parent="Background/DNA3" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 420, 0)
+
+[node name="DNAPart16" parent="Background/DNA3" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 450, 0)
+
+[node name="DNAPart17" parent="Background/DNA3" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 480, 0)
+
+[node name="DNAPart18" parent="Background/DNA3" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 510, 0)
+
+[node name="DNAPart19" parent="Background/DNA3" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 540, 0)
+
+[node name="DNAPart20" parent="Background/DNA3" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 570, 0)
+
+[node name="DNAPart21" parent="Background/DNA3" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 600, 0)
+
+[node name="DNAPart22" parent="Background/DNA3" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 630, 0)
+
+[node name="DNAPart23" parent="Background/DNA3" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 660, 0)
+
+[node name="DNAPart24" parent="Background/DNA3" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 690, 0)
+
+[node name="DNAPart25" parent="Background/DNA3" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 720, 0)
+
+[node name="DNAPart26" parent="Background/DNA3" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 750, 0)
+
+[node name="DNAPart27" parent="Background/DNA3" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 780, 0)
+
+[node name="DNA4" type="Node3D" parent="Background"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -200, -407.365, 40)
+
+[node name="DNAPart" parent="Background/DNA4" instance=ExtResource("66_np7pl")]
+
+[node name="DNAPart2" parent="Background/DNA4" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 30, 0)
+
+[node name="DNAPart3" parent="Background/DNA4" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 60, 0)
+
+[node name="DNAPart4" parent="Background/DNA4" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 90, 0)
+
+[node name="DNAPart5" parent="Background/DNA4" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 120, 0)
+
+[node name="DNAPart6" parent="Background/DNA4" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 150, 0)
+
+[node name="DNAPart7" parent="Background/DNA4" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 180, 0)
+
+[node name="DNAPart8" parent="Background/DNA4" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 210, 0)
+
+[node name="DNAPart9" parent="Background/DNA4" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 240, 0)
+
+[node name="DNAPart10" parent="Background/DNA4" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 270, 0)
+
+[node name="DNAPart11" parent="Background/DNA4" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 300, 0)
+
+[node name="DNAPart12" parent="Background/DNA4" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 330, 0)
+
+[node name="DNAPart13" parent="Background/DNA4" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 360, 0)
+
+[node name="DNAPart14" parent="Background/DNA4" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 390, 0)
+
+[node name="DNAPart15" parent="Background/DNA4" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 420, 0)
+
+[node name="DNAPart16" parent="Background/DNA4" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 450, 0)
+
+[node name="DNAPart17" parent="Background/DNA4" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 480, 0)
+
+[node name="DNAPart18" parent="Background/DNA4" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 510, 0)
+
+[node name="DNAPart19" parent="Background/DNA4" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 540, 0)
+
+[node name="DNAPart20" parent="Background/DNA4" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 570, 0)
+
+[node name="DNAPart21" parent="Background/DNA4" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 600, 0)
+
+[node name="DNAPart22" parent="Background/DNA4" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 630, 0)
+
+[node name="DNAPart23" parent="Background/DNA4" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 660, 0)
+
+[node name="DNAPart24" parent="Background/DNA4" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 690, 0)
+
+[node name="DNAPart25" parent="Background/DNA4" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 720, 0)
+
+[node name="DNAPart26" parent="Background/DNA4" instance=ExtResource("66_np7pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 750, 0)
+
+[node name="DNAPart27" parent="Background/DNA4" instance=ExtResource("66_np7pl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 780, 0)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="Background"]

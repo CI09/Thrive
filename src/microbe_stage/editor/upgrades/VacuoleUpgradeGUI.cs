@@ -21,9 +21,6 @@ public partial class VacuoleUpgradeGUI : VBoxContainer, IOrganelleUpgrader
     private Label description = null!;
 
     [Export]
-    private CheckBox isSpecializedCheckbox = null!;
-
-    [Export]
     private VBoxContainer compoundSelection = null!;
 #pragma warning restore CA2213
 
@@ -57,7 +54,6 @@ public partial class VacuoleUpgradeGUI : VBoxContainer, IOrganelleUpgrader
         if (organelle.Upgrades?.CustomUpgradeData is StorageComponentUpgrades configuration)
         {
             CompoundDefinition? specialization = shownChoices.Find(c => c.ID == configuration.SpecializedFor);
-            isSpecializedCheckbox.ButtonPressed = specialization != null;
 
             compounds.Selected = specialization != null ?
                 shownChoices.IndexOf(specialization) :
@@ -66,7 +62,6 @@ public partial class VacuoleUpgradeGUI : VBoxContainer, IOrganelleUpgrader
         else
         {
             compounds.Selected = defaultCompoundIndex;
-            isSpecializedCheckbox.ButtonPressed = false;
         }
 
         UpdateGUI();
@@ -84,9 +79,7 @@ public partial class VacuoleUpgradeGUI : VBoxContainer, IOrganelleUpgrader
         if (compounds.Selected == -1)
             compounds.Selected = 0;
 
-        organelleUpgrades.CustomUpgradeData = new StorageComponentUpgrades(isSpecializedCheckbox.ButtonPressed ?
-            shownChoices[compounds.Selected].ID :
-            Compound.Invalid);
+        organelleUpgrades.CustomUpgradeData = new StorageComponentUpgrades(shownChoices[compounds.Selected].ID);
 
         return true;
     }
@@ -104,22 +97,12 @@ public partial class VacuoleUpgradeGUI : VBoxContainer, IOrganelleUpgrader
 
     private void UpdateGUI()
     {
-        // Update visibility of the compound selection
-        compoundSelection.Visible = isSpecializedCheckbox.ButtonPressed;
-
         if (shownChoices == null)
             return;
 
         float capacity = SimulationParameters.Instance.GetOrganelleType("vacuole").Components.Storage!.Capacity;
-        if (!isSpecializedCheckbox.ButtonPressed)
-        {
-            var text = new LocalizedString("VACUOLE_NOT_SPECIALIZED_DESCRIPTION", capacity);
-            description.Text = text.ToString();
-        }
-        else
-        {
-            var text = new LocalizedString("VACUOLE_SPECIALIZED_DESCRIPTION", capacity * 2);
-            description.Text = text.ToString();
-        }
+
+        var text = new LocalizedString("VACUOLE_SPECIALIZED_DESCRIPTION", capacity);
+        description.Text = text.ToString();
     }
 }

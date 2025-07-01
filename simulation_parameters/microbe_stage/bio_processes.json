@@ -17,7 +17,8 @@
       "glucose": 0.006
     },
     "Outputs": {
-      "atp": 2
+      "atp": 2,
+      "pyruvate": 0.012
     },
     "IsMetabolismProcess": true
   },
@@ -27,7 +28,8 @@
       "glucose": 0.009
     },
     "Outputs": {
-      "atp": 3
+      "atp": 3,
+      "pyruvate": 0.018
     },
     "IsMetabolismProcess": true
   },

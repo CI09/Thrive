@@ -238,7 +238,7 @@ public class OrganelleDefinition : IRegistryType
         /// </summary>
         Hidden,
 
-        Structural,
+        Basic,
         Protein,
         External,
         Organelle,

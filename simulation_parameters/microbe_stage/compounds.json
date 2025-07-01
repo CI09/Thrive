@@ -267,5 +267,25 @@
       "b": 1
     },
     "IconPath": "res://assets/textures/gui/bevel/Luciferase.svg"
+  },
+  "pyruvate": {
+    "Name": "PYRUVATE",
+    "Volume": 1,
+    "IsCloud": false,
+    "IsAlwaysUseful": false,
+    "IsEnvironmental": false,
+    "CanBeDistributed": false,
+    "Digestible": true,
+    "Colour": {
+      "r": 1.0,
+      "g": 0.8,
+      "b": 0.82
+    },
+    "BarColour": {
+      "r": 0.9,
+      "g": 0.7,
+      "b": 0.72
+    },
+    "IconPath": "res://assets/textures/gui/bevel/Pyruvate.svg"
   }
 }

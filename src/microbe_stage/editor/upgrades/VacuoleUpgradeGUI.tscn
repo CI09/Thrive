@@ -15,17 +15,8 @@ theme = ExtResource("1")
 script = ExtResource("2")
 compounds = NodePath("CompoundSelection/OptionButton")
 description = NodePath("Description")
-isSpecializedCheckbox = NodePath("CheckBox")
+isSpecializedCheckbox = NodePath("")
 compoundSelection = NodePath("CompoundSelection")
-
-[node name="CheckBox" type="CheckBox" parent="."]
-layout_mode = 2
-theme_override_font_sizes/font_size = 14
-text = "VACUOLE_IS_SPECIALIZED"
-
-[node name="Spacer2" type="Control" parent="."]
-custom_minimum_size = Vector2(0, 5)
-layout_mode = 2
 
 [node name="CompoundSelection" type="VBoxContainer" parent="."]
 layout_mode = 2
@@ -47,5 +38,3 @@ editor_description = "PLACEHOLDER"
 layout_mode = 2
 text = "DESCRIPTION GOES HERE"
 label_settings = ExtResource("3_h8r74")
-
-[connection signal="toggled" from="CheckBox" to="." method="OnIsSpecializedToggled"]

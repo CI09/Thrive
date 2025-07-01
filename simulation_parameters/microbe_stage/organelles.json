@@ -73,11 +73,6 @@
     "Processes": {
       "iron_chemolithoautotrophy": 1
     },
-    "Components": {
-      "Storage": {
-        "Capacity": 0.25
-      }
-    },
     "Enzymes": {
       "rusticyanin": 1
     },
@@ -111,11 +106,6 @@
     "Processes": {
       "glycolysis": 1,
       "nitrogenaseReaction": 1
-    },
-    "Components": {
-      "Storage": {
-        "Capacity": 0.25
-      }
     },
     "ToleranceEffects": {
       "Oxygen": -0.01
@@ -157,11 +147,6 @@
     "Processes": {
       "glycolysis": 1
     },
-    "Components": {
-      "Storage": {
-        "Capacity": 15
-      }
-    },
     "AutoEvoCanPlace": false,
     "Density": 1100,
     "CorpseChunkGraphics": {
@@ -191,11 +176,6 @@
     "Processes": {
       "glycolysis": 1,
       "bacterial_ChemoSynthesis": 1
-    },
-    "Components": {
-      "Storage": {
-        "Capacity": 0.25
-      }
     },
     "Density": 1100,
     "Graphics": {
@@ -228,9 +208,6 @@
       "bacterial_cytotoxinSynthesis": 1
     },
     "Components": {
-      "Storage": {
-        "Capacity": 1
-      },
       "AgentVacuole": {
         "Process": "bacterial_cytotoxinSynthesis",
         "Compound": "oxytoxy"
@@ -330,11 +307,6 @@
       "glycolysis": 1,
       "chromatophore_photosynthesis": 1
     },
-    "Components": {
-      "Storage": {
-        "Capacity": 0.25
-      }
-    },
     "ToleranceEffects": {
       "UV": 0.03,
       "Oxygen": 0.01
@@ -376,11 +348,6 @@
     "Processes": {
       "protein_respiration": 1
     },
-    "Components": {
-      "Storage": {
-        "Capacity": 0.25
-      }
-    },
     "ToleranceEffects": {
       "Oxygen": 0.03
     },
@@ -421,11 +388,6 @@
     "Processes": {
       "clostridial_fermentation": 1
     },
-    "Components": {
-      "Storage": {
-        "Capacity": 0.25
-      }
-    },
     "ToleranceEffects": {
       "Oxygen": -0.03
     },
@@ -460,11 +422,6 @@
     ],
     "Processes": {
       "hydrogenosome_fermentation": 1
-    },
-    "Components": {
-      "Storage": {
-        "Capacity": 1.0
-      }
     },
     "ToleranceEffects": {
       "Oxygen": -0.06
@@ -515,11 +472,6 @@
     "Processes": {
       "nitrogenFixing": 1
     },
-    "Components": {
-      "Storage": {
-        "Capacity": 0.5
-      }
-    },
     "ToleranceEffects": {
       "Oxygen": -0.02
     },
@@ -551,11 +503,6 @@
     ],
     "Processes": {
       "bacterial_thermosynthesis": 1
-    },
-    "Components": {
-      "Storage": {
-        "Capacity": 0.25
-      }
     },
     "FeatureTags": [
       "HeatCollecting"
@@ -604,11 +551,6 @@
     ],
     "Processes": {
       "chemoSynthesis": 1
-    },
-    "Components": {
-      "Storage": {
-        "Capacity": 0.25
-      }
     },
     "Density": 1100,
     "Graphics": {
@@ -686,8 +628,8 @@
     "Processes": {},
     "Components": {
       "Storage": {
-        "Capacity": 5
-      }
+        "Capacity": 4
+      },
     },
     "ToleranceEffects": {
       "PressureRange": 100000
@@ -702,9 +644,40 @@
     "ProcessesDescription": "VACUOLE_PROCESSES_DESCRIPTION",
     "IconPath": "res://assets/textures/gui/bevel/parts/VacuoleIcon.png",
     "UpgradeGUI": "res://src/microbe_stage/editor/upgrades/VacuoleUpgradeGUI.tscn",
-    "RequiresNucleus": true,
-    "EditorButtonGroup": "Organelle",
-    "EditorButtonOrder": 12
+    "EditorButtonGroup": "Basic",
+    "EditorButtonOrder": 3
+  },
+  "inclusion": {
+    "MPCost": 25,
+    "InitialComposition": {
+      "ammonia": 1,
+      "phosphates": 1
+    },
+    "Hexes": [
+      {
+        "r": 0,
+        "q": 0
+      }
+    ],
+    "Processes": {},
+    "ToleranceEffects": {
+      "PressureRange": 100000
+    },
+    "Components": {
+      "Storage": {
+        "Capacity": 0.6
+      }
+    },
+    "Density": 1200,
+    "RelativeDensityVolume": 1,
+    "Graphics": {
+      "ScenePath": "res://assets/models/organelles/Inclusion.tscn"
+    },
+    "Name": "INCLUSION",
+    "Description": "INCLUSION_DESCRIPTION",
+    "IconPath": "res://assets/textures/gui/bevel/parts/InclusionIcon.png",
+    "EditorButtonGroup": "Basic",
+    "EditorButtonOrder": 2
   },
   "mitochondrion": {
     "MPCost": 45,
@@ -724,11 +697,6 @@
     ],
     "Processes": {
       "respiration": 1
-    },
-    "Components": {
-      "Storage": {
-        "Capacity": 0.5
-      }
     },
     "ToleranceEffects": {
       "Oxygen": 0.06
@@ -776,9 +744,6 @@
       "cytotoxinSynthesis": 1
     },
     "Components": {
-      "Storage": {
-        "Capacity": 1.5
-      },
       "AgentVacuole": {
         "Process": "cytotoxinSynthesis",
         "Compound": "oxytoxy"
@@ -872,11 +837,6 @@
       }
     ],
     "Processes": {},
-    "Components": {
-      "Storage": {
-        "Capacity": 1
-      }
-    },
     "FeatureTags": [
       "BindingAgent"
     ],
@@ -975,7 +935,7 @@
     },
     "Components": {
       "Storage": {
-        "Capacity": 0.5
+        "Capacity": 0.3
       }
     },
     "Density": 1000,
@@ -988,7 +948,7 @@
     "ProductionColour": "#1db7c5",
     "ConsumptionColour": "#c51d38",
     "IconPath": "res://assets/textures/gui/bevel/parts/CytoplasmIcon.png",
-    "EditorButtonGroup": "Structural",
+    "EditorButtonGroup": "Basic",
     "EditorButtonOrder": 1
   },
   "nucleus": {
@@ -1040,11 +1000,6 @@
       }
     ],
     "Processes": {},
-    "Components": {
-      "Storage": {
-        "Capacity": 2
-      }
-    },
     "FeatureTags": [
       "Nucleus"
     ],
@@ -1108,7 +1063,7 @@
     },
     "Components": {
       "Storage": {
-        "Capacity": 0.5
+        "Capacity": 0.5 //SLIMESLIMESLIMESLIMESLIMESLIMESLIMESLIMESLIMESLIMESLIMESLIMESLIMESLIMESLIMESLIMESLIMESLIMESLIMESLIMESLIMESLIMESLIMESLIMESLIME
       },
       "SlimeJet": {}
     },
@@ -1239,11 +1194,6 @@
     "Processes": {
       "thermosynthesis": 1
     },
-    "Components": {
-      "Storage": {
-        "Capacity": 0.5
-      }
-    },
     "FeatureTags": [
       "HeatCollecting"
     ],
@@ -1337,7 +1287,7 @@
     "Processes": {},
     "Components": {
       "Storage": {
-        "Capacity": 0.5
+        "Capacity": 0.5 //LYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOME
       },
       "Lysosome": {}
     },
@@ -1390,11 +1340,6 @@
     "Processes": {
       "ferrosynthesis": 1
     },
-    "Components": {
-      "Storage": {
-        "Capacity": 0.5
-      }
-    },
     "Enzymes": {
       "rusticyanin": 1
     },
@@ -1440,11 +1385,6 @@
     ],
     "Processes": {
       "radiosynthesis": 1
-    },
-    "Components": {
-      "Storage": {
-        "Capacity": 0.5
-      }
     },
     "FeatureTags": [
       "RadiationBlock"

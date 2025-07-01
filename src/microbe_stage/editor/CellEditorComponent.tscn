@@ -760,9 +760,9 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 placeholder_text = "SEARCH_DOT_DOT_DOT"
 selecting_enabled = false
 
-[node name="Structural" parent="LeftPanel/MainPanel/VBoxContainer/MarginContainer/EditingPanel/Structure/ScrollContainer/MarginContainer/StructureContainer/PartsSelection" instance=ExtResource("45")]
+[node name="Basic" parent="LeftPanel/MainPanel/VBoxContainer/MarginContainer/EditingPanel/Structure/ScrollContainer/MarginContainer/StructureContainer/PartsSelection" instance=ExtResource("45")]
 layout_mode = 2
-DisplayName = "STRUCTURAL"
+DisplayName = "BASIC"
 Columns = 3
 
 [node name="Protein" parent="LeftPanel/MainPanel/VBoxContainer/MarginContainer/EditingPanel/Structure/ScrollContainer/MarginContainer/StructureContainer/PartsSelection" instance=ExtResource("45")]

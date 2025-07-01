@@ -46,6 +46,9 @@ public partial class CreatureStageHUDBase<TStage> : HUDWithPausing, ICreatureSta
     protected CompoundPanels compoundsPanel = null!;
 
     [Export]
+    protected AllCompoundsPanel allCompounds = null!;
+
+    [Export]
     protected EditorEntryButton editorButton = null!;
 
     [Export]
@@ -126,7 +129,7 @@ public partial class CreatureStageHUDBase<TStage> : HUDWithPausing, ICreatureSta
     /// </summary>
     protected TStage? stage;
 
-    private readonly List<(Compound Compound, CompoundProgressBar Bar)> compoundBars = new();
+    private readonly Dictionary<Compound, CompoundProgressBar> compoundBars = new();
 
     private readonly Dictionary<Compound, float> gatheredCompounds = new();
     private readonly Dictionary<Compound, float> totalNeededCompounds = new();
@@ -163,6 +166,8 @@ public partial class CreatureStageHUDBase<TStage> : HUDWithPausing, ICreatureSta
 
     [Export]
     private StyleBoxFlat? strainBarRedFill;
+
+    private PackedScene barScene;
 
     // Used for a save-load to apply these properties
     private bool temporaryEnvironmentCompressed;
@@ -266,7 +271,7 @@ public partial class CreatureStageHUDBase<TStage> : HUDWithPausing, ICreatureSta
 
         // Setup bars. In the future it'd be nice to set up bars as needed for the player for allowing easily adding
         // new compound types
-        var barScene = GD.Load<PackedScene>("res://src/microbe_stage/gui/CompoundProgressBar.tscn");
+        barScene = GD.Load<PackedScene>("res://src/microbe_stage/gui/CompoundProgressBar.tscn");
 
         var simulationParameters = SimulationParameters.Instance;
 
@@ -333,19 +338,19 @@ public partial class CreatureStageHUDBase<TStage> : HUDWithPausing, ICreatureSta
         ironBar = CompoundProgressBar.Create(barScene, simulationParameters.GetCompoundDefinition(Compound.Iron), 0, 1);
 
         compoundsPanel.AddPrimaryBar(glucoseBar);
-        compoundBars.Add((Compound.Glucose, glucoseBar));
+        compoundBars.Add(Compound.Glucose, glucoseBar);
 
         compoundsPanel.AddPrimaryBar(ammoniaBar);
-        compoundBars.Add((Compound.Ammonia, ammoniaBar));
+        compoundBars.Add(Compound.Ammonia, ammoniaBar);
 
         compoundsPanel.AddPrimaryBar(phosphateBar);
-        compoundBars.Add((Compound.Phosphates, phosphateBar));
+        compoundBars.Add(Compound.Phosphates, phosphateBar);
 
         compoundsPanel.AddPrimaryBar(hydrogenSulfideBar);
-        compoundBars.Add((Compound.Hydrogensulfide, hydrogenSulfideBar));
+        compoundBars.Add(Compound.Hydrogensulfide, hydrogenSulfideBar);
 
         compoundsPanel.AddPrimaryBar(ironBar);
-        compoundBars.Add((Compound.Iron, ironBar));
+        compoundBars.Add(Compound.Iron, ironBar);
 
         // Agent bars
         oxytoxyBar = CompoundProgressBar.Create(barScene, simulationParameters.GetCompoundDefinition(Compound.Oxytoxy),
@@ -354,10 +359,10 @@ public partial class CreatureStageHUDBase<TStage> : HUDWithPausing, ICreatureSta
             simulationParameters.GetCompoundDefinition(Compound.Mucilage), 0, 1);
 
         compoundsPanel.AddAgentBar(oxytoxyBar);
-        compoundBars.Add((Compound.Oxytoxy, oxytoxyBar));
+        compoundBars.Add(Compound.Oxytoxy, oxytoxyBar);
 
         compoundsPanel.AddAgentBar(mucilageBar);
-        compoundBars.Add((Compound.Mucilage, mucilageBar));
+        compoundBars.Add(Compound.Mucilage, mucilageBar);
 
         // Fossilization setup
         // Make sure fossilization layer update won't run if it isn't open
@@ -953,14 +958,39 @@ public partial class CreatureStageHUDBase<TStage> : HUDWithPausing, ICreatureSta
     {
         var compounds = GetPlayerStorage();
 
-        foreach (var (compound, bar) in compoundBars)
+        var simulationParameters = SimulationParameters.Instance;
+
+        if (Input.IsActionPressed("g_show_all_compounds"))
         {
-            // Probably can save on performance here by not updating hidden bars and hoping that when bars become
-            // visible they will be updated immediately for the player to not notice
-            if (!bar.Visible)
+            allCompounds.Show();
+        }
+        else
+        {
+            allCompounds.Hide();
+        }
+
+        foreach (var compound in simulationParameters.GetAllCompounds())
+        {
+            var compoundEnum = simulationParameters.GetCompound(compound.Key);
+
+            if (compounds.GetCapacityForCompound(compoundEnum) < Mathf.Epsilon)
                 continue;
 
-            bar.UpdateValue(compounds.GetCompoundAmount(compound), compounds.GetCapacityForCompound(compound));
+            if (compoundBars.ContainsKey(compoundEnum))
+            {
+                var bar = compoundBars[compoundEnum];
+
+                if (bar.Visible)
+                    bar.UpdateValue(compounds.GetCompoundAmount(compoundEnum), compounds.GetCapacityForCompound(compoundEnum));
+            }
+            else
+            {
+                var bar = CompoundProgressBar.Create(barScene, simulationParameters.GetCompoundDefinition(compoundEnum), 0, 1);
+
+                allCompounds.AddBar(bar);
+
+                compoundBars.Add(compoundEnum, bar);
+            }
         }
     }
 

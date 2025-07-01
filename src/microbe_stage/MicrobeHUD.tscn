@@ -1,4 +1,4 @@
-[gd_scene load_steps=52 format=3 uid="uid://bt2fv82h01ice"]
+[gd_scene load_steps=53 format=3 uid="uid://bt2fv82h01ice"]
 
 [ext_resource type="PackedScene" uid="uid://ddbq6kni0re0u" path="res://src/gui_common/RadialPopup.tscn" id="1"]
 [ext_resource type="Theme" uid="uid://b4cx0o110g4b6" path="res://src/gui_common/thrive_theme.tres" id="5"]
@@ -19,6 +19,7 @@
 [ext_resource type="LabelSettings" uid="uid://bgokf8pxiak4n" path="res://src/gui_common/fonts/Title-SemiBold-Tiny.tres" id="39_2oma1"]
 [ext_resource type="PackedScene" uid="uid://bocoy7fjgtnue" path="res://src/microbe_stage/gui/HeatAccumulationBar.tscn" id="39_al48g"]
 [ext_resource type="LabelSettings" uid="uid://c07qrffjvqfw" path="res://src/gui_common/fonts/Body-Regular-Tiny.tres" id="39_nfpcw"]
+[ext_resource type="PackedScene" uid="uid://bowxlns5cw8p" path="res://src/microbe_stage/gui/AllCompoundsPanel.tscn" id="40_e4my1"]
 [ext_resource type="Texture2D" uid="uid://on8072s1tlly" path="res://assets/textures/gui/bevel/Hitpoints.png" id="42"]
 [ext_resource type="Texture2D" uid="uid://o0q204t8ees3" path="res://assets/textures/gui/bevel/AtpBar.png" id="43"]
 [ext_resource type="Texture2D" uid="uid://budtxbmecqr3l" path="res://assets/textures/gui/bevel/dataValueBackground.png" id="44"]
@@ -267,7 +268,7 @@ corner_radius_top_right = 1
 corner_radius_bottom_right = 1
 corner_radius_bottom_left = 1
 
-[node name="MicrobeHUD" type="Control" node_paths=PackedStringArray("bindingModeHotkey", "unbindAllHotkey", "siderophoreHotkey", "multicellularButton", "multicellularConfirmPopup", "macroscopicButton", "heatAccumulationBar", "mouseHoverPanel", "environmentPanel", "compoundsPanel", "editorButton", "mucocystHotkey", "engulfHotkey", "secreteSlimeHotkey", "ejectEngulfedHotkey", "signalingAgentsHotkey", "atpBar", "healthBar", "atpLabel", "hpLabel", "populationLabel", "hintText", "packControlRadial", "bottomLeftBar", "sprintHotkey", "strainBar", "damageScreenEffect", "hotBar", "fireToxinHotkey", "processPanel", "pausePrompt", "pauseInfo", "hudMessages")]
+[node name="MicrobeHUD" type="Control" node_paths=PackedStringArray("bindingModeHotkey", "unbindAllHotkey", "siderophoreHotkey", "multicellularButton", "multicellularConfirmPopup", "macroscopicButton", "heatAccumulationBar", "mouseHoverPanel", "environmentPanel", "compoundsPanel", "allCompounds", "editorButton", "mucocystHotkey", "engulfHotkey", "secreteSlimeHotkey", "ejectEngulfedHotkey", "signalingAgentsHotkey", "atpBar", "healthBar", "atpLabel", "hpLabel", "populationLabel", "hintText", "packControlRadial", "bottomLeftBar", "sprintHotkey", "strainBar", "damageScreenEffect", "hotBar", "fireToxinHotkey", "processPanel", "pausePrompt", "pauseInfo", "hudMessages")]
 process_mode = 3
 process_priority = 4
 layout_mode = 3
@@ -296,6 +297,7 @@ PatchExtinctionBoxScene = ExtResource("60")
 mouseHoverPanel = NodePath("TopRight/MouseHoverPanel")
 environmentPanel = NodePath("BottomLeft/LeftPanels/EnvironmentPanel")
 compoundsPanel = NodePath("BottomLeft/LeftPanels/CompoundPanels")
+allCompounds = NodePath("AllCompoundsPanel")
 editorButton = NodePath("BottomRight/EditorButton")
 mucocystHotkey = NodePath("ScrollContainer/HotBar/Mucocyst")
 engulfHotkey = NodePath("ScrollContainer/HotBar/Engulfment")
@@ -782,6 +784,11 @@ theme_type_variation = &"SprintBar"
 max_value = 0.9
 step = 0.001
 show_percentage = false
+
+[node name="AllCompoundsPanel" parent="." instance=ExtResource("40_e4my1")]
+layout_mode = 1
+offset_top = -300.0
+offset_bottom = 300.0
 
 [connection signal="OnCompoundsToggled" from="BottomLeft/HUDBottomBar" to="." method="CompoundButtonPressed"]
 [connection signal="OnEnvironmentToggled" from="BottomLeft/HUDBottomBar" to="." method="EnvironmentButtonPressed"]

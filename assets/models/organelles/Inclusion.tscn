@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=3 uid="uid://b8du48jpdb823"]
+
+[ext_resource type="Shader" uid="uid://bpdtg8smolq32" path="res://shaders/OrganelleTransparent.gdshader" id="1_4fnqx"]
+[ext_resource type="Texture2D" uid="uid://baxuoyeo83r2u" path="res://assets/textures/dissolve_noise.tres" id="2_jqqge"]
+[ext_resource type="Texture2D" uid="uid://2hbye6cfsiaf" path="res://assets/textures/Vacuole.png" id="3_fu004"]
+[ext_resource type="ArrayMesh" uid="uid://dd7k1s0j0w3rs" path="res://assets/models/organelles/Inclusion.tres" id="4_4fnqx"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qaowp"]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("1_4fnqx")
+shader_parameter/texture = ExtResource("3_fu004")
+shader_parameter/dissolveTexture = ExtResource("2_jqqge")
+shader_parameter/dissolveValue = 0.0
+shader_parameter/dissolveScale = 1.0
+shader_parameter/fresnelValue = 0.94
+shader_parameter/fresnelActive = true
+shader_parameter/outlineWidth = 0.05
+shader_parameter/growColor = Color(0.303233, 0.303233, 0.303233, 1)
+shader_parameter/tint = Color(1, 1, 1, 1)
+shader_parameter/jiggleAmount = 0.0005
+
+[node name="Inclusion" type="MeshInstance3D"]
+material_override = SubResource("ShaderMaterial_qaowp")
+mesh = ExtResource("4_4fnqx")
