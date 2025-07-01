@@ -40,6 +40,9 @@ public class GameWorld : ISaveLoadable
     [JsonProperty]
     public WorldGenerationSettings WorldSettings;
 
+    [JsonProperty]
+    public float LastCollectedAmmoniaPhosphateBonus;
+
     /// <summary>
     ///   History of the world. Generations need to be inserted in order for this to work.
     /// </summary>

@@ -1037,9 +1037,11 @@ public partial class EditorBase<TAction, TStage> : NodeWithInput, IEditor, ILoad
         if (FreeBuilding || CheatManager.InfiniteMP)
             return Constants.BASE_MUTATION_POINTS;
 
-        mutationPointsCache = history.CalculateMutationPointsLeft();
+        var effectiveMaxMutationPoints = Constants.BASE_MUTATION_POINTS - 50 + (25 * CurrentGame.GameWorld.LastCollectedAmmoniaPhosphateBonus);
 
-        if (mutationPointsCache.Value is < Constants.ALLOWED_MP_OVERSHOOT or > Constants.BASE_MUTATION_POINTS)
+        mutationPointsCache = history.CalculateMutationPointsLeft(effectiveMaxMutationPoints);
+
+        if (mutationPointsCache.Value is < Constants.ALLOWED_MP_OVERSHOOT || mutationPointsCache.Value > effectiveMaxMutationPoints)
         {
             GD.PrintErr("Invalid MP amount: ", mutationPointsCache,
                 " This should only happen if the user disabled the Infinite MP cheat while having mutated too much.");

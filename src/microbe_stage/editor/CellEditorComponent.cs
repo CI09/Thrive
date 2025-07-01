@@ -1009,7 +1009,10 @@ public partial class CellEditorComponent :
 
         // This is triggered when no changes have been made. A more accurate way would be to check the action history
         // for any undoable action, but that isn't accessible here currently, so this is probably good enough.
-        if (Editor.MutationPoints == Constants.BASE_MUTATION_POINTS)
+
+        var effectiveMaxMutationPoints = Constants.BASE_MUTATION_POINTS - 50;
+
+        if (Editor.MutationPoints == effectiveMaxMutationPoints)
         {
             var tutorial = Editor.CurrentGame.TutorialState;
 

@@ -48,7 +48,7 @@ public class EditorActionHistory<TAction> : ActionHistory<TAction>
     /// <summary>
     ///   Calculates the remaining MP from the action history.
     /// </summary>
-    public double CalculateMutationPointsLeft()
+    public double CalculateMutationPointsLeft(float maxMutationPoints)
     {
         if (CheatManager.InfiniteMP)
             return Constants.BASE_MUTATION_POINTS;
@@ -110,7 +110,7 @@ public class EditorActionHistory<TAction> : ActionHistory<TAction>
             }
         }
 
-        return Constants.BASE_MUTATION_POINTS - processedHistory.Sum(p => p.CalculateCost());
+        return maxMutationPoints - processedHistory.Sum(p => p.CalculateCost());
     }
 
     public override bool Redo()

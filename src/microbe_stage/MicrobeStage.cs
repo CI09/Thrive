@@ -608,6 +608,16 @@ public partial class MicrobeStage : CreatureStageBase<Entity, MicrobeWorldSimula
 
         RecordPlayerReproduction();
 
+        var compounds = Player.Get<CompoundStorage>();
+
+        compounds.Compounds.Compounds.TryGetValue(Compound.Ammonia, out var ammonia);
+        compounds.Compounds.Compounds.TryGetValue(Compound.Phosphates, out var phosphates);
+
+        ammonia /= compounds.Compounds.NominalCapacity;
+        phosphates /= compounds.Compounds.NominalCapacity;
+
+        GameWorld.LastCollectedAmmoniaPhosphateBonus = ammonia + phosphates;
+
         // We don't free this here as the editor will return to this scene
         if (SceneManager.Instance.SwitchToScene(sceneInstance, true) != this)
         {
