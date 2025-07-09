@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=3 uid="uid://bsc2yabl2k4a4"]
+
+[ext_resource type="Texture2D" uid="uid://2hbye6cfsiaf" path="res://assets/textures/Vacuole.png" id="1_71a8k"]
+[ext_resource type="ArrayMesh" uid="uid://p46k8myuwmqe" path="res://assets/models/organelles/RibosomeA.res" id="2_c14tp"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_et66q"]
+albedo_texture = ExtResource("1_71a8k")
+
+[node name="RibosomeA" type="MeshInstance3D"]
+material_override = SubResource("StandardMaterial3D_et66q")
+mesh = ExtResource("2_c14tp")

@@ -154,7 +154,8 @@
       "carbondioxide": 0.09
     },
     "Outputs": {
-      "glucose": 0.1
+      "glucose": 0.1,
+      "sulfur": 0.1
     },
     "IsMetabolismProcess": true
   },
@@ -165,7 +166,8 @@
       "carbondioxide": 0.09
     },
     "Outputs": {
-      "glucose": 0.04
+      "glucose": 0.04,
+      "sulfur": 0.04
     },
     "IsMetabolismProcess": true
   },
@@ -208,7 +210,8 @@
       "glucose": 0.013
     },
     "Outputs": {
-      "atp": 5
+      "atp": 5,
+      "butanol": 0.002
     },
     "IsMetabolismProcess": true
   },
@@ -218,7 +221,8 @@
       "glucose": 0.02
     },
     "Outputs": {
-      "atp": 13
+      "atp": 13,
+      "butanol": 0.004
     },
     "IsMetabolismProcess": true
   },
@@ -288,6 +292,19 @@
     },
     "Outputs": {
       "luciferase": 1.5
+    }
+  },
+  "lactateSynthesis": {
+    "Name": "LACTATE_SYNTHESIS",
+    "Inputs": {
+      "pyruvate": 0.012,
+      "atp": 0.1
+    },
+    "InputEnzymes": {
+      "lactateDehydrogenase": 1
+    },
+    "Outputs": {
+      "lactate": 0.012
     }
   }
 }

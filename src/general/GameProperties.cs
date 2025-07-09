@@ -369,6 +369,18 @@ public class GameProperties
         playerSpecies.Organelles.AddFast(new OrganelleTemplate(simulationParameters.GetOrganelleType("bindingAgent"),
             new Hex(0, 2), 0), workMemory1, workMemory2);
 
+        playerSpecies.Organelles.AddFast(new OrganelleTemplate(simulationParameters.GetOrganelleType("ribosomeA"),
+            new Hex(0, 3), 0), workMemory1, workMemory2);
+        playerSpecies.HasRibosomeA = true;
+
+        playerSpecies.Organelles.AddFast(new OrganelleTemplate(simulationParameters.GetOrganelleType("ribosomeB"),
+            new Hex(-1, 3), 0), workMemory1, workMemory2);
+        playerSpecies.HasRibosomeB = true;
+
+        playerSpecies.Organelles.AddFast(new OrganelleTemplate(simulationParameters.GetOrganelleType("ribosomeC"),
+            new Hex(1, 3), 0), workMemory1, workMemory2);
+        playerSpecies.HasRibosomeC = true;
+
         playerSpecies.OnEdited();
         return playerSpecies;
     }

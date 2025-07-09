@@ -109,6 +109,15 @@ public class AddOrganelleAnywhere : IMutationStrategy<MicrobeSpecies>
             if (organelle.RequiresNucleus && baseSpecies.IsBacteria)
                 continue;
 
+            if (organelle.RequiredRibosome == 1 && !baseSpecies.HasRibosomeC)
+                continue;
+
+            if (organelle.RequiredRibosome == 2 && !baseSpecies.HasRibosomeB)
+                continue;
+
+            if (organelle.RequiredRibosome == 3 && !baseSpecies.HasRibosomeA)
+                continue;
+
             if (organelle.Unique && baseSpecies.Organelles.Select(x => x.Definition).Contains(organelle))
                 continue;
 

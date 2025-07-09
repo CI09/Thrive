@@ -35,6 +35,7 @@ public partial class ChemicalEquation : VBoxContainer
     private CompoundListBox? rightSide;
     private Label? perSecondLabel;
     private Label? environmentSeparator;
+    private Label? enzymeSection;
     private CompoundListBox? environmentSection;
 #pragma warning restore CA2213
 
@@ -255,6 +256,22 @@ public partial class ChemicalEquation : VBoxContainer
 
         // Environment conditions
         UpdateEnvironmentPart(environmentalInputs);
+
+        if (EquationFromProcess.EnzymeInputs != null && EquationFromProcess.EnzymeInputs.Count > 0)
+        {
+            if (enzymeSection == null)
+            {
+                enzymeSection = new Label
+                {
+                    CustomMinimumSize = new Vector2(30, 20),
+                    HorizontalAlignment = HorizontalAlignment.Right,
+                };
+
+                firstLineContainer.AddChild(enzymeSection);
+            }
+
+            enzymeSection.Text = EquationFromProcess.EnzymeInputs.First().Key.Name;
+        }
 
         ApplyProcessToggleValue();
     }

@@ -34,6 +34,11 @@ public interface IProcessDisplayInfo : IEquatable<IProcessDisplayInfo>
     public IReadOnlyDictionary<Compound, float> FullSpeedRequiredEnvironmentalInputs { get; }
 
     /// <summary>
+    ///   Current enzyme input values
+    /// </summary>
+    public Dictionary<Enzyme, float> EnzymeInputs { get; set; }
+
+    /// <summary>
     ///   All the output compounds
     /// </summary>
     public IReadOnlyDictionary<Compound, float> Outputs { get; }

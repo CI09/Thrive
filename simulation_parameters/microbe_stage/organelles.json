@@ -38,6 +38,7 @@
         }
       }
     ],
+    "RequiredRibosome": 1,
     "EditorButtonGroup": "External",
     "EditorButtonOrder": 2,
     "AvailableUpgrades": {
@@ -128,6 +129,7 @@
         }
       }
     ],
+    "RequiredRibosome": 1,
     "EditorButtonGroup": "Protein",
     "EditorButtonOrder": 5,
     "EndosymbiosisUnlocks": "nitrogenfixingplastid"
@@ -174,7 +176,6 @@
       }
     ],
     "Processes": {
-      "glycolysis": 1,
       "bacterial_ChemoSynthesis": 1
     },
     "Density": 1100,
@@ -238,6 +239,7 @@
         }
       }
     ],
+    "RequiredRibosome": 1,
     "EditorButtonGroup": "Protein",
     "UpgradeGUI": "res://src/microbe_stage/editor/upgrades/ToxinUpgradeGUI.tscn",
     "UpgraderSkipDefaultControls": true,
@@ -329,6 +331,7 @@
         }
       }
     ],
+    "RequiredRibosome": 2,
     "EditorButtonGroup": "Protein",
     "EditorButtonOrder": 2,
     "EndosymbiosisUnlocks": "chloroplast"
@@ -369,6 +372,7 @@
         }
       }
     ],
+    "RequiredRibosome": 2,
     "EditorButtonGroup": "Protein",
     "EditorButtonOrder": 1,
     "EndosymbiosisUnlocks": "mitochondrion"
@@ -395,6 +399,7 @@
     "Graphics": {
       "ScenePath": "res://assets/models/organelles/Hydrogenase.tscn"
     },
+    "RequiredRibosome": 1,
     "Name": "HYDROGENASE",
     "Description": "HYDROGENASE_DESCRIPTION",
     "ProcessesDescription": "HYDROGENASE_PROCESSES_DESCRIPTION",
@@ -450,6 +455,7 @@
       }
     ],
     "RequiresNucleus": true,
+    "RequiredRibosome": 1,
     "EditorButtonGroup": "Organelle",
     "EditorButtonOrder": 3
   },
@@ -486,6 +492,7 @@
     "ConsumptionColour": "#ffb74f",
     "IconPath": "res://assets/textures/gui/bevel/parts/NitroplastidIcon.png",
     "RequiresNucleus": true,
+    "RequiredRibosome": 2,
     "EditorButtonGroup": "Organelle",
     "EditorButtonOrder": 11
   },
@@ -528,6 +535,7 @@
         }
       }
     ],
+    "RequiredRibosome": 2,
     "EditorButtonGroup": "Protein",
     "EditorButtonOrder": 8,
     "LAWK": false,
@@ -561,6 +569,7 @@
     "ProcessesDescription": "CHEMOPLAST_PROCESSES_DESCRIPTION",
     "IconPath": "res://assets/textures/gui/bevel/parts/ChemoplastIcon.png",
     "RequiresNucleus": true,
+    "RequiredRibosome": 2,
     "EditorButtonGroup": "Organelle",
     "EditorButtonOrder": 10
   },
@@ -609,6 +618,7 @@
       }
     ],
     "UpgradeGUI": "res://src/microbe_stage/editor/upgrades/FlagellumUpgradeGUI.tscn",
+    "RequiredRibosome": 1,
     "EditorButtonGroup": "External",
     "EditorButtonOrder": 1,
     "SuggestionPlacement": "Back"
@@ -629,7 +639,7 @@
     "Components": {
       "Storage": {
         "Capacity": 4
-      },
+      }
     },
     "ToleranceEffects": {
       "PressureRange": 100000
@@ -725,6 +735,7 @@
       }
     ],
     "RequiresNucleus": true,
+    "RequiredRibosome": 2,
     "EditorButtonGroup": "Organelle",
     "EditorButtonOrder": 5
   },
@@ -821,6 +832,7 @@
         }
       }
     },
+    "RequiredRibosome": 1,
     "EditorButtonGroup": "Organelle",
     "EditorButtonOrder": 13
   },
@@ -915,6 +927,7 @@
       }
     ],
     "RequiresNucleus": true,
+    "RequiredRibosome": 2,
     "EditorButtonGroup": "Organelle",
     "EditorButtonOrder": 7
   },
@@ -931,7 +944,8 @@
       }
     ],
     "Processes": {
-      "glycolysis_cytoplasm": 1
+      "glycolysis_cytoplasm": 1,
+      "lactateSynthesis": 1
     },
     "Components": {
       "Storage": {
@@ -1014,6 +1028,7 @@
     "ProcessesDescription": "NUCLEUS_SMALL_DESCRIPTION",
     "IconPath": "res://assets/textures/gui/bevel/parts/NucleusIcon.png",
     "Unique": true,
+    "RequiredRibosome": 2,
     "EditorButtonGroup": "Organelle",
     "EditorButtonOrder": 1
   },
@@ -1043,6 +1058,7 @@
     "ProcessesDescription": "CHEMORECEPTOR_PROCESSES_DESCRIPTION",
     "IconPath": "res://assets/textures/gui/bevel/parts/ChemoreceptorIcon.png",
     "UpgradeGUI": "res://src/microbe_stage/editor/upgrades/ChemoreceptorUpgradeGUI.tscn",
+    "RequiredRibosome": 1,
     "EditorButtonGroup": "External",
     "EditorButtonOrder": 3
   },
@@ -1082,6 +1098,7 @@
     "ProcessesDescription": "SLIME_JET_PROCESSES_DESCRIPTION",
     "ConsumptionColour": "#00ffcc",
     "IconPath": "res://assets/textures/gui/bevel/parts/SlimeJetIcon.png",
+    "RequiredRibosome": 2,
     "EditorButtonGroup": "External",
     "EditorButtonOrder": 4,
     "AvailableUpgrades": {
@@ -1172,6 +1189,7 @@
     "ConsumptionColour": "#2fa2ac",
     "IconPath": "res://assets/textures/gui/bevel/parts/BioluminescentIcon.png",
     "RequiresNucleus": true,
+    "RequiredRibosome": 1,
     "EditorButtonGroup": "Organelle",
     "EditorButtonOrder": 16
   },
@@ -1221,6 +1239,7 @@
       }
     ],
     "RequiresNucleus": true,
+    "RequiredRibosome": 2,
     "EditorButtonGroup": "Organelle",
     "EditorButtonOrder": 9,
     "LAWK": false
@@ -1287,14 +1306,15 @@
     "Processes": {},
     "Components": {
       "Storage": {
-        "Capacity": 0.5 //LYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOME
+        "Capacity": 0.2 //LYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOMELYSOSOME
       },
       "Lysosome": {}
     },
     "Enzymes": {
       "lipase": 1,
       "chitinase": 0,
-      "cellulase": 0
+      "cellulase": 0,
+      "lactateDehydrogenase": 0
     },
     "Density": 1100,
     "Graphics": {
@@ -1304,22 +1324,10 @@
     "Description": "LYSOSOME_DESCRIPTION",
     "ProcessesDescription": "LYSOSOME_PROCESSES_DESCRIPTION",
     "IconPath": "res://assets/textures/gui/bevel/parts/LysosomeIcon.png",
-    "UnlockConditions": [
-      {
-        "EngulfedMicrobesAbove": {
-          "Required": 20
-        }
-      },
-      {
-        "DigestedMicrobesAbove": {
-          "Required": 10
-        }
-      }
-    ],
     "UpgradeGUI": "res://src/microbe_stage/editor/upgrades/LysosomeUpgradeGUI.tscn",
-    "RequiresNucleus": true,
-    "EditorButtonGroup": "Organelle",
-    "EditorButtonOrder": 8
+    "UpgradeOnPlacement": true,
+    "EditorButtonGroup": "Basic",
+    "EditorButtonOrder": 4
   },
   "ferroplast": {
     "MPCost": 45,
@@ -1364,6 +1372,7 @@
       }
     ],
     "RequiresNucleus": true,
+    "RequiredRibosome": 1,
     "EditorButtonGroup": "Organelle",
     "EditorButtonOrder": 6
   },
@@ -1412,6 +1421,7 @@
       }
     ],
     "RequiresNucleus": true,
+    "RequiredRibosome": 1,
     "EditorButtonGroup": "Organelle",
     "EditorButtonOrder": 14
   },
@@ -1489,5 +1499,110 @@
     "RequiresNucleus": true,
     "EditorButtonGroup": "Macroscopic",
     "EditorButtonOrder": 2
+  },
+  "ribosomeC": {
+    "MPCost": 70,
+    "InitialComposition": {
+      "ammonia": 1,
+      "phosphates": 1
+    },
+    "Hexes": [
+      {
+        "r": 0,
+        "q": 0
+      }
+    ],
+    "UnlockConditions": [
+      {
+        "HaveCompound": {
+          "Compound": "sulfur",
+          "MinPercentage": 50
+        }
+      },
+      {
+        "HaveCompound": {
+          "Compound": "iron",
+          "MinPercentage": 50
+        }
+      }
+    ],
+    "Processes": {},
+    "Components": {
+    },
+    "Density": 1100,
+    "Graphics": {
+      "ScenePath": "res://assets/models/organelles/RibosomeC.tscn"
+    },
+    "Name": "RIBOSOME_C",
+    "Description": "RIBOSOME_C_DESCRIPTION",
+    "ProcessesDescription": "RIBOSOME_C_PROCESSES_DESCRIPTION",
+    "IconPath": "res://assets/textures/gui/bevel/parts/VacuoleIcon.png",
+    "Unique": true,
+    "EditorButtonGroup": "Basic",
+    "EditorButtonOrder": 5
+  },
+  "ribosomeB": {
+    "MPCost": 70,
+    "InitialComposition": {
+      "ammonia": 1,
+      "phosphates": 1
+    },
+    "Hexes": [
+      {
+        "r": 0,
+        "q": 0
+      }
+    ],
+    "UnlockConditions": [
+      {
+        "HaveCompound": {
+          "Compound": "butanol",
+          "MinPercentage": 50
+        }
+      }
+    ],
+    "Processes": {},
+    "Components": {
+    },
+    "Density": 1100,
+    "Graphics": {
+      "ScenePath": "res://assets/models/organelles/RibosomeB.tscn"
+    },
+    "Name": "RIBOSOME_B",
+    "Description": "RIBOSOME_B_DESCRIPTION",
+    "ProcessesDescription": "RIBOSOME_B_PROCESSES_DESCRIPTION",
+    "IconPath": "res://assets/textures/gui/bevel/parts/VacuoleIcon.png",
+    "Unique": true,
+    "RequiredRibosome": 1,
+    "EditorButtonGroup": "Basic",
+    "EditorButtonOrder": 6
+  },
+  "ribosomeA": {
+    "MPCost": 70,
+    "InitialComposition": {
+      "ammonia": 1,
+      "phosphates": 1
+    },
+    "Hexes": [
+      {
+        "r": 0,
+        "q": 0
+      }
+    ],
+    "Processes": {},
+    "Components": {
+    },
+    "Density": 1100,
+    "Graphics": {
+      "ScenePath": "res://assets/models/organelles/RibosomeA.tscn"
+    },
+    "Name": "RIBOSOME_A",
+    "Description": "RIBOSOME_A_DESCRIPTION",
+    "ProcessesDescription": "RIBOSOME_A_PROCESSES_DESCRIPTION",
+    "IconPath": "res://assets/textures/gui/bevel/parts/VacuoleIcon.png",
+    "Unique": true,
+    "RequiredRibosome": 2,
+    "EditorButtonGroup": "Basic",
+    "EditorButtonOrder": 7
   }
 }

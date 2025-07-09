@@ -566,6 +566,9 @@ public partial class ToolTipManager : CanvasLayer
             tooltip.MutationPointCost = organelle.MPCost;
             tooltip.DisplayName = organelle.Name;
             tooltip.RequiresNucleus = organelle.RequiresNucleus;
+            tooltip.RequiredRibosomeVisible = organelle.RequiredRibosome > 0;
+            tooltip.RequiredRibosome = organelle.RequiredRibosome == 1 ? Localization.Translate("C") :
+                organelle.RequiredRibosome == 2 ? Localization.Translate("B") : Localization.Translate("A");
             tooltip.ThriveopediaPageName = organelle.InternalName;
             tooltip.ProcessesDescription = organelle.ProcessesDescription ?? string.Empty;
 

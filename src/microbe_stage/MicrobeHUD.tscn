@@ -786,6 +786,7 @@ step = 0.001
 show_percentage = false
 
 [node name="AllCompoundsPanel" parent="." instance=ExtResource("40_e4my1")]
+visible = false
 layout_mode = 1
 offset_top = -300.0
 offset_bottom = 300.0

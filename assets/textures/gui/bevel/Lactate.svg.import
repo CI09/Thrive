@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bte2ogjlcpyf5"
-path="res://.godot/imported/Pyruvate.svg-de3a494b7151a39fa818d1ca0382f3ba.ctex"
+uid="uid://bcng1uf0460kd"
+path="res://.godot/imported/Lactate.svg-6f5691def522c897b0c37ce6c9b5477b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/textures/gui/bevel/Pyruvate.svg"
-dest_files=["res://.godot/imported/Pyruvate.svg-de3a494b7151a39fa818d1ca0382f3ba.ctex"]
+source_file="res://assets/textures/gui/bevel/Lactate.svg"
+dest_files=["res://.godot/imported/Lactate.svg-6f5691def522c897b0c37ce6c9b5477b.ctex"]
 
 [params]
 

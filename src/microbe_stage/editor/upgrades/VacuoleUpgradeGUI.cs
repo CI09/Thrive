@@ -11,7 +11,8 @@ public partial class VacuoleUpgradeGUI : VBoxContainer, IOrganelleUpgrader
     ///   We need to explicitly block some compounds from upgrades as there's no way to otherwise skip these based on
     ///   just the properties of the compounds in the JSON
     /// </summary>
-    public static readonly Compound[] BlockedSpecializedCompounds = [Compound.Radiation, Compound.Temperature];
+    public static readonly Compound[] BlockedSpecializedCompounds = [Compound.Radiation, Compound.Temperature,
+        Compound.Ammonia, Compound.Phosphates];
 
 #pragma warning disable CA2213
     [Export]

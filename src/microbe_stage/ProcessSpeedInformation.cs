@@ -26,6 +26,8 @@ public class ProcessSpeedInformation : IProcessDisplayInfo
     // ReSharper disable once CollectionNeverQueried.Global
     public Dictionary<Compound, float> AvailableRates { get; } = new();
 
+    public Dictionary<Enzyme, float> EnzymeInputs { get; set; } = new();
+
     public IEnumerable<KeyValuePair<Compound, float>> Inputs =>
         WritableInputs.Where(p => !IProcessDisplayInfo.IsEnvironmental(p.Key));
 

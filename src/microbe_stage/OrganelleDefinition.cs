@@ -77,6 +77,11 @@ public class OrganelleDefinition : IRegistryType
     public bool Unimplemented;
 
     /// <summary>
+    ///   If true, upgrade GUI will show up upon placement
+    /// </summary>
+    public bool UpgradeOnPlacement;
+
+    /// <summary>
     ///   The group of buttons under which the button to select to place this organelle is put
     /// </summary>
     [JsonRequired]
@@ -144,6 +149,11 @@ public class OrganelleDefinition : IRegistryType
     ///   Cost of placing this organelle in the editor (in mutation points)
     /// </summary>
     public int MPCost;
+
+    /// <summary>
+    ///   Required at least one ribosome: 0 - None, 1 - Ribosome C, 2 - Ribosome B, 3 - Ribosome A
+    /// </summary>
+    public int RequiredRibosome;
 
     /// <summary>
     ///   Controls whether this organelle scales with growth progress (progress towards division and reproduction).

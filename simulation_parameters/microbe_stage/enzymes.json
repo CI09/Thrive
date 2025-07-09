@@ -14,6 +14,11 @@
     "Description": "CHITINASE_DESCRIPTION",
     "Property": "hydrolytic"
   },
+  "lactateDehydrogenase": {
+    "Name": "LACTATE_DEHYDROGENASE",
+    "Description": "LACTATE_DEHYDROGENASE_DESCRIPTION",
+    "Property": "hydrolytic"
+  },
   "rusticyanin": {
     "Name": "RUSTICYANIN",
     "Description": "RUSTICYANIN_DESCRIPTION",

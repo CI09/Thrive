@@ -211,3 +211,44 @@ public class PatchCompound : WorldBasedUnlockCondition
         }
     }
 }
+
+/// <summary>
+///   The player entered editor with a compound
+/// </summary>
+public class HaveCompound : WorldBasedUnlockCondition
+{
+    [JsonProperty]
+    public int? MinPercentage;
+
+    [JsonProperty]
+    public Compound Compound;
+
+    public override bool Satisfied(IUnlockStateDataSource data)
+    {
+        if (data is not WorldAndPlayerDataSource worldArgs)
+            return false;
+
+        if (!worldArgs.World.LastCollectedCompoundsFraction.TryGetValue(Compound, out var value))
+            return false;
+
+        return value * 100 >= MinPercentage;
+    }
+
+    public override void GenerateTooltip(LocalizedStringBuilder builder, IUnlockStateDataSource data)
+    {
+        var compoundDefinition = SimulationParameters.GetCompound(Compound);
+
+        // These are objects to allow LocalizedString and pure string parameters used in the final localized string
+        // which anyway takes plain objects as the format parameters
+
+        string? formattedMin = MinPercentage?.ToString(CultureInfo.CurrentCulture);
+
+        var compoundName = compoundDefinition.InternalName;
+
+        if (formattedMin != null)
+        {
+            builder.Append(new LocalizedString("UNLOCK_CONDITION_HAVE_COMPOUND_ABOVE", compoundName, formattedMin));
+        }
+
+    }
+}

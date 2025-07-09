@@ -9,6 +9,12 @@ public static class CommonMutationFunctions
 {
     public static OrganelleDefinition Nucleus = SimulationParameters.Instance.GetOrganelleType("nucleus");
 
+    public static OrganelleDefinition RibosomeC = SimulationParameters.Instance.GetOrganelleType("ribosomeC");
+
+    public static OrganelleDefinition RibosomeB = SimulationParameters.Instance.GetOrganelleType("ribosomeB");
+
+    public static OrganelleDefinition RibosomeA = SimulationParameters.Instance.GetOrganelleType("ribosomeA");
+
     // These must be defined this way to avoid allocations
     private static readonly Hex.HexSide[] TraversalOrder1 = [Hex.HexSide.Top];
     private static readonly Hex.HexSide[] TraversalOrder2 = [Hex.HexSide.Bottom];
@@ -155,6 +161,15 @@ public static class CommonMutationFunctions
         {
             newSpecies.IsBacteria = false;
         }
+
+        if (organelle == RibosomeC)
+            newSpecies.HasRibosomeC = true;
+
+        if (organelle == RibosomeB)
+            newSpecies.HasRibosomeB = true;
+
+        if (organelle == RibosomeA)
+            newSpecies.HasRibosomeA = true;
 
         return true;
     }

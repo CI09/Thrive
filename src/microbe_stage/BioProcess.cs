@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Microsoft.VisualStudio.TestPlatform.Utilities;
 using Newtonsoft.Json;
 using ThriveScriptsShared;
 
@@ -23,6 +24,12 @@ public class BioProcess : IRegistryType
     public Dictionary<CompoundDefinition, float> Outputs = new();
 
     /// <summary>
+    ///   Enzymes that allow the reaction
+    /// </summary>
+    [JsonIgnore]
+    public Dictionary<Enzyme, float> InputEnzymes = new();
+
+    /// <summary>
     ///   True when this is a metabolism process
     /// </summary>
     public bool IsMetabolismProcess;
@@ -36,6 +43,9 @@ public class BioProcess : IRegistryType
 
     [JsonProperty(nameof(Outputs))]
     private Dictionary<Compound, float>? outputsRaw;
+
+    [JsonProperty(nameof(InputEnzymes))]
+    private Dictionary<string, float>? inputEnzymesRaw;
 #pragma warning restore 169,649
 
     public string InternalName { get; set; } = null!;
@@ -72,6 +82,18 @@ public class BioProcess : IRegistryType
             }
         }
 
+        if (inputEnzymesRaw != null)
+        {
+            foreach (var inputEnzyme in inputEnzymesRaw)
+            {
+                if (inputEnzyme.Value <= 0)
+                {
+                    throw new InvalidRegistryDataException(name, GetType().Name,
+                        "Non-positive amount of input enzyme compound " + inputEnzyme.Key + " found");
+                }
+            }
+        }
+
         TranslationHelper.CopyTranslateTemplatesToTranslateSource(this);
     }
 
@@ -86,6 +108,14 @@ public class BioProcess : IRegistryType
         foreach (var entry in outputsRaw!)
         {
             Outputs[simulationParameters.GetCompoundDefinition(entry.Key)] = entry.Value;
+        }
+
+        if (inputEnzymesRaw != null)
+        {
+            foreach (var entry in inputEnzymesRaw)
+            {
+                InputEnzymes[simulationParameters.GetEnzyme(entry.Key)] = entry.Value;
+            }
         }
     }
 

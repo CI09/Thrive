@@ -27,6 +27,7 @@ using World = DefaultEcs.World;
 /// </remarks>
 [With(typeof(CompoundStorage))]
 [With(typeof(BioProcesses))]
+[With(typeof(OrganelleContainer))]
 [RunsAfter(typeof(CompoundAbsorptionSystem))]
 [RunsBefore(typeof(OsmoregulationAndHealingSystem))]
 [RunsBefore(typeof(MicrobeMovementSystem))]
@@ -552,6 +553,8 @@ public sealed class ProcessSystem : AEntitySetSystem<float>
         float speedFactor = 1.0f;
         float efficiency = 1.0f;
 
+        result.EnzymeInputs = process.Process.InputEnzymes;
+
         if (requireInputCompoundsInBiome)
         {
             foreach (var input in process.Process.Inputs)
@@ -682,7 +685,7 @@ public sealed class ProcessSystem : AEntitySetSystem<float>
             if (outputCompound == Compound.ATP)
                 result.ATPProduction += amount;
         }
-
+        
         result.CurrentSpeed = speedFactor;
 
         return result;
@@ -799,6 +802,7 @@ public sealed class ProcessSystem : AEntitySetSystem<float>
     {
         ref var storage = ref entity.Get<CompoundStorage>();
         ref var processes = ref entity.Get<BioProcesses>();
+        ref var organelles = ref entity.Get<OrganelleContainer>();
 
         float overallSpeedModifier = 1.0f;
 
@@ -834,7 +838,7 @@ public sealed class ProcessSystem : AEntitySetSystem<float>
         }
 #endif
 
-        ProcessNode(ref processes, ref storage, overallSpeedModifier, delta);
+        ProcessNode(ref processes, ref storage, overallSpeedModifier, ref organelles, delta);
     }
 
     private static void CalculateSimplePartOfEnergyBalance(IReadOnlyList<OrganelleTemplate> organelles,
@@ -968,7 +972,7 @@ public sealed class ProcessSystem : AEntitySetSystem<float>
     }
 
     private void ProcessNode(ref BioProcesses processor, ref CompoundStorage storage, float overallSpeedModifier,
-        float delta)
+        ref OrganelleContainer organelles, float delta)
     {
         var bag = storage.Compounds;
 
@@ -1023,12 +1027,12 @@ public sealed class ProcessSystem : AEntitySetSystem<float>
 
                         currentProcessStatistics.BeginFrame(delta);
                         RunProcess(delta, processData, bag, process, ref processor, overallSpeedModifier,
-                            currentProcessStatistics);
+                            currentProcessStatistics, ref organelles);
                     }
                 }
                 else
                 {
-                    RunProcess(delta, processData, bag, process, ref processor, overallSpeedModifier, null);
+                    RunProcess(delta, processData, bag, process, ref processor, overallSpeedModifier, null, ref organelles);
                 }
             }
         }
@@ -1040,7 +1044,8 @@ public sealed class ProcessSystem : AEntitySetSystem<float>
     }
 
     private void RunProcess(float delta, BioProcess processData, CompoundBag bag, TweakedProcess process,
-        ref BioProcesses processorInfo, float overallSpeedModifier, SingleProcessStatistics? currentProcessStatistics)
+        ref BioProcesses processorInfo, float overallSpeedModifier, SingleProcessStatistics? currentProcessStatistics,
+        ref OrganelleContainer organelles)
     {
         // Bool for can your cell do the process
         bool canDoProcess = true;
@@ -1141,6 +1146,29 @@ public sealed class ProcessSystem : AEntitySetSystem<float>
             }
         }
 
+        // Enzymes
+        var enzymeModifier = 1.0f;
+
+        if (organelles.AvailableEnzymes != null)
+        {
+            foreach (var enzyme in process.Process.InputEnzymes)
+            {
+                if (organelles.AvailableEnzymes.ContainsKey(enzyme.Key))
+                {
+                    var availableAmount = organelles.AvailableEnzymes[enzyme.Key];
+
+                    if (availableAmount < enzyme.Value)
+                    {
+                        enzymeModifier *= availableAmount / enzyme.Value;
+                    }
+                }
+                else
+                {
+                    enzymeModifier = 0;
+                }
+            }
+        }
+
         bool isATPProducer = false;
 
         foreach (var entry in processData.Outputs)
@@ -1158,8 +1186,8 @@ public sealed class ProcessSystem : AEntitySetSystem<float>
 
             outputAdded = outputAdded * delta * spaceConstraintModifier;
 
-            // if environmental right now, this isn't released anywhere
-            if (entry.Key.IsEnvironmental)
+            // if environmental or disposable, lack of storage doesn't affect it
+            if (entry.Key.IsEnvironmental || entry.Key.Disposable)
                 continue;
 
             // If no space we can't do the process, if we can't adjust the space constraint modifier enough
@@ -1202,7 +1230,7 @@ public sealed class ProcessSystem : AEntitySetSystem<float>
         }
 
         float totalModifier = process.Rate * delta * environmentModifier * spaceConstraintModifier *
-            process.SpeedMultiplier * overallSpeedModifier;
+            process.SpeedMultiplier * overallSpeedModifier * enzymeModifier;
 
         // Apply ATP production speed cap if in effect
         if (isATPProducer && processorInfo.ATPProductionSpeedModifier != 0)
@@ -1225,7 +1253,7 @@ public sealed class ProcessSystem : AEntitySetSystem<float>
             // TODO: should the overall speed modifier be included in here? It already has scaled the inputs and
             // outputs
             currentProcessStatistics.CurrentSpeed = process.Rate * environmentModifier * spaceConstraintModifier *
-                process.SpeedMultiplier * overallSpeedModifier;
+                process.SpeedMultiplier * overallSpeedModifier * enzymeModifier;
         }
 
         // Consume inputs

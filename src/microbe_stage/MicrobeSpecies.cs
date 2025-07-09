@@ -52,6 +52,12 @@ public class MicrobeSpecies : Species, ICellDefinition
 
     public bool IsBacteria { get; set; }
 
+    public bool HasRibosomeC { get; set; }
+
+    public bool HasRibosomeB { get; set; }
+
+    public bool HasRibosomeA { get; set; }
+
     /// <summary>
     ///   Needs to be set before using this class
     /// </summary>
@@ -304,6 +310,9 @@ public class MicrobeSpecies : Species, ICellDefinition
         ClonePropertiesTo(result);
 
         result.IsBacteria = IsBacteria;
+        result.HasRibosomeC = HasRibosomeC;
+        result.HasRibosomeB = HasRibosomeB;
+        result.HasRibosomeA = HasRibosomeA;
         result.MembraneType = MembraneType;
         result.MembraneRigidity = MembraneRigidity;
 

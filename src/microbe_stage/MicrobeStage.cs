@@ -613,10 +613,23 @@ public partial class MicrobeStage : CreatureStageBase<Entity, MicrobeWorldSimula
         compounds.Compounds.Compounds.TryGetValue(Compound.Ammonia, out var ammonia);
         compounds.Compounds.Compounds.TryGetValue(Compound.Phosphates, out var phosphates);
 
-        ammonia /= compounds.Compounds.NominalCapacity;
-        phosphates /= compounds.Compounds.NominalCapacity;
+        var capacity = compounds.Compounds.NominalCapacity;
+
+        ammonia /= capacity;
+        phosphates /= capacity;
 
         GameWorld.LastCollectedAmmoniaPhosphateBonus = ammonia + phosphates;
+
+        compounds.Compounds.Compounds.TryGetValue(Compound.Glucose, out var glucose);
+
+        var collectedCompounds = new Dictionary<Compound, float>();
+
+        foreach (var compound in compounds.Compounds.Compounds)
+        {
+            collectedCompounds.Add(compound.Key, compound.Value / capacity);
+        }
+
+        GameWorld.LastCollectedCompoundsFraction = collectedCompounds;
 
         // We don't free this here as the editor will return to this scene
         if (SceneManager.Instance.SwitchToScene(sceneInstance, true) != this)

@@ -132,6 +132,9 @@ public static class MicrobeInternalCalculations
         if (upgrades?.CustomUpgradeData is StorageComponentUpgrades storage &&
             storage.SpecializedFor != Compound.Invalid)
         {
+            if (storage.SpecializedFor == Compound.Ammonia || storage.SpecializedFor == Compound.Phosphates)
+                return (Compound.Invalid, 0);
+
             var specialization = storage.SpecializedFor;
             var capacity = definition.Components.Storage!.Capacity;
             var extraCapacity = capacity * Constants.VACUOLE_SPECIALIZED_MULTIPLIER;

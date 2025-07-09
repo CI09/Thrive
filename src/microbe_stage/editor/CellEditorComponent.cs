@@ -185,6 +185,11 @@ public partial class CellEditorComponent :
 #pragma warning restore CA2213
 
     private OrganelleDefinition nucleus = null!;
+
+    private OrganelleDefinition ribosomeC = null!;
+    private OrganelleDefinition ribosomeB = null!;
+    private OrganelleDefinition ribosomeA = null!;
+
     private OrganelleDefinition bindingAgent = null!;
 
     private OrganelleDefinition cytoplasm = null!;
@@ -415,6 +420,15 @@ public partial class CellEditorComponent :
     public bool HasNucleus => PlacedUniqueOrganelles.Any(d => d == nucleus);
 
     [JsonIgnore]
+    public bool HasRibosomeC => PlacedUniqueOrganelles.Any(d => d == ribosomeC);
+
+    [JsonIgnore]
+    public bool HasRibosomeB => PlacedUniqueOrganelles.Any(d => d == ribosomeB);
+
+    [JsonIgnore]
+    public bool HasRibosomeA => PlacedUniqueOrganelles.Any(d => d == ribosomeA);
+
+    [JsonIgnore]
     public override bool HasIslands =>
         editedMicrobeOrganelles.GetIslandHexes(islandResults, islandsWorkMemory1, islandsWorkMemory2,
             islandsWorkMemory3) > 0;
@@ -556,6 +570,11 @@ public partial class CellEditorComponent :
         growthOrderGUI.ShowCoordinates = showGrowthOrderCoordinates.ButtonPressed;
 
         nucleus = SimulationParameters.Instance.GetOrganelleType("nucleus");
+
+        ribosomeC = SimulationParameters.Instance.GetOrganelleType("ribosomeC");
+        ribosomeB = SimulationParameters.Instance.GetOrganelleType("ribosomeB");
+        ribosomeA = SimulationParameters.Instance.GetOrganelleType("ribosomeA");
+
         bindingAgent = SimulationParameters.Instance.GetOrganelleType("bindingAgent");
 
         organelleSelectionButtonScene =
@@ -1469,11 +1488,31 @@ public partial class CellEditorComponent :
     {
         var organelle = ActiveActionName!;
 
-        if (AddOrganelle(organelle))
+        if (AddOrganelle(organelle, out var resultOrganelle))
         {
             // Only trigger tutorial if an organelle was really placed
             TutorialState?.SendEvent(TutorialEventType.MicrobeEditorOrganellePlaced,
                 new OrganellePlacedEventArgs(GetOrganelleDefinition(organelle)), this);
+        }
+
+        if (resultOrganelle == null)
+            return;
+
+        if (resultOrganelle.Definition.UpgradeOnPlacement)
+        {
+            if (!IsUpgradingPossibleFor(resultOrganelle.Definition))
+            {
+                GD.PrintErr("Attempted to modify an organelle that can't be upgraded");
+                return;
+            }
+
+            if (TutorialState?.Enabled == true)
+            {
+                TutorialState.SendEvent(TutorialEventType.MicrobeEditorOrganelleModified, EventArgs.Empty, this);
+            }
+
+            organelleUpgradeGUI.OpenForOrganelle(resultOrganelle, resultOrganelle.Definition.UpgradeGUI ?? string.Empty, this, Editor, CostMultiplier,
+                Editor.CurrentGame);
         }
     }
 
@@ -2130,7 +2169,7 @@ public partial class CellEditorComponent :
     ///   place multiple at once.
     /// </summary>
     /// <returns>True when at least one organelle got placed</returns>
-    private bool AddOrganelle(string organelleType)
+    private bool AddOrganelle(string organelleType, out OrganelleTemplate? resultOrganelle)
     {
         GetMouseHex(out int q, out int r);
 
@@ -2138,6 +2177,8 @@ public partial class CellEditorComponent :
 
         // For multi hex organelles we keep track of positions that got filled in
         var usedHexes = new HashSet<Hex>();
+
+        OrganelleTemplate organelleIfSingle = null!;
 
         HexEditorSymmetry? overrideSymmetry =
             componentBottomLeftButtons.SymmetryEnabled ? null : HexEditorSymmetry.None;
@@ -2147,6 +2188,9 @@ public partial class CellEditorComponent :
             {
                 var organelle = new OrganelleTemplate(GetOrganelleDefinition(organelleType),
                     new Hex(attemptQ, attemptR), rotation);
+
+                if (!(Symmetry != HexEditorSymmetry.None && overrideSymmetry != HexEditorSymmetry.None))
+                    organelleIfSingle = organelle;
 
                 var hexes = organelle.RotatedHexes.Select(h => h + new Hex(attemptQ, attemptR)).ToList();
 
@@ -2171,6 +2215,8 @@ public partial class CellEditorComponent :
                     }
                 }
             }, overrideSymmetry);
+
+        resultOrganelle = organelleIfSingle;
 
         if (placementActions.Count < 1)
             return false;
@@ -2215,7 +2261,10 @@ public partial class CellEditorComponent :
         // 1 - you put a unique organelle (means only one instance allowed) but you already have it
         // 2 - you put an organelle that requires nucleus but you don't have one
         if ((organelle.Definition.Unique && HasOrganelle(organelle.Definition)) ||
-            (organelle.Definition.RequiresNucleus && !HasNucleus))
+            (organelle.Definition.RequiresNucleus && !HasNucleus) ||
+            (organelle.Definition.RequiredRibosome == 1 && !HasRibosomeC) ||
+            (organelle.Definition.RequiredRibosome == 2 && !HasRibosomeB) ||
+            (organelle.Definition.RequiredRibosome == 3 && !HasRibosomeA))
         {
             return null;
         }
@@ -2540,6 +2589,18 @@ public partial class CellEditorComponent :
         {
             item.Locked = true;
         }
+        else if (organelle.RequiredRibosome == 1 && !placedUniqueOrganelleNames.Contains(ribosomeC))
+        {
+            item.Locked = true;
+        }
+        else if (organelle.RequiredRibosome == 2 && !placedUniqueOrganelleNames.Contains(ribosomeB))
+        {
+            item.Locked = true;
+        }
+        else if (organelle.RequiredRibosome == 3 && !placedUniqueOrganelleNames.Contains(ribosomeA))
+        {
+            item.Locked = true;
+        }
         else
         {
             item.Locked = false;
@@ -2726,6 +2787,15 @@ public partial class CellEditorComponent :
         {
             if (entry.Definition == nucleus)
                 target.IsBacteria = false;
+
+            if (entry.Definition == ribosomeC)
+                target.HasRibosomeC = true;
+
+            if (entry.Definition == ribosomeB)
+                target.HasRibosomeB = true;
+
+            if (entry.Definition == ribosomeA)
+                target.HasRibosomeA = true;
 
             target.Organelles.AddFast(entry, hexTemporaryMemory, hexTemporaryMemory2);
         }

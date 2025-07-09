@@ -52,6 +52,11 @@ public class CompoundDefinition : IRegistryType, IEquatable<CompoundDefinition>
     public bool IsAlwaysUseful;
 
     /// <summary>
+    ///   Lets cell dump this out when it is a process output and there is no storage left
+    /// </summary>
+    public bool Disposable;
+
+    /// <summary>
     ///   Allows absorbing this compound from environmental clouds (also needs <see cref="IsCloud"/> to be true).
     ///   If false microbes can't absorb clouds of this compound type.
     /// </summary>

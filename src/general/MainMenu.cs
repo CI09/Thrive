@@ -236,7 +236,7 @@ public partial class MainMenu : NodeWithInput
 
             var fraction = animationTime / AnimationLength;
 
-            camera.GlobalPosition += new Vector3(0, 0, (400 - camera.GlobalPosition.Z) * (float)delta * AnimationLengthInverse);
+            camera.GlobalPosition = new Vector3(0, 0, (float)fraction * 410f - 10f - (float)fraction * (float)fraction * 205f);
 
             if (animationTime >= AnimationLength)
                 introVideoPassed = true;

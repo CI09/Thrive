@@ -38,6 +38,12 @@ public partial class SelectionMenuToolTip : ControlWithInput, ICustomToolTip
     private Label? requiresNucleusLabel;
 
     [Export]
+    private Control? requiredRibosomeBox;
+
+    [Export]
+    private Label? requiredRibosome;
+
+    [Export]
     private ModifierInfoLabel? osmoregulationModifier;
 
     [Export]
@@ -164,6 +170,24 @@ public partial class SelectionMenuToolTip : ControlWithInput, ICustomToolTip
         {
             requiresNucleus = value;
             UpdateRequiresNucleus();
+        }
+    }
+
+    public bool RequiredRibosomeVisible
+    {
+        get => requiredRibosomeBox!.Visible;
+        set
+        {
+            requiredRibosomeBox!.Visible = value;
+        }
+    }
+
+    public string RequiredRibosome
+    {
+        get => requiredRibosome!.Text;
+        set
+        {
+            requiredRibosome!.Text = value;
         }
     }
 

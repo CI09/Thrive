@@ -111,6 +111,7 @@ public class SingleProcessStatistics : IProcessDisplayInfo
         this.keepSnapshotTime = keepSnapshotTime;
         Process = process;
         computedStatistics = new AverageProcessStatistics(this);
+        EnzymeInputs = process.Process.InputEnzymes;
     }
 
     /// <summary>
@@ -134,6 +135,8 @@ public class SingleProcessStatistics : IProcessDisplayInfo
         precomputedEnvironmentInputs ??= Process.Process.Inputs
             .Where(p => IProcessDisplayInfo.IsEnvironmental(p.Key.ID))
             .ToDictionary(p => p.Key.ID, p => p.Value);
+
+    public Dictionary<Enzyme, float> EnzymeInputs { get; set; } = new();
 
     public IReadOnlyDictionary<Compound, float> Outputs =>
         LatestSnapshot?.Outputs ?? throw new InvalidOperationException("No snapshot set");
@@ -402,6 +405,8 @@ public class AverageProcessStatistics : IProcessDisplayInfo
 
     public IReadOnlyDictionary<Compound, float> FullSpeedRequiredEnvironmentalInputs =>
         owner.FullSpeedRequiredEnvironmentalInputs;
+
+    public Dictionary<Enzyme, float> EnzymeInputs { get; set; } = new();
 
     public IReadOnlyDictionary<Compound, float> Outputs => WritableOutputs;
     public float CurrentSpeed { get; set; }
