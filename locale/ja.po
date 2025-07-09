@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thrive VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-05-28 14:54+0300\n"
+"POT-Creation-Date: 2025-07-09 11:50+0200\n"
 "PO-Revision-Date: 2025-02-23 16:13+0000\n"
 "Last-Translator: grassgrass <r.u.tohohogisu@gmail.com>\n"
 "Language-Team: Japanese <https://translate.revolutionarygamesstudio.com/projects/thrive/thrive-game/ja/>\n"
@@ -29,6 +29,9 @@ msgid "3D_MOVEMENT"
 msgstr ""
 
 msgid "3D_MOVEMENT_TYPE_SELECTION"
+msgstr ""
+
+msgid "A"
 msgstr ""
 
 msgid "ABILITIES"
@@ -367,6 +370,9 @@ msgstr ""
 msgid "AWARE_STAGE"
 msgstr ""
 
+msgid "B"
+msgstr ""
+
 msgid "BACK"
 msgstr ""
 
@@ -398,6 +404,9 @@ msgid "BASE_MOBILITY"
 msgstr ""
 
 msgid "BASE_MOVEMENT"
+msgstr ""
+
+msgid "BASIC"
 msgstr ""
 
 msgid "BASIC_VIEW"
@@ -514,10 +523,16 @@ msgstr ""
 msgid "BUILD_STRUCTURE"
 msgstr ""
 
+msgid "BUTANOL"
+msgstr ""
+
 msgid "BY"
 msgstr ""
 
 msgid "BY_REVOLUTIONARY_GAMES"
+msgstr ""
+
+msgid "C"
 msgstr ""
 
 msgid "CACHE_DISK_MAX_TIME"
@@ -2363,6 +2378,12 @@ msgstr ""
 msgid "INCLUDE_MULTICELLULAR_PROTOTYPE_EXPLANATION"
 msgstr ""
 
+msgid "INCLUSION"
+msgstr ""
+
+msgid "INCLUSION_DESCRIPTION"
+msgstr ""
+
 msgid "INCREASE_ITEM_SIZE"
 msgstr ""
 
@@ -2733,6 +2754,18 @@ msgid "KPPERIOD"
 msgstr ""
 
 msgid "KPSUBTRACT"
+msgstr ""
+
+msgid "LACTATE"
+msgstr ""
+
+msgid "LACTATE_DEHYDROGENASE"
+msgstr ""
+
+msgid "LACTATE_DEHYDROGENASE_DESCRIPTION"
+msgstr ""
+
+msgid "LACTATE_SYNTHESIS"
 msgstr ""
 
 msgid "LANGUAGE"
@@ -4381,6 +4414,9 @@ msgstr ""
 msgid "PULL_REQUESTS_PROGRAMMING"
 msgstr ""
 
+msgid "PYRUVATE"
+msgstr ""
+
 msgid "QUADRILLION_ABBREVIATION"
 msgstr ""
 
@@ -4475,6 +4511,9 @@ msgstr ""
 msgid "REPRODUCTION_METHOD"
 msgstr ""
 
+msgid "REQUIRED_RIBOSOME"
+msgstr ""
+
 msgid "REQUIRES_NUCLEUS"
 msgstr ""
 
@@ -4566,6 +4605,33 @@ msgid "REVEAL_ALL_PATCHES"
 msgstr ""
 
 msgid "REVOLUTIONARY_GAMES_SOCIAL_TOOLTIP"
+msgstr ""
+
+msgid "RIBOSOME_A"
+msgstr ""
+
+msgid "RIBOSOME_A_DESCRIPTION"
+msgstr ""
+
+msgid "RIBOSOME_A_PROCESSES_DESCRIPTION"
+msgstr ""
+
+msgid "RIBOSOME_B"
+msgstr ""
+
+msgid "RIBOSOME_B_DESCRIPTION"
+msgstr ""
+
+msgid "RIBOSOME_B_PROCESSES_DESCRIPTION"
+msgstr ""
+
+msgid "RIBOSOME_C"
+msgstr ""
+
+msgid "RIBOSOME_C_DESCRIPTION"
+msgstr ""
+
+msgid "RIBOSOME_C_PROCESSES_DESCRIPTION"
 msgstr ""
 
 msgid "RIGHT_ARROW"
@@ -5169,9 +5235,6 @@ msgstr ""
 msgid "STRICT_NICHE_COMPETITION"
 msgstr ""
 
-msgid "STRUCTURAL"
-msgstr ""
-
 msgid "STRUCTURE"
 msgstr ""
 
@@ -5215,6 +5278,9 @@ msgid "SUCCESS_BUT_MISSING_ID"
 msgstr ""
 
 msgid "SUICIDE_BUTTON_TOOLTIP"
+msgstr ""
+
+msgid "SULFUR"
 msgstr ""
 
 msgid "SUNLIGHT"
@@ -5856,6 +5922,9 @@ msgstr ""
 msgid "UNLOCK_CONDITION_EXCESS_ATP_ABOVE"
 msgstr ""
 
+msgid "UNLOCK_CONDITION_HAVE_COMPOUND_ABOVE"
+msgstr ""
+
 msgid "UNLOCK_CONDITION_PLAYER_DAMAGE_RECEIVED"
 msgstr ""
 
@@ -5975,12 +6044,6 @@ msgid "VACUOLE"
 msgstr ""
 
 msgid "VACUOLE_DESCRIPTION"
-msgstr ""
-
-msgid "VACUOLE_IS_SPECIALIZED"
-msgstr ""
-
-msgid "VACUOLE_NOT_SPECIALIZED_DESCRIPTION"
 msgstr ""
 
 msgid "VACUOLE_PROCESSES_DESCRIPTION"

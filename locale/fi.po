@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-05-28 14:54+0300\n"
+"POT-Creation-Date: 2025-07-09 11:50+0200\n"
 "PO-Revision-Date: 2025-05-25 15:00+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Finnish <https://translate.revolutionarygamesstudio.com/projects/thrive/thrive-game/fi/>\n"
@@ -30,6 +30,10 @@ msgstr "3D-liikkuminen"
 
 msgid "3D_MOVEMENT_TYPE_SELECTION"
 msgstr "3D-liikkumisen tyyli:"
+
+#, fuzzy
+msgid "A"
+msgstr "@"
 
 msgid "ABILITIES"
 msgstr "Kyvyt"
@@ -419,6 +423,10 @@ msgstr ""
 "\n"
 "Selviytyäkseksi tässä armottomassa ympäristössä, sinun täytyy etsiä ja kerätä yhdisteitä. Niiden avulla voit kehittyä sukupolvien saatossa ja kilpailla muiden lajien kanssa."
 
+#, fuzzy
+msgid "B"
+msgstr "Tekijä:"
+
 msgid "BACK"
 msgstr "Takaisin"
 
@@ -454,6 +462,10 @@ msgstr "Liikkuvuus"
 
 msgid "BASE_MOVEMENT"
 msgstr "Perus liikkuminen"
+
+#, fuzzy
+msgid "BASIC"
+msgstr "Yksinkertainen"
 
 msgid "BASIC_VIEW"
 msgstr "Yksinkertainen"
@@ -584,11 +596,17 @@ msgstr "Rakenne"
 msgid "BUILD_STRUCTURE"
 msgstr "Rakenne"
 
+msgid "BUTANOL"
+msgstr ""
+
 msgid "BY"
 msgstr "Tekijä:"
 
 msgid "BY_REVOLUTIONARY_GAMES"
 msgstr "Tehnyt Revolutionary Games Studio"
+
+msgid "C"
+msgstr ""
 
 msgid "CACHE_DISK_MAX_TIME"
 msgstr ""
@@ -2807,6 +2825,13 @@ msgstr "Lisää soluelin"
 msgid "INCLUDE_MULTICELLULAR_PROTOTYPE_EXPLANATION"
 msgstr ""
 
+msgid "INCLUSION"
+msgstr ""
+
+#, fuzzy
+msgid "INCLUSION_DESCRIPTION"
+msgstr "Kuvaus puuttuu"
+
 #, fuzzy
 msgid "INCREASE_ITEM_SIZE"
 msgstr "Luo uusi tallennus"
@@ -3221,6 +3246,21 @@ msgstr "Num ."
 
 msgid "KPSUBTRACT"
 msgstr "Num -"
+
+msgid "LACTATE"
+msgstr ""
+
+#, fuzzy
+msgid "LACTATE_DEHYDROGENASE"
+msgstr "Rikkivety"
+
+#, fuzzy
+msgid "LACTATE_DEHYDROGENASE_DESCRIPTION"
+msgstr "Nitrogenaasi on entsyymikompleksi, joka katalysoi typpimolekyylien pelkistymistä ammoniakiksi käyttäen ATP:tä. Ammoniakki on tärkeä aine solun kasvulle. Tätä prosessia kutsutaan anaerobiseksi typpifiksaatioksi. Nitrogenaasi sijaitsee soluliman ympäröimänä, joka puolestaan toteuttaa osaltaan glykolyysia."
+
+#, fuzzy
+msgid "LACTATE_SYNTHESIS"
+msgstr "Kemosynteesi"
 
 msgid "LANGUAGE"
 msgstr "Kieli:"
@@ -5221,6 +5261,9 @@ msgstr "Protoplasma"
 msgid "PULL_REQUESTS_PROGRAMMING"
 msgstr "Pull Requests / ohjelmointi"
 
+msgid "PYRUVATE"
+msgstr ""
+
 #, fuzzy
 msgid "QUADRILLION_ABBREVIATION"
 msgstr "{0} G"
@@ -5330,6 +5373,9 @@ msgstr "Lisääntyminen:"
 
 msgid "REPRODUCTION_METHOD"
 msgstr "Lisääntyminen:"
+
+msgid "REQUIRED_RIBOSOME"
+msgstr ""
 
 #, fuzzy
 msgid "REQUIRES_NUCLEUS"
@@ -5441,6 +5487,39 @@ msgstr "levisi alueille:"
 #, fuzzy
 msgid "REVOLUTIONARY_GAMES_SOCIAL_TOOLTIP"
 msgstr "Tehnyt Revolutionary Games Studio"
+
+msgid "RIBOSOME_A"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_A_DESCRIPTION"
+msgstr "Metabolosomit, eli aineenvaihduntaelimet ovat proteiinikuorien koteloimia proteiiniryppäitä, jotka muuntavat glukoosia ATP:ksi. Näiden energian tuotanto on solulimaa tehokkaampaa johtuen prosessista, jota kutsutaan aerobiseksi energiantuotoksi. Siinä glykolyysin lisäksi tapahtuu muita toimintoja, jotka tuottavat pelkkää glykolyysiä huomattavasti enemmän ATP:tä. Tämä prosessi tarvitsee kuitenkin happea toimiakseen, ja siten ympäristön happipitoisuus vaikuttaa muunnosnopeuteen."
+
+#, fuzzy
+msgid "RIBOSOME_A_PROCESSES_DESCRIPTION"
+msgstr "Muuntaa [thrive:compound type=\"atp\"][/thrive:compound]:n [thrive:compound type=\"oxytoxy\"]oxytoxyksi[/thrive:compound]. Muunnosnopeus riippuu ympäristön [thrive:compound type=\"oxygen\"]happipitoisuudesta[/thrive:compound]. Voi päästää myrkkyjä painamalla [thrive:input]g_fire_toxin[/thrive:input]. Kun [thrive:compound type=\"oxytoxy\"][/thrive:compound]n pitoisuudet ovat alhaiset, ampuminen on edelleen mahdollista, mutta aiheuttaa vähemmän vahinkoa."
+
+msgid "RIBOSOME_B"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_B_DESCRIPTION"
+msgstr "Metabolosomit, eli aineenvaihduntaelimet ovat proteiinikuorien koteloimia proteiiniryppäitä, jotka muuntavat glukoosia ATP:ksi. Näiden energian tuotanto on solulimaa tehokkaampaa johtuen prosessista, jota kutsutaan aerobiseksi energiantuotoksi. Siinä glykolyysin lisäksi tapahtuu muita toimintoja, jotka tuottavat pelkkää glykolyysiä huomattavasti enemmän ATP:tä. Tämä prosessi tarvitsee kuitenkin happea toimiakseen, ja siten ympäristön happipitoisuus vaikuttaa muunnosnopeuteen."
+
+#, fuzzy
+msgid "RIBOSOME_B_PROCESSES_DESCRIPTION"
+msgstr "Muuntaa [thrive:compound type=\"atp\"][/thrive:compound]:n [thrive:compound type=\"oxytoxy\"]oxytoxyksi[/thrive:compound]. Muunnosnopeus riippuu ympäristön [thrive:compound type=\"oxygen\"]happipitoisuudesta[/thrive:compound]. Voi päästää myrkkyjä painamalla [thrive:input]g_fire_toxin[/thrive:input]. Kun [thrive:compound type=\"oxytoxy\"][/thrive:compound]n pitoisuudet ovat alhaiset, ampuminen on edelleen mahdollista, mutta aiheuttaa vähemmän vahinkoa."
+
+msgid "RIBOSOME_C"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_C_DESCRIPTION"
+msgstr "Metabolosomit, eli aineenvaihduntaelimet ovat proteiinikuorien koteloimia proteiiniryppäitä, jotka muuntavat glukoosia ATP:ksi. Näiden energian tuotanto on solulimaa tehokkaampaa johtuen prosessista, jota kutsutaan aerobiseksi energiantuotoksi. Siinä glykolyysin lisäksi tapahtuu muita toimintoja, jotka tuottavat pelkkää glykolyysiä huomattavasti enemmän ATP:tä. Tämä prosessi tarvitsee kuitenkin happea toimiakseen, ja siten ympäristön happipitoisuus vaikuttaa muunnosnopeuteen."
+
+#, fuzzy
+msgid "RIBOSOME_C_PROCESSES_DESCRIPTION"
+msgstr "Muuntaa [thrive:compound type=\"atp\"][/thrive:compound]:n [thrive:compound type=\"oxytoxy\"]oxytoxyksi[/thrive:compound]. Muunnosnopeus riippuu ympäristön [thrive:compound type=\"oxygen\"]happipitoisuudesta[/thrive:compound]. Voi päästää myrkkyjä painamalla [thrive:input]g_fire_toxin[/thrive:input]. Kun [thrive:compound type=\"oxytoxy\"][/thrive:compound]n pitoisuudet ovat alhaiset, ampuminen on edelleen mahdollista, mutta aiheuttaa vähemmän vahinkoa."
 
 #, fuzzy
 msgid "RIGHT_ARROW"
@@ -6149,9 +6228,6 @@ msgstr ""
 msgid "STRICT_NICHE_COMPETITION"
 msgstr ""
 
-msgid "STRUCTURAL"
-msgstr "Rakenteellinen"
-
 msgid "STRUCTURE"
 msgstr "Rakenne"
 
@@ -6197,6 +6273,9 @@ msgstr ""
 
 msgid "SUICIDE_BUTTON_TOOLTIP"
 msgstr "Kuole"
+
+msgid "SULFUR"
+msgstr ""
 
 msgid "SUNLIGHT"
 msgstr "Auringonvalo"
@@ -7131,6 +7210,10 @@ msgid "UNLOCK_CONDITION_EXCESS_ATP_ABOVE"
 msgstr ""
 
 #, fuzzy
+msgid "UNLOCK_CONDITION_HAVE_COMPOUND_ABOVE"
+msgstr "Nopeus:"
+
+#, fuzzy
 msgid "UNLOCK_CONDITION_PLAYER_DAMAGE_RECEIVED"
 msgstr "Nopeus:"
 
@@ -7268,13 +7351,6 @@ msgstr "Vakuoli"
 
 msgid "VACUOLE_DESCRIPTION"
 msgstr ""
-
-msgid "VACUOLE_IS_SPECIALIZED"
-msgstr ""
-
-#, fuzzy
-msgid "VACUOLE_NOT_SPECIALIZED_DESCRIPTION"
-msgstr "Lisää solun varastointitilaa kerätyille yhdisteille."
 
 msgid "VACUOLE_PROCESSES_DESCRIPTION"
 msgstr "Lisää solun varastointitilaa kerätyille yhdisteille."
@@ -9416,6 +9492,13 @@ msgstr "Zoomaa sisään"
 msgid "ZOOM_OUT"
 msgstr "Zoomaa ulospäin"
 
+#~ msgid "STRUCTURAL"
+#~ msgstr "Rakenteellinen"
+
+#, fuzzy
+#~ msgid "VACUOLE_NOT_SPECIALIZED_DESCRIPTION"
+#~ msgstr "Lisää solun varastointitilaa kerätyille yhdisteille."
+
 #, fuzzy
 #~ msgid "PASSIVE_REPRODUCTION_PROGRESS_EXPLANATION"
 #~ msgstr "Tämä paneeli kertoo mistä luvuista auto-evo simuloi ennusteensa. Lajin selviytymiseen vaikuttaa sen onnistuminen energian haalimisessa ja muut tarpeet. Auto-evo käyttää yksinkertaistettua mallia laskeakseen lajin menestymisen perustaen sen lajin hankkimaan energiaan. Jokaisen ravintotyypin kohdalla voi nähdä kuinka paljon siitä saa energiaa. Lajin sopivuus kertoo kuinka hyvin lajin jäsenet pystyvät käyttämään kyseisiä ravinnon lähteitä."
@@ -10031,9 +10114,6 @@ msgstr "Zoomaa ulospäin"
 
 #~ msgid "SEMICOLON"
 #~ msgstr ";"
-
-#~ msgid "AT"
-#~ msgstr "@"
 
 #~ msgid "BRACKETRIGHT"
 #~ msgstr "]"

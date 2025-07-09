@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-05-28 14:54+0300\n"
+"POT-Creation-Date: 2025-07-09 11:50+0200\n"
 "PO-Revision-Date: 2025-04-04 10:42+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Spanish (Argentina) <https://translate.revolutionarygamesstudio.com/projects/thrive/thrive-game/es_AR/>\n"
@@ -30,6 +30,9 @@ msgstr "Movimiento 3D"
 
 msgid "3D_MOVEMENT_TYPE_SELECTION"
 msgstr "Estilo de movimiento 3D:"
+
+msgid "A"
+msgstr ""
 
 msgid "ABILITIES"
 msgstr "Habilidades"
@@ -414,6 +417,10 @@ msgstr "Etapa de despertar"
 msgid "AWARE_STAGE"
 msgstr "Etapa Consciente"
 
+#, fuzzy
+msgid "B"
+msgstr "Por:"
+
 msgid "BACK"
 msgstr "Atras"
 
@@ -446,6 +453,10 @@ msgstr "Movilidad basal"
 
 msgid "BASE_MOVEMENT"
 msgstr "Movimiento basal"
+
+#, fuzzy
+msgid "BASIC"
+msgstr "Basico"
 
 msgid "BASIC_VIEW"
 msgstr "Basico"
@@ -576,10 +587,16 @@ msgstr "Fila de construcción"
 msgid "BUILD_STRUCTURE"
 msgstr "Construir una estructura"
 
+msgid "BUTANOL"
+msgstr ""
+
 msgid "BY"
 msgstr "Por:"
 
 msgid "BY_REVOLUTIONARY_GAMES"
+msgstr ""
+
+msgid "C"
 msgstr ""
 
 msgid "CACHE_DISK_MAX_TIME"
@@ -2601,6 +2618,13 @@ msgstr "Poner organela"
 msgid "INCLUDE_MULTICELLULAR_PROTOTYPE_EXPLANATION"
 msgstr ""
 
+msgid "INCLUSION"
+msgstr ""
+
+#, fuzzy
+msgid "INCLUSION_DESCRIPTION"
+msgstr "población:"
+
 msgid "INCREASE_ITEM_SIZE"
 msgstr ""
 
@@ -3000,6 +3024,21 @@ msgstr ""
 
 msgid "KPSUBTRACT"
 msgstr ""
+
+msgid "LACTATE"
+msgstr ""
+
+#, fuzzy
+msgid "LACTATE_DEHYDROGENASE"
+msgstr "Sulfuro de hidrógeno"
+
+#, fuzzy
+msgid "LACTATE_DEHYDROGENASE_DESCRIPTION"
+msgstr "población:"
+
+#, fuzzy
+msgid "LACTATE_SYNTHESIS"
+msgstr "Fotosíntesis"
 
 msgid "LANGUAGE"
 msgstr "Idiomas bro:"
@@ -4886,6 +4925,9 @@ msgstr "Protoplasma"
 msgid "PULL_REQUESTS_PROGRAMMING"
 msgstr ""
 
+msgid "PYRUVATE"
+msgstr ""
+
 #, fuzzy
 msgid "QUADRILLION_ABBREVIATION"
 msgstr "{0} B"
@@ -4989,6 +5031,9 @@ msgstr "Resolución:"
 msgid "REPRODUCTION_METHOD"
 msgstr ""
 
+msgid "REQUIRED_RIBOSOME"
+msgstr ""
+
 #, fuzzy
 msgid "REQUIRES_NUCLEUS"
 msgstr "Núcleo"
@@ -5086,6 +5131,39 @@ msgstr "propagación debido a \"parches\""
 
 msgid "REVOLUTIONARY_GAMES_SOCIAL_TOOLTIP"
 msgstr ""
+
+msgid "RIBOSOME_A"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_A_DESCRIPTION"
+msgstr "población:"
+
+#, fuzzy
+msgid "RIBOSOME_A_PROCESSES_DESCRIPTION"
+msgstr "población:"
+
+msgid "RIBOSOME_B"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_B_DESCRIPTION"
+msgstr "población:"
+
+#, fuzzy
+msgid "RIBOSOME_B_PROCESSES_DESCRIPTION"
+msgstr "población:"
+
+msgid "RIBOSOME_C"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_C_DESCRIPTION"
+msgstr "población:"
+
+#, fuzzy
+msgid "RIBOSOME_C_PROCESSES_DESCRIPTION"
+msgstr "población:"
 
 msgid "RIGHT_ARROW"
 msgstr ""
@@ -5745,9 +5823,6 @@ msgstr "Usá W, A, S y D y el mouse para moverte. E para disparar OxiToxi NT si 
 msgid "STRICT_NICHE_COMPETITION"
 msgstr ""
 
-msgid "STRUCTURAL"
-msgstr ""
-
 msgid "STRUCTURE"
 msgstr ""
 
@@ -5791,6 +5866,9 @@ msgid "SUCCESS_BUT_MISSING_ID"
 msgstr ""
 
 msgid "SUICIDE_BUTTON_TOOLTIP"
+msgstr ""
+
+msgid "SULFUR"
 msgstr ""
 
 msgid "SUNLIGHT"
@@ -6603,6 +6681,10 @@ msgid "UNLOCK_CONDITION_EXCESS_ATP_ABOVE"
 msgstr ""
 
 #, fuzzy
+msgid "UNLOCK_CONDITION_HAVE_COMPOUND_ABOVE"
+msgstr "población:"
+
+#, fuzzy
 msgid "UNLOCK_CONDITION_PLAYER_DAMAGE_RECEIVED"
 msgstr "población:"
 
@@ -6736,13 +6818,6 @@ msgstr "Vacuola"
 
 msgid "VACUOLE_DESCRIPTION"
 msgstr ""
-
-msgid "VACUOLE_IS_SPECIALIZED"
-msgstr ""
-
-#, fuzzy
-msgid "VACUOLE_NOT_SPECIALIZED_DESCRIPTION"
-msgstr "población:"
 
 msgid "VACUOLE_PROCESSES_DESCRIPTION"
 msgstr ""
@@ -8958,6 +9033,10 @@ msgstr "Acercar la pantalla"
 
 msgid "ZOOM_OUT"
 msgstr "Alejar la pantalla"
+
+#, fuzzy
+#~ msgid "VACUOLE_NOT_SPECIALIZED_DESCRIPTION"
+#~ msgstr "población:"
 
 #, fuzzy
 #~ msgid "MICROBE_STAGE_DAY_NIGHT_TEXT"

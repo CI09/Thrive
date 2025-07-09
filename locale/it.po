@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-05-28 14:54+0300\n"
+"POT-Creation-Date: 2025-07-09 11:50+0200\n"
 "PO-Revision-Date: 2025-05-25 15:00+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Italian <https://translate.revolutionarygamesstudio.com/projects/thrive/thrive-game/it/>\n"
@@ -30,6 +30,10 @@ msgstr "Movimento 3D"
 
 msgid "3D_MOVEMENT_TYPE_SELECTION"
 msgstr "Stile di movimento 3D:"
+
+#, fuzzy
+msgid "A"
+msgstr "ATP"
 
 msgid "ABILITIES"
 msgstr "Abilità"
@@ -406,6 +410,10 @@ msgstr "Fase del Risveglio"
 msgid "AWARE_STAGE"
 msgstr "Fase della consapevolezza"
 
+#, fuzzy
+msgid "B"
+msgstr "Di:"
+
 msgid "BACK"
 msgstr "Indietro"
 
@@ -438,6 +446,10 @@ msgstr "Mobilità di base"
 
 msgid "BASE_MOVEMENT"
 msgstr "Movimento di Base"
+
+#, fuzzy
+msgid "BASIC"
+msgstr "Di base"
 
 msgid "BASIC_VIEW"
 msgstr "Di base"
@@ -555,11 +567,17 @@ msgstr "Coda di costruzione"
 msgid "BUILD_STRUCTURE"
 msgstr "Costruisci una struttura"
 
+msgid "BUTANOL"
+msgstr ""
+
 msgid "BY"
 msgstr "Di:"
 
 msgid "BY_REVOLUTIONARY_GAMES"
 msgstr "Di Revolutionary Games Studio"
+
+msgid "C"
+msgstr ""
 
 msgid "CACHE_DISK_MAX_TIME"
 msgstr "Tempo massimo in cui gli items sono tenuti nel disco prima che vengano eliminati"
@@ -2678,6 +2696,13 @@ msgstr "Includi prototipi"
 msgid "INCLUDE_MULTICELLULAR_PROTOTYPE_EXPLANATION"
 msgstr "(alcune features potrebbero non essere disponibili nelle fasi successive)"
 
+msgid "INCLUSION"
+msgstr ""
+
+#, fuzzy
+msgid "INCLUSION_DESCRIPTION"
+msgstr "La caratteristica distintiva delle cellule eucariote, ottenuta dall'assimilazione di una cellula procariote. Il nucleo racchiude anche il reticolo endoplasmatico e l'apparato del Golgi. Esso permette alla cellula di dividere in scomparti i vari processi che avvengono al suo interno, prevenendo così che si sovrappongano; ciò permette ai suoi nuovi organuli membranosi di essere molto più complessi, efficienti e specializzati di quanto lo potrebbero essere se vagassero liberamente nel citoplasma. Tuttavia, avere un nucleo rende la cellula molto più grande e consuma molta della sua energia."
+
 #, fuzzy
 msgid "INCREASE_ITEM_SIZE"
 msgstr "Crea nuovo elemento"
@@ -3097,6 +3122,21 @@ msgstr ". (tastierino numerico)"
 
 msgid "KPSUBTRACT"
 msgstr "- (tastierino numerico)"
+
+msgid "LACTATE"
+msgstr ""
+
+#, fuzzy
+msgid "LACTATE_DEHYDROGENASE"
+msgstr "Idrogeno solforato"
+
+#, fuzzy
+msgid "LACTATE_DEHYDROGENASE_DESCRIPTION"
+msgstr "La nitrogenasi è una proteina che converte l'[thrive:compound type=\"nitrogen\"][/thrive:compound] gassoso e l'energia della cellula (in forma di [thrive:compound type=\"atp\"][/thrive:compound]) in [thrive:compound type=\"ammonia\"][/thrive:compound], un nutriente essenziale per la crescita delle cellule. Questo processo si chiama [b]azotofissazione anaerobica[/b]. Siccome la nitrogenasi è sospesa direttamente nel citoplasma, il fuido circostante produce piccole quantità di [thrive:compound type=\"atp\"][/thrive:compound] tramite [b]glicolisi[/b]."
+
+#, fuzzy
+msgid "LACTATE_SYNTHESIS"
+msgstr "Sintesi della mucillagine"
 
 msgid "LANGUAGE"
 msgstr "Lingua:"
@@ -5068,6 +5108,9 @@ msgstr "Protoplasma"
 msgid "PULL_REQUESTS_PROGRAMMING"
 msgstr "Pull request / programmazione"
 
+msgid "PYRUVATE"
+msgstr ""
+
 #, fuzzy
 msgid "QUADRILLION_ABBREVIATION"
 msgstr "{0} Mld"
@@ -5173,6 +5216,9 @@ msgstr "Riproduzione:"
 
 msgid "REPRODUCTION_METHOD"
 msgstr "Riproduzione:"
+
+msgid "REQUIRED_RIBOSOME"
+msgstr ""
 
 msgid "REQUIRES_NUCLEUS"
 msgstr "Richiede nucleo"
@@ -5282,6 +5328,39 @@ msgstr "è migrato nelle zone:"
 #, fuzzy
 msgid "REVOLUTIONARY_GAMES_SOCIAL_TOOLTIP"
 msgstr "Di Revolutionary Games Studio"
+
+msgid "RIBOSOME_A"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_A_DESCRIPTION"
+msgstr "Il lisosoma è un organulo membranoso contenente enzimi idrolitici in grado di spezzare diversi tipi di biomolecole; ciò permette alle cellule di digerire i materiali ingeriti attraverso l'endocitosi e di pulire i propri prodotti di scarto, in un processo detto [b]autofagia[/b]."
+
+#, fuzzy
+msgid "RIBOSOME_A_PROCESSES_DESCRIPTION"
+msgstr "Contiene uno di tre enzimi digestivi. Fai clic su \"Modifica\" per scegliere quale. Gli enzimi velocizzano la digestione e la rendono più efficiente."
+
+msgid "RIBOSOME_B"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_B_DESCRIPTION"
+msgstr "Il lisosoma è un organulo membranoso contenente enzimi idrolitici in grado di spezzare diversi tipi di biomolecole; ciò permette alle cellule di digerire i materiali ingeriti attraverso l'endocitosi e di pulire i propri prodotti di scarto, in un processo detto [b]autofagia[/b]."
+
+#, fuzzy
+msgid "RIBOSOME_B_PROCESSES_DESCRIPTION"
+msgstr "Contiene uno di tre enzimi digestivi. Fai clic su \"Modifica\" per scegliere quale. Gli enzimi velocizzano la digestione e la rendono più efficiente."
+
+msgid "RIBOSOME_C"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_C_DESCRIPTION"
+msgstr "Il lisosoma è un organulo membranoso contenente enzimi idrolitici in grado di spezzare diversi tipi di biomolecole; ciò permette alle cellule di digerire i materiali ingeriti attraverso l'endocitosi e di pulire i propri prodotti di scarto, in un processo detto [b]autofagia[/b]."
+
+#, fuzzy
+msgid "RIBOSOME_C_PROCESSES_DESCRIPTION"
+msgstr "Contiene uno di tre enzimi digestivi. Fai clic su \"Modifica\" per scegliere quale. Gli enzimi velocizzano la digestione e la rendono più efficiente."
 
 msgid "RIGHT_ARROW"
 msgstr "→"
@@ -5954,9 +6033,6 @@ msgstr "Fase Microbica"
 msgid "STRICT_NICHE_COMPETITION"
 msgstr "Forte competizione di nicchia (le differenze di idoneità sono accentuate)"
 
-msgid "STRUCTURAL"
-msgstr "Strutturale"
-
 msgid "STRUCTURE"
 msgstr "Struttura"
 
@@ -6002,6 +6078,9 @@ msgstr "Operazione riuscita, ma nessun ID restituito"
 
 msgid "SUICIDE_BUTTON_TOOLTIP"
 msgstr "Autodistruzione"
+
+msgid "SULFUR"
+msgstr ""
 
 msgid "SUNLIGHT"
 msgstr "Luce solare"
@@ -6929,6 +7008,10 @@ msgid "UNLOCK_CONDITION_EXCESS_ATP_ABOVE"
 msgstr ""
 
 #, fuzzy
+msgid "UNLOCK_CONDITION_HAVE_COMPOUND_ABOVE"
+msgstr "Velocità di digestione:"
+
+#, fuzzy
 msgid "UNLOCK_CONDITION_PLAYER_DAMAGE_RECEIVED"
 msgstr "Velocità di digestione:"
 
@@ -7065,13 +7148,6 @@ msgstr "Vacuolo"
 
 msgid "VACUOLE_DESCRIPTION"
 msgstr "Il vacuolo è un organulo membranoso interno, utilizzato per lo stoccaggio di sostanze. È composto di diverse vesciche (cioè strutture membranose più piccole, usate comunemente nelle cellule per lo stoccaggio) che si sono fuse insieme. Il vacuolo è colmo d'acqua, usata per contenere molecole, enzimi, solidi e altre sostanze. La sua forma è fluida e può variare da cellula a cellula."
-
-msgid "VACUOLE_IS_SPECIALIZED"
-msgstr ""
-
-#, fuzzy
-msgid "VACUOLE_NOT_SPECIALIZED_DESCRIPTION"
-msgstr "Aumenta lo spazio di stoccaggio della cellula."
 
 msgid "VACUOLE_PROCESSES_DESCRIPTION"
 msgstr "Aumenta lo spazio di stoccaggio della cellula."
@@ -9091,6 +9167,13 @@ msgstr "Zoom avanti"
 msgid "ZOOM_OUT"
 msgstr "Zoom indietro"
 
+#~ msgid "STRUCTURAL"
+#~ msgstr "Strutturale"
+
+#, fuzzy
+#~ msgid "VACUOLE_NOT_SPECIALIZED_DESCRIPTION"
+#~ msgstr "Aumenta lo spazio di stoccaggio della cellula."
+
 #~ msgid "PASSIVE_REPRODUCTION_PROGRESS_EXPLANATION"
 #~ msgstr "(ottieni composti riproduttivi in modo passivo dall'ambiente, senza dover far nulla)"
 
@@ -9736,10 +9819,6 @@ msgstr "Zoom indietro"
 #, fuzzy
 #~ msgid "SEMICOLON"
 #~ msgstr "Dimensione:"
-
-#, fuzzy
-#~ msgid "AT"
-#~ msgstr "ATP"
 
 #, fuzzy
 #~ msgid "BRACKETRIGHT"

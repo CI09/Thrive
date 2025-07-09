@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-05-28 14:54+0300\n"
+"POT-Creation-Date: 2025-07-09 11:50+0200\n"
 "PO-Revision-Date: 2025-05-25 15:00+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Esperanto <https://translate.revolutionarygamesstudio.com/projects/thrive/thrive-game/eo/>\n"
@@ -30,6 +30,10 @@ msgstr "3D Movado"
 
 msgid "3D_MOVEMENT_TYPE_SELECTION"
 msgstr ""
+
+#, fuzzy
+msgid "A"
+msgstr "ATP"
 
 msgid "ABILITIES"
 msgstr "Kapabloj"
@@ -422,6 +426,10 @@ msgstr ""
 "\n"
 "Por postvivi en ĉi tiu malamika mondo, vi devos kolekti iujn ajn komponaĵojn, kiujn vi povas trovi, kaj evoluigi ĉiun generacion por konkurenci kontraŭ la aliaj specioj de mikroboj."
 
+#, fuzzy
+msgid "B"
+msgstr "Per:"
+
 msgid "BACK"
 msgstr "Reen"
 
@@ -457,6 +465,9 @@ msgstr "Movebleco"
 
 msgid "BASE_MOVEMENT"
 msgstr "Baza Movado"
+
+msgid "BASIC"
+msgstr ""
 
 msgid "BASIC_VIEW"
 msgstr ""
@@ -593,10 +604,16 @@ msgstr "Strukturo"
 msgid "BUILD_STRUCTURE"
 msgstr "Strukturo"
 
+msgid "BUTANOL"
+msgstr ""
+
 msgid "BY"
 msgstr "Per:"
 
 msgid "BY_REVOLUTIONARY_GAMES"
+msgstr ""
+
+msgid "C"
 msgstr ""
 
 msgid "CACHE_DISK_MAX_TIME"
@@ -2753,6 +2770,13 @@ msgstr "Disloku organeton"
 msgid "INCLUDE_MULTICELLULAR_PROTOTYPE_EXPLANATION"
 msgstr ""
 
+msgid "INCLUSION"
+msgstr ""
+
+#, fuzzy
+msgid "INCLUSION_DESCRIPTION"
+msgstr "La ĉefa eco de eŭkariotaj ĉeloj. La kerno ankaŭ inkluzivas la endoplasman retikulo kaj la golgi-korpon. Ĉi tio estas evoluado de prokariotaj ĉeloj por disvolvi sistemon de internaj membranoj, farita per asimilado de alia prokarioto en si mem. Ĉi tio permesas al ili dividi, aŭ kunestigi la malsamajn procezojn okazantajn ene de la ĉelo kaj malhelpi ilin interkovri. Ĉi tio permesas al iliaj novaj membranoligitaj organetoj esti multe pli kompleksaj, efikaj kaj specialigitaj ol se ili libere flosus en la citoplasmo. Tamen ĉi tio kostas fari la ĉelon multe pli granda kaj postuli multan energion por konservi la ĉelon."
+
 #, fuzzy
 msgid "INCREASE_ITEM_SIZE"
 msgstr "Kreu Novan Konservadon"
@@ -3178,6 +3202,21 @@ msgstr ""
 
 msgid "KPSUBTRACT"
 msgstr ""
+
+msgid "LACTATE"
+msgstr ""
+
+#, fuzzy
+msgid "LACTATE_DEHYDROGENASE"
+msgstr "Hidrogena Sulfido"
+
+#, fuzzy
+msgid "LACTATE_DEHYDROGENASE_DESCRIPTION"
+msgstr "Nitrogenazo estas proteino kapabla uzi gasan nitrogenon kaj ĉelan energion en la formo de ATP por produkti amoniakon, ĉefan kreskonutraĵon por ĉeloj. Ĉi tio estas procezo nomata Anaeroba Nitrogena Fiksado. Ĉar la nitrogenazo estas suspensie en la citoplasmo, la ĉirkaŭa fluidaĵo iom fermentas."
+
+#, fuzzy
+msgid "LACTATE_SYNTHESIS"
+msgstr "Kemisintezo"
 
 msgid "LANGUAGE"
 msgstr "Lingvo:"
@@ -5175,6 +5214,9 @@ msgstr "Protoplasmo"
 msgid "PULL_REQUESTS_PROGRAMMING"
 msgstr ""
 
+msgid "PYRUVATE"
+msgstr ""
+
 #, fuzzy
 msgid "QUADRILLION_ABBREVIATION"
 msgstr "{0} Mrd"
@@ -5284,6 +5326,9 @@ msgstr "reproduktis"
 #, fuzzy
 msgid "REPRODUCTION_METHOD"
 msgstr "reproduktis"
+
+msgid "REQUIRED_RIBOSOME"
+msgstr ""
 
 #, fuzzy
 msgid "REQUIRES_NUCLEUS"
@@ -5395,6 +5440,39 @@ msgstr "disvastiĝas al flikĵj:"
 #, fuzzy
 msgid "REVOLUTIONARY_GAMES_SOCIAL_TOOLTIP"
 msgstr "Aldonunovan funkcion por klavo"
+
+msgid "RIBOSOME_A"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_A_DESCRIPTION"
+msgstr "Metabolosomoj estas aretoj de proteinoj envolvitaj en proteinaj ŝeloj. Ili povas konverti glukozon en ATP kun multe pli alta rapideco ol oni povas esti farita en la citoplasmo en proceso nomita Aeroba Respirado. Tamen ĝi postulas oksigenon por funkcii, kaj pli malaltaj niveloj de oksigeno en la medio malrapidigos la rapidon de ĝia produktado de ATP. Ĉar la metabolosomoj estas suspenditaj rekte en la citoplasmo, la ĉirkaŭa likvaĵo iom fermentas."
+
+#, fuzzy
+msgid "RIBOSOME_A_PROCESSES_DESCRIPTION"
+msgstr "Metabolosomoj estas aretoj de proteinoj envolvitaj en proteinaj ŝeloj. Ili povas konverti glukozon en ATP kun multe pli alta rapideco ol oni povas esti farita en la citoplasmo en proceso nomita Aeroba Respirado. Tamen ĝi postulas oksigenon por funkcii, kaj pli malaltaj niveloj de oksigeno en la medio malrapidigos la rapidon de ĝia produktado de ATP. Ĉar la metabolosomoj estas suspenditaj rekte en la citoplasmo, la ĉirkaŭa likvaĵo iom fermentas."
+
+msgid "RIBOSOME_B"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_B_DESCRIPTION"
+msgstr "Metabolosomoj estas aretoj de proteinoj envolvitaj en proteinaj ŝeloj. Ili povas konverti glukozon en ATP kun multe pli alta rapideco ol oni povas esti farita en la citoplasmo en proceso nomita Aeroba Respirado. Tamen ĝi postulas oksigenon por funkcii, kaj pli malaltaj niveloj de oksigeno en la medio malrapidigos la rapidon de ĝia produktado de ATP. Ĉar la metabolosomoj estas suspenditaj rekte en la citoplasmo, la ĉirkaŭa likvaĵo iom fermentas."
+
+#, fuzzy
+msgid "RIBOSOME_B_PROCESSES_DESCRIPTION"
+msgstr "Metabolosomoj estas aretoj de proteinoj envolvitaj en proteinaj ŝeloj. Ili povas konverti glukozon en ATP kun multe pli alta rapideco ol oni povas esti farita en la citoplasmo en proceso nomita Aeroba Respirado. Tamen ĝi postulas oksigenon por funkcii, kaj pli malaltaj niveloj de oksigeno en la medio malrapidigos la rapidon de ĝia produktado de ATP. Ĉar la metabolosomoj estas suspenditaj rekte en la citoplasmo, la ĉirkaŭa likvaĵo iom fermentas."
+
+msgid "RIBOSOME_C"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_C_DESCRIPTION"
+msgstr "Metabolosomoj estas aretoj de proteinoj envolvitaj en proteinaj ŝeloj. Ili povas konverti glukozon en ATP kun multe pli alta rapideco ol oni povas esti farita en la citoplasmo en proceso nomita Aeroba Respirado. Tamen ĝi postulas oksigenon por funkcii, kaj pli malaltaj niveloj de oksigeno en la medio malrapidigos la rapidon de ĝia produktado de ATP. Ĉar la metabolosomoj estas suspenditaj rekte en la citoplasmo, la ĉirkaŭa likvaĵo iom fermentas."
+
+#, fuzzy
+msgid "RIBOSOME_C_PROCESSES_DESCRIPTION"
+msgstr "Metabolosomoj estas aretoj de proteinoj envolvitaj en proteinaj ŝeloj. Ili povas konverti glukozon en ATP kun multe pli alta rapideco ol oni povas esti farita en la citoplasmo en proceso nomita Aeroba Respirado. Tamen ĝi postulas oksigenon por funkcii, kaj pli malaltaj niveloj de oksigeno en la medio malrapidigos la rapidon de ĝia produktado de ATP. Ĉar la metabolosomoj estas suspenditaj rekte en la citoplasmo, la ĉirkaŭa likvaĵo iom fermentas."
 
 #, fuzzy
 msgid "RIGHT_ARROW"
@@ -6121,9 +6199,6 @@ msgstr ""
 msgid "STRICT_NICHE_COMPETITION"
 msgstr ""
 
-msgid "STRUCTURAL"
-msgstr "Struktura"
-
 msgid "STRUCTURE"
 msgstr "Strukturo"
 
@@ -6170,6 +6245,9 @@ msgstr ""
 #, fuzzy
 msgid "SUICIDE_BUTTON_TOOLTIP"
 msgstr "Aldonunovan funkcion por klavo"
+
+msgid "SULFUR"
+msgstr ""
 
 msgid "SUNLIGHT"
 msgstr "Sunlumo"
@@ -7093,6 +7171,10 @@ msgid "UNLOCK_CONDITION_EXCESS_ATP_ABOVE"
 msgstr ""
 
 #, fuzzy
+msgid "UNLOCK_CONDITION_HAVE_COMPOUND_ABOVE"
+msgstr "Rapideco:"
+
+#, fuzzy
 msgid "UNLOCK_CONDITION_PLAYER_DAMAGE_RECEIVED"
 msgstr "Rapideco:"
 
@@ -7230,13 +7312,6 @@ msgid "VACUOLE"
 msgstr "Vakuolo"
 
 msgid "VACUOLE_DESCRIPTION"
-msgstr "La vakuolo estas interna membraneca organeto uzata por stokado en la ĉelo. Ili estas kunmetitaj de pluraj kunfandiĝitaj vezikoj, pli malgrandaj membranaj strukturoj vaste uzataj en ĉeloj por stokado. Ĝi estas plenigita per akvo, kiu kutimas enhavi molekulojn, enzimojn, solidojn kaj aliajn substancojn. Ilia formo estas flua kaj povas varii inter ĉeloj."
-
-msgid "VACUOLE_IS_SPECIALIZED"
-msgstr ""
-
-#, fuzzy
-msgid "VACUOLE_NOT_SPECIALIZED_DESCRIPTION"
 msgstr "La vakuolo estas interna membraneca organeto uzata por stokado en la ĉelo. Ili estas kunmetitaj de pluraj kunfandiĝitaj vezikoj, pli malgrandaj membranaj strukturoj vaste uzataj en ĉeloj por stokado. Ĝi estas plenigita per akvo, kiu kutimas enhavi molekulojn, enzimojn, solidojn kaj aliajn substancojn. Ilia formo estas flua kaj povas varii inter ĉeloj."
 
 #, fuzzy
@@ -9422,6 +9497,13 @@ msgstr "Zomu"
 msgid "ZOOM_OUT"
 msgstr "Malzomu"
 
+#~ msgid "STRUCTURAL"
+#~ msgstr "Struktura"
+
+#, fuzzy
+#~ msgid "VACUOLE_NOT_SPECIALIZED_DESCRIPTION"
+#~ msgstr "La vakuolo estas interna membraneca organeto uzata por stokado en la ĉelo. Ili estas kunmetitaj de pluraj kunfandiĝitaj vezikoj, pli malgrandaj membranaj strukturoj vaste uzataj en ĉeloj por stokado. Ĝi estas plenigita per akvo, kiu kutimas enhavi molekulojn, enzimojn, solidojn kaj aliajn substancojn. Ilia formo estas flua kaj povas varii inter ĉeloj."
+
 #, fuzzy
 #~ msgid "PASSIVE_REPRODUCTION_PROGRESS_EXPLANATION"
 #~ msgstr "{0} loĝantaro ŝanĝiĝis per {1} pro: {2}"
@@ -10012,10 +10094,6 @@ msgstr "Malzomu"
 #, fuzzy
 #~ msgid "SEMICOLON"
 #~ msgstr "Grandeco:"
-
-#, fuzzy
-#~ msgid "AT"
-#~ msgstr "ATP"
 
 #, fuzzy
 #~ msgid "BRACKETRIGHT"

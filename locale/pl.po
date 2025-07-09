@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-05-28 14:54+0300\n"
+"POT-Creation-Date: 2025-07-09 11:50+0200\n"
 "PO-Revision-Date: 2025-05-27 06:43+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Polish <https://translate.revolutionarygamesstudio.com/projects/thrive/thrive-game/pl/>\n"
@@ -30,6 +30,10 @@ msgstr "Ruch 3D"
 
 msgid "3D_MOVEMENT_TYPE_SELECTION"
 msgstr "Styl ruchu 3D:"
+
+#, fuzzy
+msgid "A"
+msgstr "ATP"
 
 msgid "ABILITIES"
 msgstr "Umiejętności"
@@ -402,6 +406,10 @@ msgstr "Faza Przebudzenia"
 msgid "AWARE_STAGE"
 msgstr "Faza Świadomości"
 
+#, fuzzy
+msgid "B"
+msgstr "Przez:"
+
 msgid "BACK"
 msgstr "Wróć"
 
@@ -434,6 +442,10 @@ msgstr "Bazowa Mobilność"
 
 msgid "BASE_MOVEMENT"
 msgstr "Bazowa prędkość"
+
+#, fuzzy
+msgid "BASIC"
+msgstr "Podstawowy"
 
 msgid "BASIC_VIEW"
 msgstr "Podstawowy"
@@ -549,11 +561,17 @@ msgstr "Kolejka Budowy"
 msgid "BUILD_STRUCTURE"
 msgstr "Zbuduj Strukturę"
 
+msgid "BUTANOL"
+msgstr ""
+
 msgid "BY"
 msgstr "Przez:"
 
 msgid "BY_REVOLUTIONARY_GAMES"
 msgstr "Wykonane Przez Revolutionary Games Studio"
+
+msgid "C"
+msgstr ""
 
 msgid "CACHE_DISK_MAX_TIME"
 msgstr "Maksymalny czas przechowywania wpisów na dysku przed usunięciem"
@@ -2643,6 +2661,13 @@ msgstr "Zawiera prototypy późniejszych etapów"
 msgid "INCLUDE_MULTICELLULAR_PROTOTYPE_EXPLANATION"
 msgstr "(niektóre funkcje mogą być niedostępne gdy dotrzesz to następnych etapów)"
 
+msgid "INCLUSION"
+msgstr ""
+
+#, fuzzy
+msgid "INCLUSION_DESCRIPTION"
+msgstr "Cecha definiująca komórki eukariotyczne. Jądro zawiera w pakiecie siatkę endoplazmatyczną i aparat Golgiego. Wykształcenie systemu wewnętrznych membran jest ewolucją prokariotycznych komórek, dokonaną przez wchłonięcie innego prokariota. To pozwala im na oddzielanie, lub zatrzymywanie, różnych procesów dziejących się w środku komórki i zapobiec przed ich nakładaniem się na siebie. To pozwala ich nowym organellom membranowym na większą złożoność, efektywność i wyspecjalizowanie niż gdyby pływały bezpośrednio w cytozolu. Jednakże ma to swoją cenę - bardzo powiększa komórkę i wymaga dużo energii do utrzymania."
+
 #, fuzzy
 msgid "INCREASE_ITEM_SIZE"
 msgstr "Stwórz Nowy"
@@ -3043,6 +3068,21 @@ msgstr "Numeryczna ."
 
 msgid "KPSUBTRACT"
 msgstr "Numeryczny -"
+
+msgid "LACTATE"
+msgstr ""
+
+#, fuzzy
+msgid "LACTATE_DEHYDROGENASE"
+msgstr "Siarkowodór (H₂S)"
+
+#, fuzzy
+msgid "LACTATE_DEHYDROGENASE_DESCRIPTION"
+msgstr "Wykorzystuje wodór do uzyskiwania energii z [thrive:compound type=\\\"glucose\\\"]Glukozy[/thrive:compound]. Bardziej skuteczna przy niższych stężeniach [thrive:compound type=\\\"oxygen\\\"]Tlenu[/thrive:compound] niż metabolosomy. Jest głównym źródłem energii dla wielu organizmów w środowiskach beztlenowych."
+
+#, fuzzy
+msgid "LACTATE_SYNTHESIS"
+msgstr "Synteza śluzu"
 
 msgid "LANGUAGE"
 msgstr "Język:"
@@ -4963,6 +5003,9 @@ msgstr "Protoplazma"
 msgid "PULL_REQUESTS_PROGRAMMING"
 msgstr "Pull Requesty / Programowanie"
 
+msgid "PYRUVATE"
+msgstr ""
+
 #, fuzzy
 msgid "QUADRILLION_ABBREVIATION"
 msgstr "{0} MD"
@@ -5065,6 +5108,9 @@ msgstr "Metoda Rozmnażania:"
 
 msgid "REPRODUCTION_METHOD"
 msgstr "Metoda Rozmnażania:"
+
+msgid "REQUIRED_RIBOSOME"
+msgstr ""
 
 msgid "REQUIRES_NUCLEUS"
 msgstr "Wymaga Jądra"
@@ -5169,6 +5215,39 @@ msgstr ""
 
 msgid "REVOLUTIONARY_GAMES_SOCIAL_TOOLTIP"
 msgstr "Odwiedź oficjalne strony Revolutionary Games"
+
+msgid "RIBOSOME_A"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_A_DESCRIPTION"
+msgstr "Lizosom jest organellą przymocowaną do błony komórkowej która zawiera hydrolityczne enzymy które mogą rozbijać wiele biomolekuł. Lizosomy umożliwiają komórce trawienie materiałów przyjmowanych poprzez endocytozę oraz oczyszczanie odpadów komórki w procesie zwanym [b]autofagią[/b]."
+
+#, fuzzy
+msgid "RIBOSOME_A_PROCESSES_DESCRIPTION"
+msgstr "Zawiera enzymy trawienne. Może być modyfikowany by zmienić typ enzymu, jaki zawiera. Na ten czas, tylko jeden enzym może być wykorzystany."
+
+msgid "RIBOSOME_B"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_B_DESCRIPTION"
+msgstr "Lizosom jest organellą przymocowaną do błony komórkowej która zawiera hydrolityczne enzymy które mogą rozbijać wiele biomolekuł. Lizosomy umożliwiają komórce trawienie materiałów przyjmowanych poprzez endocytozę oraz oczyszczanie odpadów komórki w procesie zwanym [b]autofagią[/b]."
+
+#, fuzzy
+msgid "RIBOSOME_B_PROCESSES_DESCRIPTION"
+msgstr "Zawiera enzymy trawienne. Może być modyfikowany by zmienić typ enzymu, jaki zawiera. Na ten czas, tylko jeden enzym może być wykorzystany."
+
+msgid "RIBOSOME_C"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_C_DESCRIPTION"
+msgstr "Lizosom jest organellą przymocowaną do błony komórkowej która zawiera hydrolityczne enzymy które mogą rozbijać wiele biomolekuł. Lizosomy umożliwiają komórce trawienie materiałów przyjmowanych poprzez endocytozę oraz oczyszczanie odpadów komórki w procesie zwanym [b]autofagią[/b]."
+
+#, fuzzy
+msgid "RIBOSOME_C_PROCESSES_DESCRIPTION"
+msgstr "Zawiera enzymy trawienne. Może być modyfikowany by zmienić typ enzymu, jaki zawiera. Na ten czas, tylko jeden enzym może być wykorzystany."
 
 msgid "RIGHT_ARROW"
 msgstr "→"
@@ -5825,9 +5904,6 @@ msgstr "Etap Mikroba"
 msgid "STRICT_NICHE_COMPETITION"
 msgstr "Rygorystyczna konkurencja nisz (różnice w sprawności są przesadzone)"
 
-msgid "STRUCTURAL"
-msgstr "Strukturalne"
-
 msgid "STRUCTURE"
 msgstr "Struktura"
 
@@ -5873,6 +5949,9 @@ msgstr "Rezultat wskazał sukces lecz ID nie zostało zwrócone"
 
 msgid "SUICIDE_BUTTON_TOOLTIP"
 msgstr "Samobójstwo"
+
+msgid "SULFUR"
+msgstr ""
 
 msgid "SUNLIGHT"
 msgstr "Światło słoneczne"
@@ -6766,6 +6845,10 @@ msgid "UNLOCK_CONDITION_EXCESS_ATP_ABOVE"
 msgstr ""
 
 #, fuzzy
+msgid "UNLOCK_CONDITION_HAVE_COMPOUND_ABOVE"
+msgstr "Produkcja [thrive:compound type=\"atp\"][/thrive:compound] dotrze do {0}"
+
+#, fuzzy
 msgid "UNLOCK_CONDITION_PLAYER_DAMAGE_RECEIVED"
 msgstr "szybkość spadnie poniżej {0}"
 
@@ -6899,12 +6982,6 @@ msgstr "Wakuola"
 
 msgid "VACUOLE_DESCRIPTION"
 msgstr "Wakuola to wewnętrzna organella membranowa używana w komórce jako magazyn. Zbudowane są z kilku pęcherzyków, małych membranowych struktur szeroko używanych w komórkach do magazynowania, które są ze sobą połączone. Wypełniona jest wodą która przechowuje molokuły, enzymy, ciała stałe i inne substancje. Ich kształt jest płynny i może się różnić między komórkami."
-
-msgid "VACUOLE_IS_SPECIALIZED"
-msgstr ""
-
-msgid "VACUOLE_NOT_SPECIALIZED_DESCRIPTION"
-msgstr "Wakuola przechowuje {0} jednostek wszystkich zasobów"
 
 msgid "VACUOLE_PROCESSES_DESCRIPTION"
 msgstr "Zwiększa pojemność twojej komórki."
@@ -8915,6 +8992,12 @@ msgstr "Przybliż"
 msgid "ZOOM_OUT"
 msgstr "Oddal"
 
+#~ msgid "STRUCTURAL"
+#~ msgstr "Strukturalne"
+
+#~ msgid "VACUOLE_NOT_SPECIALIZED_DESCRIPTION"
+#~ msgstr "Wakuola przechowuje {0} jednostek wszystkich zasobów"
+
 #~ msgid "PASSIVE_REPRODUCTION_PROGRESS_EXPLANATION"
 #~ msgstr "(biernie uzyskuj związki reprodukcji ze środowiska bez potrzeby robienia czegokolwiek)"
 
@@ -9586,10 +9669,6 @@ msgstr "Oddal"
 #, fuzzy
 #~ msgid "SEMICOLON"
 #~ msgstr "Wielkość:"
-
-#, fuzzy
-#~ msgid "AT"
-#~ msgstr "ATP"
 
 #, fuzzy
 #~ msgid "BRACKETRIGHT"

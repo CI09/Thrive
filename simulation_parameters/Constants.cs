@@ -134,7 +134,7 @@ public static class Constants
     /// <summary>
     ///   Scale factor for the amount of compound in each spawned cloud
     /// </summary>
-    public const float CLOUD_SPAWN_AMOUNT_SCALE_FACTOR = 0.75f;
+    public const float CLOUD_SPAWN_AMOUNT_SCALE_FACTOR = 1.75f;
 
     /// <summary>
     ///   Threshold under which entities start to spawn around the player

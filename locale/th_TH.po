@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-05-28 14:54+0300\n"
+"POT-Creation-Date: 2025-07-09 11:50+0200\n"
 "PO-Revision-Date: 2025-05-27 06:43+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Thai <https://translate.revolutionarygamesstudio.com/projects/thrive/thrive-game/th/>\n"
@@ -31,6 +31,9 @@ msgid "3D_MOVEMENT"
 msgstr "การเคลื่อนไหว"
 
 msgid "3D_MOVEMENT_TYPE_SELECTION"
+msgstr ""
+
+msgid "A"
 msgstr ""
 
 msgid "ABILITIES"
@@ -406,6 +409,9 @@ msgstr ""
 msgid "AWARE_STAGE"
 msgstr "W, A, S, D และเมาส์เพื่อย้าย กด E เพื่อยิง OxyToxy NT หากคุณมีสารพิษแวคิวโอล กด G เพื่อสลับโหมดเขมือบ"
 
+msgid "B"
+msgstr ""
+
 msgid "BACK"
 msgstr "กลับ"
 
@@ -440,6 +446,9 @@ msgid "BASE_MOBILITY"
 msgstr "ความคล่องตัว"
 
 msgid "BASE_MOVEMENT"
+msgstr ""
+
+msgid "BASIC"
 msgstr ""
 
 msgid "BASIC_VIEW"
@@ -569,10 +578,16 @@ msgstr "ด้วยความเข้มข้นของ"
 msgid "BUILD_STRUCTURE"
 msgstr "ด้วยความเข้มข้นของ"
 
+msgid "BUTANOL"
+msgstr ""
+
 msgid "BY"
 msgstr ""
 
 msgid "BY_REVOLUTIONARY_GAMES"
+msgstr ""
+
+msgid "C"
 msgstr ""
 
 msgid "CACHE_DISK_MAX_TIME"
@@ -2648,6 +2663,13 @@ msgstr "วางออร์แกเนลล์"
 msgid "INCLUDE_MULTICELLULAR_PROTOTYPE_EXPLANATION"
 msgstr ""
 
+msgid "INCLUSION"
+msgstr ""
+
+#, fuzzy
+msgid "INCLUSION_DESCRIPTION"
+msgstr "คุณสมบัติที่กำหนดของเซลล์ยูคาริโอต นิวเคลียสยังรวมถึงเรติคูลัมเอนโดพลาสมิกและกอลจิ มันเป็นวิวัฒนาการของเซลล์โปรคาริโอตในการพัฒนาระบบของเยื่อหุ้มภายในซึ่งทำได้โดยการดูดซึมโปรคาริโอตอื่นเข้าไปในตัวมันเอง สิ่งนี้ช่วยให้สามารถแบ่งส่วนหรือปัดป้องกระบวนการต่างๆที่เกิดขึ้นภายในเซลล์และป้องกันไม่ให้เกิดการทับซ้อนกัน สิ่งนี้ช่วยให้ออร์แกเนลล์ที่ถูกยึดเมมเบรนใหม่มีความซับซ้อนมีประสิทธิภาพและเชี่ยวชาญกว่าการลอยตัวในไซโทพลาสซึมอย่างอิสระ อย่างไรก็ตามสิ่งนี้มีค่าใช้จ่ายในการทำให้เซลล์มีขนาดใหญ่ขึ้นและต้องใช้พลังงานจำนวนมากในการรักษาเซลล์"
+
 #, fuzzy
 msgid "INCREASE_ITEM_SIZE"
 msgstr "สร้างจุลินทรีย์ใหม่"
@@ -3057,6 +3079,21 @@ msgstr "เลข ."
 
 msgid "KPSUBTRACT"
 msgstr "เลข -"
+
+msgid "LACTATE"
+msgstr ""
+
+#, fuzzy
+msgid "LACTATE_DEHYDROGENASE"
+msgstr "ไฮโดรเจนซัลไฟด์"
+
+#, fuzzy
+msgid "LACTATE_DEHYDROGENASE_DESCRIPTION"
+msgstr "Nitrogenase เป็นโปรตีนที่สามารถใช้ก๊าซไนโตรเจนและพลังงานของเซลล์ในรูปแบบของ ATP เพื่อผลิตแอมโมเนียซึ่งเป็นสารอาหารที่สำคัญในการเจริญเติบโตของเซลล์ นี่คือกระบวนการที่เรียกว่าการตรึงไนโตรเจนแบบไม่ใช้ออกซิเจน เนื่องจากไนโตรเจนเนสถูกแขวนอยู่ในไซโทพลาสซึมโดยตรงของเหลวที่อยู่รอบ ๆ จึงทำปฏิกิริยาไกลโคไลซิส"
+
+#, fuzzy
+msgid "LACTATE_SYNTHESIS"
+msgstr "การสังเคราะห์ด้วยเคมี"
 
 msgid "LANGUAGE"
 msgstr "ภาษา:"
@@ -4963,6 +5000,9 @@ msgstr "โปรโตพลาสซึม"
 msgid "PULL_REQUESTS_PROGRAMMING"
 msgstr ""
 
+msgid "PYRUVATE"
+msgstr ""
+
 #, fuzzy
 msgid "QUADRILLION_ABBREVIATION"
 msgstr "{0} B"
@@ -5067,6 +5107,9 @@ msgid "REPRODUCTION_COMPOUND_HANDLING_TOOLTIP"
 msgstr "ความละเอียด:"
 
 msgid "REPRODUCTION_METHOD"
+msgstr ""
+
+msgid "REQUIRED_RIBOSOME"
 msgstr ""
 
 #, fuzzy
@@ -5178,6 +5221,39 @@ msgstr "แพร่กระจายไปยังแพทช์:"
 
 msgid "REVOLUTIONARY_GAMES_SOCIAL_TOOLTIP"
 msgstr ""
+
+msgid "RIBOSOME_A"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_A_DESCRIPTION"
+msgstr "เมตาโบโลโซมเป็นกลุ่มของโปรตีนที่ห่อหุ้มด้วยเปลือกโปรตีน พวกเขาสามารถเปลี่ยนกลูโคสเป็น ATP ในอัตราที่สูงกว่าที่ทำได้ในไซโตพลาสซึมในกระบวนการที่เรียกว่า Aerobic Respiration อย่างไรก็ตามมันต้องการออกซิเจนในการทำงานและระดับออกซิเจนในสิ่งแวดล้อมที่ต่ำลงจะทำให้อัตราการผลิต ATP ช้าลง เนื่องจากเมตาโบโซมถูกแขวนไว้ในไซโทพลาสซึมโดยตรงของเหลวที่อยู่รอบ ๆ จึงทำปฏิกิริยาไกลโคไลซิส"
+
+#, fuzzy
+msgid "RIBOSOME_A_PROCESSES_DESCRIPTION"
+msgstr "เมตาโบโลโซมเป็นกลุ่มของโปรตีนที่ห่อหุ้มด้วยเปลือกโปรตีน พวกเขาสามารถเปลี่ยนกลูโคสเป็น ATP ในอัตราที่สูงกว่าที่ทำได้ในไซโตพลาสซึมในกระบวนการที่เรียกว่า Aerobic Respiration อย่างไรก็ตามมันต้องการออกซิเจนในการทำงานและระดับออกซิเจนในสิ่งแวดล้อมที่ต่ำลงจะทำให้อัตราการผลิต ATP ช้าลง เนื่องจากเมตาโบโซมถูกแขวนไว้ในไซโทพลาสซึมโดยตรงของเหลวที่อยู่รอบ ๆ จึงทำปฏิกิริยาไกลโคไลซิส"
+
+msgid "RIBOSOME_B"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_B_DESCRIPTION"
+msgstr "เมตาโบโลโซมเป็นกลุ่มของโปรตีนที่ห่อหุ้มด้วยเปลือกโปรตีน พวกเขาสามารถเปลี่ยนกลูโคสเป็น ATP ในอัตราที่สูงกว่าที่ทำได้ในไซโตพลาสซึมในกระบวนการที่เรียกว่า Aerobic Respiration อย่างไรก็ตามมันต้องการออกซิเจนในการทำงานและระดับออกซิเจนในสิ่งแวดล้อมที่ต่ำลงจะทำให้อัตราการผลิต ATP ช้าลง เนื่องจากเมตาโบโซมถูกแขวนไว้ในไซโทพลาสซึมโดยตรงของเหลวที่อยู่รอบ ๆ จึงทำปฏิกิริยาไกลโคไลซิส"
+
+#, fuzzy
+msgid "RIBOSOME_B_PROCESSES_DESCRIPTION"
+msgstr "เมตาโบโลโซมเป็นกลุ่มของโปรตีนที่ห่อหุ้มด้วยเปลือกโปรตีน พวกเขาสามารถเปลี่ยนกลูโคสเป็น ATP ในอัตราที่สูงกว่าที่ทำได้ในไซโตพลาสซึมในกระบวนการที่เรียกว่า Aerobic Respiration อย่างไรก็ตามมันต้องการออกซิเจนในการทำงานและระดับออกซิเจนในสิ่งแวดล้อมที่ต่ำลงจะทำให้อัตราการผลิต ATP ช้าลง เนื่องจากเมตาโบโซมถูกแขวนไว้ในไซโทพลาสซึมโดยตรงของเหลวที่อยู่รอบ ๆ จึงทำปฏิกิริยาไกลโคไลซิส"
+
+msgid "RIBOSOME_C"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_C_DESCRIPTION"
+msgstr "เมตาโบโลโซมเป็นกลุ่มของโปรตีนที่ห่อหุ้มด้วยเปลือกโปรตีน พวกเขาสามารถเปลี่ยนกลูโคสเป็น ATP ในอัตราที่สูงกว่าที่ทำได้ในไซโตพลาสซึมในกระบวนการที่เรียกว่า Aerobic Respiration อย่างไรก็ตามมันต้องการออกซิเจนในการทำงานและระดับออกซิเจนในสิ่งแวดล้อมที่ต่ำลงจะทำให้อัตราการผลิต ATP ช้าลง เนื่องจากเมตาโบโซมถูกแขวนไว้ในไซโทพลาสซึมโดยตรงของเหลวที่อยู่รอบ ๆ จึงทำปฏิกิริยาไกลโคไลซิส"
+
+#, fuzzy
+msgid "RIBOSOME_C_PROCESSES_DESCRIPTION"
+msgstr "เมตาโบโลโซมเป็นกลุ่มของโปรตีนที่ห่อหุ้มด้วยเปลือกโปรตีน พวกเขาสามารถเปลี่ยนกลูโคสเป็น ATP ในอัตราที่สูงกว่าที่ทำได้ในไซโตพลาสซึมในกระบวนการที่เรียกว่า Aerobic Respiration อย่างไรก็ตามมันต้องการออกซิเจนในการทำงานและระดับออกซิเจนในสิ่งแวดล้อมที่ต่ำลงจะทำให้อัตราการผลิต ATP ช้าลง เนื่องจากเมตาโบโซมถูกแขวนไว้ในไซโทพลาสซึมโดยตรงของเหลวที่อยู่รอบ ๆ จึงทำปฏิกิริยาไกลโคไลซิส"
 
 #, fuzzy
 msgid "RIGHT_ARROW"
@@ -5872,9 +5948,6 @@ msgstr "W, A, S, D และเมาส์เพื่อย้าย กด E 
 msgid "STRICT_NICHE_COMPETITION"
 msgstr ""
 
-msgid "STRUCTURAL"
-msgstr ""
-
 msgid "STRUCTURE"
 msgstr ""
 
@@ -5918,6 +5991,9 @@ msgid "SUCCESS_BUT_MISSING_ID"
 msgstr ""
 
 msgid "SUICIDE_BUTTON_TOOLTIP"
+msgstr ""
+
+msgid "SULFUR"
 msgstr ""
 
 msgid "SUNLIGHT"
@@ -6758,6 +6834,10 @@ msgid "UNLOCK_CONDITION_EXCESS_ATP_ABOVE"
 msgstr ""
 
 #, fuzzy
+msgid "UNLOCK_CONDITION_HAVE_COMPOUND_ABOVE"
+msgstr "{0} ประชากรเปลี่ยนแปลงโดย {1} เนื่องจาก: {2}"
+
+#, fuzzy
 msgid "UNLOCK_CONDITION_PLAYER_DAMAGE_RECEIVED"
 msgstr "{0} ประชากรเปลี่ยนแปลงโดย {1} เนื่องจาก: {2}"
 
@@ -6890,13 +6970,6 @@ msgid "VACUOLE"
 msgstr "แวคิวโอล"
 
 msgid "VACUOLE_DESCRIPTION"
-msgstr "แวคิวโอลเป็นออร์แกเนลล์เยื่อภายในที่ใช้สำหรับเก็บในเซลล์ ประกอบด้วยถุงหลายอันโครงสร้างของเยื่อขนาดเล็กที่ใช้กันอย่างแพร่หลายในเซลล์เพื่อการจัดเก็บที่หลอมรวมเข้าด้วยกัน เต็มไปด้วยน้ำซึ่งใช้บรรจุโมเลกุลเอนไซม์ของแข็งและสารอื่น ๆ รูปร่างของพวกมันเป็นของเหลวและอาจแตกต่างกันไประหว่างเซลล์"
-
-msgid "VACUOLE_IS_SPECIALIZED"
-msgstr ""
-
-#, fuzzy
-msgid "VACUOLE_NOT_SPECIALIZED_DESCRIPTION"
 msgstr "แวคิวโอลเป็นออร์แกเนลล์เยื่อภายในที่ใช้สำหรับเก็บในเซลล์ ประกอบด้วยถุงหลายอันโครงสร้างของเยื่อขนาดเล็กที่ใช้กันอย่างแพร่หลายในเซลล์เพื่อการจัดเก็บที่หลอมรวมเข้าด้วยกัน เต็มไปด้วยน้ำซึ่งใช้บรรจุโมเลกุลเอนไซม์ของแข็งและสารอื่น ๆ รูปร่างของพวกมันเป็นของเหลวและอาจแตกต่างกันไประหว่างเซลล์"
 
 #, fuzzy
@@ -8896,6 +8969,10 @@ msgstr "ซูมเข้า"
 
 msgid "ZOOM_OUT"
 msgstr "ซูมออก"
+
+#, fuzzy
+#~ msgid "VACUOLE_NOT_SPECIALIZED_DESCRIPTION"
+#~ msgstr "แวคิวโอลเป็นออร์แกเนลล์เยื่อภายในที่ใช้สำหรับเก็บในเซลล์ ประกอบด้วยถุงหลายอันโครงสร้างของเยื่อขนาดเล็กที่ใช้กันอย่างแพร่หลายในเซลล์เพื่อการจัดเก็บที่หลอมรวมเข้าด้วยกัน เต็มไปด้วยน้ำซึ่งใช้บรรจุโมเลกุลเอนไซม์ของแข็งและสารอื่น ๆ รูปร่างของพวกมันเป็นของเหลวและอาจแตกต่างกันไประหว่างเซลล์"
 
 #, fuzzy
 #~ msgid "PASSIVE_REPRODUCTION_PROGRESS_EXPLANATION"

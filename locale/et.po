@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-05-28 14:54+0300\n"
+"POT-Creation-Date: 2025-07-09 11:50+0200\n"
 "PO-Revision-Date: 2025-05-25 15:00+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Estonian <https://translate.revolutionarygamesstudio.com/projects/thrive/thrive-game/et/>\n"
@@ -31,6 +31,9 @@ msgid "3D_MOVEMENT"
 msgstr "Liikumine"
 
 msgid "3D_MOVEMENT_TYPE_SELECTION"
+msgstr ""
+
+msgid "A"
 msgstr ""
 
 msgid "ABILITIES"
@@ -439,6 +442,10 @@ msgstr ""
 "\n"
 "Selles vaenulikus maailmas ellujäämiseks peate koguma kokku kõik ühendid, mida leiate ja põlvkondade kaupa edasi arenema, et võistelda teiste mikroobiliikidega."
 
+#, fuzzy
+msgid "B"
+msgstr "Autor:"
+
 msgid "BACK"
 msgstr "tagasi"
 
@@ -474,6 +481,9 @@ msgstr "Liikuvus"
 
 msgid "BASE_MOVEMENT"
 msgstr "Aluse liikumine"
+
+msgid "BASIC"
+msgstr ""
 
 msgid "BASIC_VIEW"
 msgstr ""
@@ -604,11 +614,17 @@ msgstr "Struktuur"
 msgid "BUILD_STRUCTURE"
 msgstr "Struktuur"
 
+msgid "BUTANOL"
+msgstr ""
+
 msgid "BY"
 msgstr "Autor:"
 
 msgid "BY_REVOLUTIONARY_GAMES"
 msgstr "Autor Revolutionary Games Studio"
+
+msgid "C"
+msgstr ""
 
 msgid "CACHE_DISK_MAX_TIME"
 msgstr ""
@@ -2807,6 +2823,13 @@ msgstr "Liikuge mängu järgmisse etappi (mitmerakuline). Saadaval, kui teil on 
 msgid "INCLUDE_MULTICELLULAR_PROTOTYPE_EXPLANATION"
 msgstr ""
 
+msgid "INCLUSION"
+msgstr ""
+
+#, fuzzy
+msgid "INCLUSION_DESCRIPTION"
+msgstr "Eukarüootsete rakkude iseloomulik tunnus. Tuum hõlmab ka endoplasmaatilist retikulumit ja golgi keha. See on prokarüootsete rakkude evolutsioon sisemembraanide süsteemi väljatöötamiseks, mis toimub teise prokarüooti enda sees assimileerimise teel. See võimaldab neil rakus toimuvaid erinevaid protsesse lahterdada või ära hoida ja vältida nende kattumist. See võimaldab nende uutel membraaniga seotud organellidel olla palju keerukamad, tõhusamad ja spetsialiseerunud kui siis, kui nad hõljuksid tsütoplasmas vabalt. See aga läheb raku palju suuremaks muutmise hinnaga ning selle ülalpidamiseks kulub palju raku energiat."
+
 #, fuzzy
 msgid "INCREASE_ITEM_SIZE"
 msgstr "Loo uus"
@@ -3226,6 +3249,21 @@ msgstr "number ."
 
 msgid "KPSUBTRACT"
 msgstr "number -"
+
+msgid "LACTATE"
+msgstr ""
+
+#, fuzzy
+msgid "LACTATE_DEHYDROGENASE"
+msgstr "Vesiniksulfiid"
+
+#, fuzzy
+msgid "LACTATE_DEHYDROGENASE_DESCRIPTION"
+msgstr "Lämmastik on valk, mis on võimeline kasutama gaasilist lämmastikku ja rakuenergiat ATP kujul, et toota ammoniaaki, mis on rakkude kasvu peamine toitaine. Seda protsessi nimetatakse anaeroobseks lämmastiku fikseerimiseks. Kuna lämmastik suspendeeritakse otse tsütoplasmas, teostab ümbritsev vedelik teatud glükolüüsi."
+
+#, fuzzy
+msgid "LACTATE_SYNTHESIS"
+msgstr "Kemosüntees"
 
 msgid "LANGUAGE"
 msgstr "Keel:"
@@ -5256,6 +5294,9 @@ msgstr "Protoplasma"
 msgid "PULL_REQUESTS_PROGRAMMING"
 msgstr "Tõmbetaotlused / programmeerimine"
 
+msgid "PYRUVATE"
+msgstr ""
+
 #, fuzzy
 msgid "QUADRILLION_ABBREVIATION"
 msgstr "{0} B"
@@ -5364,6 +5405,9 @@ msgstr "Paljundamine:"
 
 msgid "REPRODUCTION_METHOD"
 msgstr "Paljundamine:"
+
+msgid "REQUIRED_RIBOSOME"
+msgstr ""
 
 #, fuzzy
 msgid "REQUIRES_NUCLEUS"
@@ -5475,6 +5519,39 @@ msgstr "levinud plaastritele:"
 #, fuzzy
 msgid "REVOLUTIONARY_GAMES_SOCIAL_TOOLTIP"
 msgstr "Autor Revolutionary Games Studio"
+
+msgid "RIBOSOME_A"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_A_DESCRIPTION"
+msgstr "Metabolosoomid on valkude klastrid, mis on mähitud valgukestesse. Nad on võimelised muutma glükoosi ATP-ks palju suurema kiirusega, kui seda saab teha tsütoplasmas protsessis, mida nimetatakse aeroobseks hingamiseks. Siiski vajab see toimimiseks hapnikku ja madalam hapnikusisaldus keskkonnas aeglustab selle ATP tootmist. Kuna metabolosoomid suspendeeritakse otse tsütoplasmas, teostab ümbritsev vedelik teatud määral glükolüüsi."
+
+#, fuzzy
+msgid "RIBOSOME_A_PROCESSES_DESCRIPTION"
+msgstr "Muudab [thrive:compound type=\"atp\"][/thrive:compound] tüübiks [thrive:compound type=\"oxytoxy\"][/thrive:compound]. Hindamisskaalad kontsentratsiooniga [thrive:compound type=\"oxygen\"][/thrive:compound]. Võib vabastada toksiine, vajutades nuppu [thrive:input]g_fire_toxin[/thrive:input]. Kui [thrive:compound type=\"oxytoxy\"][/thrive:compound] kogus on väike, on pildistamine siiski võimalik, kuid sellega kaasneb väiksem kahju."
+
+msgid "RIBOSOME_B"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_B_DESCRIPTION"
+msgstr "Metabolosoomid on valkude klastrid, mis on mähitud valgukestesse. Nad on võimelised muutma glükoosi ATP-ks palju suurema kiirusega, kui seda saab teha tsütoplasmas protsessis, mida nimetatakse aeroobseks hingamiseks. Siiski vajab see toimimiseks hapnikku ja madalam hapnikusisaldus keskkonnas aeglustab selle ATP tootmist. Kuna metabolosoomid suspendeeritakse otse tsütoplasmas, teostab ümbritsev vedelik teatud määral glükolüüsi."
+
+#, fuzzy
+msgid "RIBOSOME_B_PROCESSES_DESCRIPTION"
+msgstr "Muudab [thrive:compound type=\"atp\"][/thrive:compound] tüübiks [thrive:compound type=\"oxytoxy\"][/thrive:compound]. Hindamisskaalad kontsentratsiooniga [thrive:compound type=\"oxygen\"][/thrive:compound]. Võib vabastada toksiine, vajutades nuppu [thrive:input]g_fire_toxin[/thrive:input]. Kui [thrive:compound type=\"oxytoxy\"][/thrive:compound] kogus on väike, on pildistamine siiski võimalik, kuid sellega kaasneb väiksem kahju."
+
+msgid "RIBOSOME_C"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_C_DESCRIPTION"
+msgstr "Metabolosoomid on valkude klastrid, mis on mähitud valgukestesse. Nad on võimelised muutma glükoosi ATP-ks palju suurema kiirusega, kui seda saab teha tsütoplasmas protsessis, mida nimetatakse aeroobseks hingamiseks. Siiski vajab see toimimiseks hapnikku ja madalam hapnikusisaldus keskkonnas aeglustab selle ATP tootmist. Kuna metabolosoomid suspendeeritakse otse tsütoplasmas, teostab ümbritsev vedelik teatud määral glükolüüsi."
+
+#, fuzzy
+msgid "RIBOSOME_C_PROCESSES_DESCRIPTION"
+msgstr "Muudab [thrive:compound type=\"atp\"][/thrive:compound] tüübiks [thrive:compound type=\"oxytoxy\"][/thrive:compound]. Hindamisskaalad kontsentratsiooniga [thrive:compound type=\"oxygen\"][/thrive:compound]. Võib vabastada toksiine, vajutades nuppu [thrive:input]g_fire_toxin[/thrive:input]. Kui [thrive:compound type=\"oxytoxy\"][/thrive:compound] kogus on väike, on pildistamine siiski võimalik, kuid sellega kaasneb väiksem kahju."
 
 msgid "RIGHT_ARROW"
 msgstr "→"
@@ -6177,9 +6254,6 @@ msgstr ""
 msgid "STRICT_NICHE_COMPETITION"
 msgstr ""
 
-msgid "STRUCTURAL"
-msgstr "Struktuurne"
-
 msgid "STRUCTURE"
 msgstr "Struktuur"
 
@@ -6225,6 +6299,9 @@ msgstr "Tulemus näitas, et see õnnestus, kuid ID-d ei tagastatud"
 
 msgid "SUICIDE_BUTTON_TOOLTIP"
 msgstr "vabasurm"
+
+msgid "SULFUR"
+msgstr ""
 
 msgid "SUNLIGHT"
 msgstr "Päikesevalgus"
@@ -7164,6 +7241,10 @@ msgid "UNLOCK_CONDITION_EXCESS_ATP_ABOVE"
 msgstr ""
 
 #, fuzzy
+msgid "UNLOCK_CONDITION_HAVE_COMPOUND_ABOVE"
+msgstr "Kiirus:"
+
+#, fuzzy
 msgid "UNLOCK_CONDITION_PLAYER_DAMAGE_RECEIVED"
 msgstr "Kiirus:"
 
@@ -7300,13 +7381,6 @@ msgstr "Vacuool"
 
 msgid "VACUOLE_DESCRIPTION"
 msgstr "Vakuool on sisemine membraanne organell, mida kasutatakse rakus säilitamiseks. Need koosnevad mitmest vesiikulist, väiksematest membraanistruktuuridest, mida kasutatakse laialdaselt säilitamiseks rakkudes ja mis on kokku sulanud. See on täidetud veega, mida kasutatakse molekulide, ensüümide, tahkete ainete ja muude ainete sisaldamiseks. Nende kuju on vedel ja võib rakkude vahel varieeruda."
-
-msgid "VACUOLE_IS_SPECIALIZED"
-msgstr ""
-
-#, fuzzy
-msgid "VACUOLE_NOT_SPECIALIZED_DESCRIPTION"
-msgstr "Suurendab raku salvestusruumi."
 
 msgid "VACUOLE_PROCESSES_DESCRIPTION"
 msgstr "Suurendab raku salvestusruumi."
@@ -9456,6 +9530,13 @@ msgstr "Suurenda"
 
 msgid "ZOOM_OUT"
 msgstr "Suumi välja"
+
+#~ msgid "STRUCTURAL"
+#~ msgstr "Struktuurne"
+
+#, fuzzy
+#~ msgid "VACUOLE_NOT_SPECIALIZED_DESCRIPTION"
+#~ msgstr "Suurendab raku salvestusruumi."
 
 #, fuzzy
 #~ msgid "PASSIVE_REPRODUCTION_PROGRESS_EXPLANATION"

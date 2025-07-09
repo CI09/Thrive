@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-05-28 14:54+0300\n"
+"POT-Creation-Date: 2025-07-09 11:50+0200\n"
 "PO-Revision-Date: 2025-05-25 15:00+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Indonesian <https://translate.revolutionarygamesstudio.com/projects/thrive/thrive-game/id/>\n"
@@ -30,6 +30,9 @@ msgstr "Gerakan 3D"
 
 msgid "3D_MOVEMENT_TYPE_SELECTION"
 msgstr "Gaya Gerakan 3D:"
+
+msgid "A"
+msgstr ""
 
 msgid "ABILITIES"
 msgstr "Kemampuan"
@@ -429,6 +432,10 @@ msgstr ""
 msgid "AWARE_STAGE"
 msgstr "Tahapan Mikrob"
 
+#, fuzzy
+msgid "B"
+msgstr "Oleh:"
+
 msgid "BACK"
 msgstr "Kembali"
 
@@ -464,6 +471,9 @@ msgstr "Mobilitas"
 
 msgid "BASE_MOVEMENT"
 msgstr "Pergerakan Dasar"
+
+msgid "BASIC"
+msgstr ""
 
 msgid "BASIC_VIEW"
 msgstr ""
@@ -595,11 +605,17 @@ msgstr "Struktur"
 msgid "BUILD_STRUCTURE"
 msgstr "Struktur"
 
+msgid "BUTANOL"
+msgstr ""
+
 msgid "BY"
 msgstr "Oleh:"
 
 msgid "BY_REVOLUTIONARY_GAMES"
 msgstr "Oleh Revolutionary Games Studio"
+
+msgid "C"
+msgstr ""
 
 msgid "CACHE_DISK_MAX_TIME"
 msgstr ""
@@ -2758,6 +2774,13 @@ msgstr "Letakkan organel"
 msgid "INCLUDE_MULTICELLULAR_PROTOTYPE_EXPLANATION"
 msgstr ""
 
+msgid "INCLUSION"
+msgstr ""
+
+#, fuzzy
+msgid "INCLUSION_DESCRIPTION"
+msgstr "Ciri yang mendefinisikan sel eukariota. Nukleus juga mengandung retikulum endoplasma dan badan golgi. Ia merupakan evolusi dari sel prokariota guna mengembang sebuah sistem membran internal, dilakukan dengan cara asimilasi prokariota lain ke dalam diri mereka. Ini memungkinkan eukariota untuk memilah diri atau menghindari berbagai macam proses berbeda yang terjadi dalam sel dan mencegah proses tersebut bertumpang tindih. Ini memungkinkan organel terikat-membran baru milik mereka menjadi lebih kompleks, efisien dan terspesialisasi daripada jika hanya mengambang bebas dalam sitoplasma. Namun, kekurangannya adalah memperbesar sel dan memerlukan sangat banyak energi milik sel untuk perawatan."
+
 #, fuzzy
 msgid "INCREASE_ITEM_SIZE"
 msgstr "Buat Save Baru"
@@ -3176,6 +3199,21 @@ msgstr "Num ."
 
 msgid "KPSUBTRACT"
 msgstr "Num -"
+
+msgid "LACTATE"
+msgstr ""
+
+#, fuzzy
+msgid "LACTATE_DEHYDROGENASE"
+msgstr "Hidrogen Sulfida"
+
+#, fuzzy
+msgid "LACTATE_DEHYDROGENASE_DESCRIPTION"
+msgstr "Nitrogenase adalah protein yang dapat menggunakan gas nitrogen dan energi selular dalam bentuk ATP untuk memproduksi amonia, sebuah nutrisi penumbuh penting bagi sel. Ini proses yang disebut Fiksasi Nitrogen Anaerob. Karena nitrogenase tersuspensi secara langsung dalam sitoplasma, cairan sekelilingnya melakukan beberapa glikolisis."
+
+#, fuzzy
+msgid "LACTATE_SYNTHESIS"
+msgstr "Kemosintesis"
 
 msgid "LANGUAGE"
 msgstr "Bahasa:"
@@ -5155,6 +5193,9 @@ msgstr "Protoplasma"
 msgid "PULL_REQUESTS_PROGRAMMING"
 msgstr ""
 
+msgid "PYRUVATE"
+msgstr ""
+
 #, fuzzy
 msgid "QUADRILLION_ABBREVIATION"
 msgstr "{0} M"
@@ -5260,6 +5301,9 @@ msgstr "Reproduksi:"
 
 msgid "REPRODUCTION_METHOD"
 msgstr "Reproduksi:"
+
+msgid "REQUIRED_RIBOSOME"
+msgstr ""
 
 #, fuzzy
 msgid "REQUIRES_NUCLEUS"
@@ -5372,6 +5416,39 @@ msgstr "menyebar ke daerah:"
 #, fuzzy
 msgid "REVOLUTIONARY_GAMES_SOCIAL_TOOLTIP"
 msgstr "Oleh Revolutionary Games Studio"
+
+msgid "RIBOSOME_A"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_A_DESCRIPTION"
+msgstr "Metabolosom adalah gugusan protein terbungkus dalam kulit protein. Mereka dapat mengkonversi glukosa menjadi ATP pada laju yang lebih tinggi daripada yang terjadi di sitoplasma dengan proses yang dinamakan Respirasi Aerob. Namun, proses tersebut tentu membutuhkan oksigen untuk berfungsi, dan tingkat oksigen yang lebih rendah di lingkungan akan memperlambat laju produksi ATP-nya. Karena metabolosom tersuspensi secara langsung dalam sitoplasma, cairan sekelilingnya juga melakukan beberapa glikolisis."
+
+#, fuzzy
+msgid "RIBOSOME_A_PROCESSES_DESCRIPTION"
+msgstr "Mengubah [thrive:compound type=\"atp\"][/thrive:compound] menjadi [thrive:compound type=\"oxytoxy\"][/thrive:compound]. Laju berbanding lurus dengan konsentrasi [thrive:compound type=\"oxygen\"][/thrive:compound]. Dapat meluncurkan toksin dengan menekan tombol [thrive:input]g_fire_toxin[/thrive:input]."
+
+msgid "RIBOSOME_B"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_B_DESCRIPTION"
+msgstr "Metabolosom adalah gugusan protein terbungkus dalam kulit protein. Mereka dapat mengkonversi glukosa menjadi ATP pada laju yang lebih tinggi daripada yang terjadi di sitoplasma dengan proses yang dinamakan Respirasi Aerob. Namun, proses tersebut tentu membutuhkan oksigen untuk berfungsi, dan tingkat oksigen yang lebih rendah di lingkungan akan memperlambat laju produksi ATP-nya. Karena metabolosom tersuspensi secara langsung dalam sitoplasma, cairan sekelilingnya juga melakukan beberapa glikolisis."
+
+#, fuzzy
+msgid "RIBOSOME_B_PROCESSES_DESCRIPTION"
+msgstr "Mengubah [thrive:compound type=\"atp\"][/thrive:compound] menjadi [thrive:compound type=\"oxytoxy\"][/thrive:compound]. Laju berbanding lurus dengan konsentrasi [thrive:compound type=\"oxygen\"][/thrive:compound]. Dapat meluncurkan toksin dengan menekan tombol [thrive:input]g_fire_toxin[/thrive:input]."
+
+msgid "RIBOSOME_C"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_C_DESCRIPTION"
+msgstr "Metabolosom adalah gugusan protein terbungkus dalam kulit protein. Mereka dapat mengkonversi glukosa menjadi ATP pada laju yang lebih tinggi daripada yang terjadi di sitoplasma dengan proses yang dinamakan Respirasi Aerob. Namun, proses tersebut tentu membutuhkan oksigen untuk berfungsi, dan tingkat oksigen yang lebih rendah di lingkungan akan memperlambat laju produksi ATP-nya. Karena metabolosom tersuspensi secara langsung dalam sitoplasma, cairan sekelilingnya juga melakukan beberapa glikolisis."
+
+#, fuzzy
+msgid "RIBOSOME_C_PROCESSES_DESCRIPTION"
+msgstr "Mengubah [thrive:compound type=\"atp\"][/thrive:compound] menjadi [thrive:compound type=\"oxytoxy\"][/thrive:compound]. Laju berbanding lurus dengan konsentrasi [thrive:compound type=\"oxygen\"][/thrive:compound]. Dapat meluncurkan toksin dengan menekan tombol [thrive:input]g_fire_toxin[/thrive:input]."
 
 msgid "RIGHT_ARROW"
 msgstr ""
@@ -6077,9 +6154,6 @@ msgstr "Tahapan Mikrob"
 msgid "STRICT_NICHE_COMPETITION"
 msgstr "Kompetisi relung yang ketat (perbedaan fitness (kecocokan) yang dilebihkan)"
 
-msgid "STRUCTURAL"
-msgstr "Struktural"
-
 msgid "STRUCTURE"
 msgstr "Struktur"
 
@@ -6126,6 +6200,9 @@ msgstr ""
 #, fuzzy
 msgid "SUICIDE_BUTTON_TOOLTIP"
 msgstr "Tambah keybind baru"
+
+msgid "SULFUR"
+msgstr ""
 
 msgid "SUNLIGHT"
 msgstr "Sinar Matahari"
@@ -7044,6 +7121,10 @@ msgid "UNLOCK_CONDITION_EXCESS_ATP_ABOVE"
 msgstr ""
 
 #, fuzzy
+msgid "UNLOCK_CONDITION_HAVE_COMPOUND_ABOVE"
+msgstr "Kecepatan:"
+
+#, fuzzy
 msgid "UNLOCK_CONDITION_PLAYER_DAMAGE_RECEIVED"
 msgstr "Kecepatan:"
 
@@ -7183,13 +7264,6 @@ msgstr "Vakuola"
 
 msgid "VACUOLE_DESCRIPTION"
 msgstr "Vakuola adalah organel ber-membran internal yang digunakan untuk peyimpanan dalam sel. Mereka tersusun dari beberapa gelembung (vesikel), struktur ber-membran lebih kecil yang banyak digunakan oleh sel untuk penyimpanan, yang telah menyatu. Gelembung tersebut terisi air yang digunakan untuk menampung molekul, enzim, padatan dan zat lainnya. Bentuk mereka cair dan bervariasi antar sel."
-
-msgid "VACUOLE_IS_SPECIALIZED"
-msgstr ""
-
-#, fuzzy
-msgid "VACUOLE_NOT_SPECIALIZED_DESCRIPTION"
-msgstr "Menambah ruang penyimpanan sel."
 
 msgid "VACUOLE_PROCESSES_DESCRIPTION"
 msgstr "Menambah ruang penyimpanan sel."
@@ -9200,6 +9274,13 @@ msgstr "Perbesar"
 
 msgid "ZOOM_OUT"
 msgstr "Perkecil"
+
+#~ msgid "STRUCTURAL"
+#~ msgstr "Struktural"
+
+#, fuzzy
+#~ msgid "VACUOLE_NOT_SPECIALIZED_DESCRIPTION"
+#~ msgstr "Menambah ruang penyimpanan sel."
 
 #, fuzzy
 #~ msgid "PASSIVE_REPRODUCTION_PROGRESS_EXPLANATION"

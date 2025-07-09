@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-05-28 14:54+0300\n"
+"POT-Creation-Date: 2025-07-09 11:50+0200\n"
 "PO-Revision-Date: 2024-10-17 07:24+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Latvian <https://translate.revolutionarygamesstudio.com/projects/thrive/thrive-game/lv/>\n"
@@ -30,6 +30,10 @@ msgstr "3D Kustība"
 
 msgid "3D_MOVEMENT_TYPE_SELECTION"
 msgstr "3D kustības stils:"
+
+#, fuzzy
+msgid "A"
+msgstr "ATP"
 
 msgid "ABILITIES"
 msgstr "Spējas"
@@ -413,6 +417,9 @@ msgstr ""
 msgid "AWARE_STAGE"
 msgstr "[thrive:input]g_move_forward[/thrive:input],[thrive:input]g_move_left[/thrive:input],[thrive:input]g_move_backwards[/thrive:input],[thrive:input]g_move_right[/thrive:input] un peli, lai kustētos. [thrive:input]g_fire_toxin[/thrive:input], lai šautu [thrive:compound type=\"oxytoxy\"][/thrive:compound], ja jums ir toksīnu vakuola. [thrive:input]g_toggle_engulf[/thrive:input], lai pārslēgtu aprīšanas režīmu. Jūs varat attālinātas un pietuvināties ar peles riteni."
 
+msgid "B"
+msgstr ""
+
 msgid "BACK"
 msgstr "Atpakaļ"
 
@@ -447,6 +454,9 @@ msgid "BASE_MOBILITY"
 msgstr "Kustīgums"
 
 msgid "BASE_MOVEMENT"
+msgstr ""
+
+msgid "BASIC"
 msgstr ""
 
 msgid "BASIC_VIEW"
@@ -581,10 +591,16 @@ msgstr "Struktūra"
 msgid "BUILD_STRUCTURE"
 msgstr "Struktūra"
 
+msgid "BUTANOL"
+msgstr ""
+
 msgid "BY"
 msgstr ""
 
 msgid "BY_REVOLUTIONARY_GAMES"
+msgstr ""
+
+msgid "C"
 msgstr ""
 
 msgid "CACHE_DISK_MAX_TIME"
@@ -2712,6 +2728,13 @@ msgstr "Novietot organoīdu"
 msgid "INCLUDE_MULTICELLULAR_PROTOTYPE_EXPLANATION"
 msgstr ""
 
+msgid "INCLUSION"
+msgstr ""
+
+#, fuzzy
+msgid "INCLUSION_DESCRIPTION"
+msgstr "Trūkst apraksts"
+
 #, fuzzy
 msgid "INCREASE_ITEM_SIZE"
 msgstr "Izveidot Jaunu"
@@ -3121,6 +3144,21 @@ msgstr ""
 
 msgid "KPSUBTRACT"
 msgstr ""
+
+msgid "LACTATE"
+msgstr ""
+
+#, fuzzy
+msgid "LACTATE_DEHYDROGENASE"
+msgstr "Sērūdeņradis"
+
+#, fuzzy
+msgid "LACTATE_DEHYDROGENASE_DESCRIPTION"
+msgstr "Apraksts:"
+
+#, fuzzy
+msgid "LACTATE_SYNTHESIS"
+msgstr "Hemosintēze"
 
 msgid "LANGUAGE"
 msgstr "Valoda:"
@@ -5061,6 +5099,9 @@ msgstr "Protoplazma"
 msgid "PULL_REQUESTS_PROGRAMMING"
 msgstr ""
 
+msgid "PYRUVATE"
+msgstr ""
+
 msgid "QUADRILLION_ABBREVIATION"
 msgstr ""
 
@@ -5168,6 +5209,9 @@ msgstr "ATP RAŽOŠANA IR PĀRĀK ZEMA!"
 msgid "REPRODUCTION_METHOD"
 msgstr "ATP RAŽOŠANA IR PĀRĀK ZEMA!"
 
+msgid "REQUIRED_RIBOSOME"
+msgstr ""
+
 #, fuzzy
 msgid "REQUIRES_NUCLEUS"
 msgstr "Kodols"
@@ -5274,6 +5318,39 @@ msgstr "Izplatījās uz plankumiem:"
 
 msgid "REVOLUTIONARY_GAMES_SOCIAL_TOOLTIP"
 msgstr ""
+
+msgid "RIBOSOME_A"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_A_DESCRIPTION"
+msgstr "Modifikācijas Apraksts:"
+
+#, fuzzy
+msgid "RIBOSOME_A_PROCESSES_DESCRIPTION"
+msgstr "Pārveido [thrive:compound type=\"glucose\"][/thrive:compound] par [thrive:compound type=\"atp\"][/thrive:compound]. Likme mainās ar [thrive:compound type=\"oxygen\"][/thrive:compound] koncentrāciju."
+
+msgid "RIBOSOME_B"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_B_DESCRIPTION"
+msgstr "Modifikācijas Apraksts:"
+
+#, fuzzy
+msgid "RIBOSOME_B_PROCESSES_DESCRIPTION"
+msgstr "Pārveido [thrive:compound type=\"glucose\"][/thrive:compound] par [thrive:compound type=\"atp\"][/thrive:compound]. Likme mainās ar [thrive:compound type=\"oxygen\"][/thrive:compound] koncentrāciju."
+
+msgid "RIBOSOME_C"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_C_DESCRIPTION"
+msgstr "Modifikācijas Apraksts:"
+
+#, fuzzy
+msgid "RIBOSOME_C_PROCESSES_DESCRIPTION"
+msgstr "Pārveido [thrive:compound type=\"glucose\"][/thrive:compound] par [thrive:compound type=\"atp\"][/thrive:compound]. Likme mainās ar [thrive:compound type=\"oxygen\"][/thrive:compound] koncentrāciju."
 
 msgid "RIGHT_ARROW"
 msgstr "→"
@@ -5950,9 +6027,6 @@ msgstr "[thrive:input]g_move_forward[/thrive:input],[thrive:input]g_move_left[/t
 msgid "STRICT_NICHE_COMPETITION"
 msgstr ""
 
-msgid "STRUCTURAL"
-msgstr "Strukturāls"
-
 msgid "STRUCTURE"
 msgstr "Struktūra"
 
@@ -5997,6 +6071,9 @@ msgid "SUCCESS_BUT_MISSING_ID"
 msgstr ""
 
 msgid "SUICIDE_BUTTON_TOOLTIP"
+msgstr ""
+
+msgid "SULFUR"
 msgstr ""
 
 msgid "SUNLIGHT"
@@ -6906,6 +6983,10 @@ msgid "UNLOCK_CONDITION_EXCESS_ATP_ABOVE"
 msgstr ""
 
 #, fuzzy
+msgid "UNLOCK_CONDITION_HAVE_COMPOUND_ABOVE"
+msgstr "Ātrums:"
+
+#, fuzzy
 msgid "UNLOCK_CONDITION_PLAYER_DAMAGE_RECEIVED"
 msgstr "Ātrums:"
 
@@ -7035,13 +7116,6 @@ msgstr "Vakuola"
 
 msgid "VACUOLE_DESCRIPTION"
 msgstr ""
-
-msgid "VACUOLE_IS_SPECIALIZED"
-msgstr ""
-
-#, fuzzy
-msgid "VACUOLE_NOT_SPECIALIZED_DESCRIPTION"
-msgstr "Apraksts:"
 
 msgid "VACUOLE_PROCESSES_DESCRIPTION"
 msgstr ""
@@ -9014,6 +9088,13 @@ msgstr "Pietuvināt"
 msgid "ZOOM_OUT"
 msgstr "Attālināt"
 
+#~ msgid "STRUCTURAL"
+#~ msgstr "Strukturāls"
+
+#, fuzzy
+#~ msgid "VACUOLE_NOT_SPECIALIZED_DESCRIPTION"
+#~ msgstr "Apraksts:"
+
 #, fuzzy
 #~ msgid "PASSIVE_REPRODUCTION_PROGRESS_EXPLANATION"
 #~ msgstr ""
@@ -9478,10 +9559,6 @@ msgstr "Attālināt"
 #, fuzzy
 #~ msgid "SEMICOLON"
 #~ msgstr "Izmērs:"
-
-#, fuzzy
-#~ msgid "AT"
-#~ msgstr "ATP"
 
 #, fuzzy
 #~ msgid "BRACKETRIGHT"

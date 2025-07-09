@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-05-28 14:54+0300\n"
+"POT-Creation-Date: 2025-07-09 11:50+0200\n"
 "PO-Revision-Date: 2025-04-04 10:42+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Norwegian Bokmål <https://translate.revolutionarygamesstudio.com/projects/thrive/thrive-game/nb_NO/>\n"
@@ -30,6 +30,9 @@ msgstr "3D Bevegelse"
 
 msgid "3D_MOVEMENT_TYPE_SELECTION"
 msgstr "3D bevegelses type:"
+
+msgid "A"
+msgstr ""
 
 msgid "ABILITIES"
 msgstr "Ferdigheter"
@@ -418,6 +421,9 @@ msgstr "Oppvåkningsstadiet"
 msgid "AWARE_STAGE"
 msgstr "Bevisst Stadie"
 
+msgid "B"
+msgstr ""
+
 msgid "BACK"
 msgstr "Tilbake"
 
@@ -453,6 +459,10 @@ msgstr "Grunnleggende Mobilitet"
 
 msgid "BASE_MOVEMENT"
 msgstr "Grunnleggende Bevegelse"
+
+#, fuzzy
+msgid "BASIC"
+msgstr "Grunnleggende"
 
 msgid "BASIC_VIEW"
 msgstr "Grunnleggende"
@@ -572,10 +582,16 @@ msgstr ""
 msgid "BUILD_STRUCTURE"
 msgstr ""
 
+msgid "BUTANOL"
+msgstr ""
+
 msgid "BY"
 msgstr ""
 
 msgid "BY_REVOLUTIONARY_GAMES"
+msgstr ""
+
+msgid "C"
 msgstr ""
 
 msgid "CACHE_DISK_MAX_TIME"
@@ -2498,6 +2514,13 @@ msgstr ""
 msgid "INCLUDE_MULTICELLULAR_PROTOTYPE_EXPLANATION"
 msgstr ""
 
+msgid "INCLUSION"
+msgstr ""
+
+#, fuzzy
+msgid "INCLUSION_DESCRIPTION"
+msgstr "Anaerob Nitrogenfiksering"
+
 msgid "INCREASE_ITEM_SIZE"
 msgstr ""
 
@@ -2885,6 +2908,21 @@ msgstr ""
 
 msgid "KPSUBTRACT"
 msgstr ""
+
+msgid "LACTATE"
+msgstr ""
+
+#, fuzzy
+msgid "LACTATE_DEHYDROGENASE"
+msgstr "Aerob Nitrogenfiksering"
+
+#, fuzzy
+msgid "LACTATE_DEHYDROGENASE_DESCRIPTION"
+msgstr "Anaerob Nitrogenfiksering"
+
+#, fuzzy
+msgid "LACTATE_SYNTHESIS"
+msgstr "AI mutasjonshastighet"
 
 msgid "LANGUAGE"
 msgstr ""
@@ -4614,6 +4652,9 @@ msgstr ""
 msgid "PULL_REQUESTS_PROGRAMMING"
 msgstr ""
 
+msgid "PYRUVATE"
+msgstr ""
+
 msgid "QUADRILLION_ABBREVIATION"
 msgstr ""
 
@@ -4712,6 +4753,9 @@ msgstr "ATP PRODUKSJON FOR LAV!"
 msgid "REPRODUCTION_METHOD"
 msgstr ""
 
+msgid "REQUIRED_RIBOSOME"
+msgstr ""
+
 msgid "REQUIRES_NUCLEUS"
 msgstr ""
 
@@ -4808,6 +4852,39 @@ msgstr ""
 
 msgid "REVOLUTIONARY_GAMES_SOCIAL_TOOLTIP"
 msgstr ""
+
+msgid "RIBOSOME_A"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_A_DESCRIPTION"
+msgstr "Anaerob Nitrogenfiksering"
+
+#, fuzzy
+msgid "RIBOSOME_A_PROCESSES_DESCRIPTION"
+msgstr "Anaerob Nitrogenfiksering"
+
+msgid "RIBOSOME_B"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_B_DESCRIPTION"
+msgstr "Anaerob Nitrogenfiksering"
+
+#, fuzzy
+msgid "RIBOSOME_B_PROCESSES_DESCRIPTION"
+msgstr "Anaerob Nitrogenfiksering"
+
+msgid "RIBOSOME_C"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_C_DESCRIPTION"
+msgstr "Anaerob Nitrogenfiksering"
+
+#, fuzzy
+msgid "RIBOSOME_C_PROCESSES_DESCRIPTION"
+msgstr "Anaerob Nitrogenfiksering"
 
 msgid "RIGHT_ARROW"
 msgstr ""
@@ -5424,9 +5501,6 @@ msgstr "Mikrobestadiet"
 msgid "STRICT_NICHE_COMPETITION"
 msgstr ""
 
-msgid "STRUCTURAL"
-msgstr ""
-
 msgid "STRUCTURE"
 msgstr ""
 
@@ -5470,6 +5544,9 @@ msgid "SUCCESS_BUT_MISSING_ID"
 msgstr ""
 
 msgid "SUICIDE_BUTTON_TOOLTIP"
+msgstr ""
+
+msgid "SULFUR"
 msgstr ""
 
 msgid "SUNLIGHT"
@@ -6141,6 +6218,9 @@ msgstr ""
 msgid "UNLOCK_CONDITION_EXCESS_ATP_ABOVE"
 msgstr ""
 
+msgid "UNLOCK_CONDITION_HAVE_COMPOUND_ABOVE"
+msgstr ""
+
 msgid "UNLOCK_CONDITION_PLAYER_DAMAGE_RECEIVED"
 msgstr ""
 
@@ -6261,12 +6341,6 @@ msgid "VACUOLE"
 msgstr ""
 
 msgid "VACUOLE_DESCRIPTION"
-msgstr ""
-
-msgid "VACUOLE_IS_SPECIALIZED"
-msgstr ""
-
-msgid "VACUOLE_NOT_SPECIALIZED_DESCRIPTION"
 msgstr ""
 
 msgid "VACUOLE_PROCESSES_DESCRIPTION"

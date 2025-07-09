@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-05-28 14:54+0300\n"
+"POT-Creation-Date: 2025-07-09 11:50+0200\n"
 "PO-Revision-Date: 2025-05-25 15:00+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Dutch (Belgium) <https://translate.revolutionarygamesstudio.com/projects/thrive/thrive-game/nl_BE/>\n"
@@ -30,6 +30,10 @@ msgstr "3D beweging"
 
 msgid "3D_MOVEMENT_TYPE_SELECTION"
 msgstr "3D bewegingsstijl:"
+
+#, fuzzy
+msgid "A"
+msgstr "ATP"
 
 msgid "ABILITIES"
 msgstr "Vaardigheden"
@@ -421,6 +425,10 @@ msgstr "Ontwaakfase"
 msgid "AWARE_STAGE"
 msgstr "Bewustzijnsfase"
 
+#, fuzzy
+msgid "B"
+msgstr "Door:"
+
 msgid "BACK"
 msgstr "Terug"
 
@@ -456,6 +464,10 @@ msgstr "Mobiliteit"
 
 msgid "BASE_MOVEMENT"
 msgstr "Basisbeweging"
+
+#, fuzzy
+msgid "BASIC"
+msgstr "Basis"
 
 msgid "BASIC_VIEW"
 msgstr "Basis"
@@ -578,11 +590,17 @@ msgstr "Bouw Wachtrij"
 msgid "BUILD_STRUCTURE"
 msgstr "Bouw een Bouwwerk"
 
+msgid "BUTANOL"
+msgstr ""
+
 msgid "BY"
 msgstr "Door:"
 
 msgid "BY_REVOLUTIONARY_GAMES"
 msgstr "Door Revolutionary Games Studio"
+
+msgid "C"
+msgstr ""
 
 msgid "CACHE_DISK_MAX_TIME"
 msgstr ""
@@ -2758,6 +2776,13 @@ msgstr "Organel plaatsen"
 msgid "INCLUDE_MULTICELLULAR_PROTOTYPE_EXPLANATION"
 msgstr ""
 
+msgid "INCLUSION"
+msgstr ""
+
+#, fuzzy
+msgid "INCLUSION_DESCRIPTION"
+msgstr "Het belangrijkste kenmerk van eukaryotische cellen. De celkern bevat ook het golgi-apparaat en het endoplasmatisch reticulum. Het is een aanpassing van prokaryotische cellen om een systeem van interne membranen te ontwikkelen, wat bereikt werd door een andere prokaryoot te absorberen. Dit liet hen toe om de verschillende processen die binnen in de cel gebeurden op te splitsen, of om hen af te sluiten, en om ervoor te zorgen dat ze niet konden overlappen. Dit zorgt ervoor dat hun nieuwe membraangebonden organellen veel complexer, efficiënter en gespecialiseerder kan zijn dan als ze vrij in het cytoplasma ronddreven. Dit komt wel met de prijs dat het veel van de cel zijn energie opneemt en dat de cel veel groter moet zijn."
+
 #, fuzzy
 msgid "INCREASE_ITEM_SIZE"
 msgstr "Maak Nieuw"
@@ -3171,6 +3196,21 @@ msgstr "Num .(toets)."
 
 msgid "KPSUBTRACT"
 msgstr "Num -(toets)"
+
+msgid "LACTATE"
+msgstr ""
+
+#, fuzzy
+msgid "LACTATE_DEHYDROGENASE"
+msgstr "Waterstofsulfide"
+
+#, fuzzy
+msgid "LACTATE_DEHYDROGENASE_DESCRIPTION"
+msgstr "Nitrogenase is een eiwit dat [thrive:compound type=\"nitrogen\"][/thrive:compound] en celenergie in de vorm van [thrive:compound type=\"atp\"][/thrive:compound] kan gebruiken om [thrive:compound type=\"ammonia\"][/thrive:compound] aan te maken, een belangrijke voedingsstof voor de groei van cellen. Dit proces noemt men [b]anaerobe waterstoffixatie[/b]. Omdat nitrogenase een suspensie in de cytoplasma is, voert de omliggende vloeistof [b]glycolyse[/b] uit."
+
+#, fuzzy
+msgid "LACTATE_SYNTHESIS"
+msgstr "Chemosynthese"
 
 msgid "LANGUAGE"
 msgstr "Taal:"
@@ -5133,6 +5173,9 @@ msgstr "Protoplasma"
 msgid "PULL_REQUESTS_PROGRAMMING"
 msgstr "Pull-verzoeken / programmering"
 
+msgid "PYRUVATE"
+msgstr ""
+
 #, fuzzy
 msgid "QUADRILLION_ABBREVIATION"
 msgstr "{0} B"
@@ -5245,6 +5288,9 @@ msgstr "gereproduceerd"
 msgid "REPRODUCTION_METHOD"
 msgstr "gereproduceerd"
 
+msgid "REQUIRED_RIBOSOME"
+msgstr ""
+
 #, fuzzy
 msgid "REQUIRES_NUCLEUS"
 msgstr "Nucleus"
@@ -5355,6 +5401,39 @@ msgstr "verspreid naar gebieden:"
 #, fuzzy
 msgid "REVOLUTIONARY_GAMES_SOCIAL_TOOLTIP"
 msgstr "Door Revolutionary Games Studio"
+
+msgid "RIBOSOME_A"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_A_DESCRIPTION"
+msgstr "Metabolosomen zijn clusters van proteïnen verpakt in eiwitomhulsels. Ze zijn in staat om veel sneller glucose om te zetten in ATP dan cytoplasma, dit door middel van een proces genaamd aerobe respiratie. Het heeft echter wel zuurstof nodig om te functioneren en lagere zuurstofniveaus in de omgeving vertragen dus de ATP-productie. Omdat de metabolosomen direct in het cytoplasma zijn gesuspendeerd, voert de omringende vloeistof enige glycolyse uit."
+
+#, fuzzy
+msgid "RIBOSOME_A_PROCESSES_DESCRIPTION"
+msgstr "verandert [thrive:compound type=\"atp\"][/thrive:compound] in [thrive:compound type=\"oxytoxy\"][/thrive:compound]. Ratio schaalt met concentratie van [thrive:compound type=\"oxygen\"][/thrive:compound]. Kan gif afvuren door te drukken op [thrive:input]g_fire_toxin[/thrive:input]."
+
+msgid "RIBOSOME_B"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_B_DESCRIPTION"
+msgstr "Metabolosomen zijn clusters van proteïnen verpakt in eiwitomhulsels. Ze zijn in staat om veel sneller glucose om te zetten in ATP dan cytoplasma, dit door middel van een proces genaamd aerobe respiratie. Het heeft echter wel zuurstof nodig om te functioneren en lagere zuurstofniveaus in de omgeving vertragen dus de ATP-productie. Omdat de metabolosomen direct in het cytoplasma zijn gesuspendeerd, voert de omringende vloeistof enige glycolyse uit."
+
+#, fuzzy
+msgid "RIBOSOME_B_PROCESSES_DESCRIPTION"
+msgstr "verandert [thrive:compound type=\"atp\"][/thrive:compound] in [thrive:compound type=\"oxytoxy\"][/thrive:compound]. Ratio schaalt met concentratie van [thrive:compound type=\"oxygen\"][/thrive:compound]. Kan gif afvuren door te drukken op [thrive:input]g_fire_toxin[/thrive:input]."
+
+msgid "RIBOSOME_C"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_C_DESCRIPTION"
+msgstr "Metabolosomen zijn clusters van proteïnen verpakt in eiwitomhulsels. Ze zijn in staat om veel sneller glucose om te zetten in ATP dan cytoplasma, dit door middel van een proces genaamd aerobe respiratie. Het heeft echter wel zuurstof nodig om te functioneren en lagere zuurstofniveaus in de omgeving vertragen dus de ATP-productie. Omdat de metabolosomen direct in het cytoplasma zijn gesuspendeerd, voert de omringende vloeistof enige glycolyse uit."
+
+#, fuzzy
+msgid "RIBOSOME_C_PROCESSES_DESCRIPTION"
+msgstr "verandert [thrive:compound type=\"atp\"][/thrive:compound] in [thrive:compound type=\"oxytoxy\"][/thrive:compound]. Ratio schaalt met concentratie van [thrive:compound type=\"oxygen\"][/thrive:compound]. Kan gif afvuren door te drukken op [thrive:input]g_fire_toxin[/thrive:input]."
 
 msgid "RIGHT_ARROW"
 msgstr "→"
@@ -6045,9 +6124,6 @@ msgstr "Microbestadium"
 msgid "STRICT_NICHE_COMPETITION"
 msgstr ""
 
-msgid "STRUCTURAL"
-msgstr "Structureel"
-
 msgid "STRUCTURE"
 msgstr "Structuur"
 
@@ -6093,6 +6169,9 @@ msgstr ""
 
 msgid "SUICIDE_BUTTON_TOOLTIP"
 msgstr "Zelfmoord"
+
+msgid "SULFUR"
+msgstr ""
 
 msgid "SUNLIGHT"
 msgstr "Zonlicht"
@@ -7017,6 +7096,10 @@ msgid "UNLOCK_CONDITION_EXCESS_ATP_ABOVE"
 msgstr ""
 
 #, fuzzy
+msgid "UNLOCK_CONDITION_HAVE_COMPOUND_ABOVE"
+msgstr "Snelheid:"
+
+#, fuzzy
 msgid "UNLOCK_CONDITION_PLAYER_DAMAGE_RECEIVED"
 msgstr "Snelheid:"
 
@@ -7152,12 +7235,6 @@ msgstr "Vacuole"
 
 msgid "VACUOLE_DESCRIPTION"
 msgstr "De vacuole is een intern membraanorganel dat gebruikt wordt voor opslag in de cel. Ze bestaan uit meerdere vesikels, kleinere membraanstructuren vaak gebruikt in cellen voor opslag, die samengesmolten zijn. Het is gevuld met water dat gebruikt wordt om moleculen, enzymen, vaste stoffen en andere substanties op te slaan. Hun vorm is veranderlijk en kan variëren tussen cellen."
-
-msgid "VACUOLE_IS_SPECIALIZED"
-msgstr ""
-
-msgid "VACUOLE_NOT_SPECIALIZED_DESCRIPTION"
-msgstr "De vacuole zal {0} eenheden van alle stoffen opslaan"
 
 msgid "VACUOLE_PROCESSES_DESCRIPTION"
 msgstr "Vergroot de opslagruimte van de cel."
@@ -9208,6 +9285,12 @@ msgstr "Inzoomen"
 msgid "ZOOM_OUT"
 msgstr "Uitzoomen"
 
+#~ msgid "STRUCTURAL"
+#~ msgstr "Structureel"
+
+#~ msgid "VACUOLE_NOT_SPECIALIZED_DESCRIPTION"
+#~ msgstr "De vacuole zal {0} eenheden van alle stoffen opslaan"
+
 #, fuzzy
 #~ msgid "PASSIVE_REPRODUCTION_PROGRESS_EXPLANATION"
 #~ msgstr "{0} bevolking veranderd met {1} door: {2}"
@@ -9814,10 +9897,6 @@ msgstr "Uitzoomen"
 #, fuzzy
 #~ msgid "SEMICOLON"
 #~ msgstr "Grootte:"
-
-#, fuzzy
-#~ msgid "AT"
-#~ msgstr "ATP"
 
 #, fuzzy
 #~ msgid "BRACKETRIGHT"

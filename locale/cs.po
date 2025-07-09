@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-05-28 14:54+0300\n"
+"POT-Creation-Date: 2025-07-09 11:50+0200\n"
 "PO-Revision-Date: 2025-05-27 06:43+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Czech <https://translate.revolutionarygamesstudio.com/projects/thrive/thrive-game/cs/>\n"
@@ -30,6 +30,10 @@ msgstr "3D Pohyb"
 
 msgid "3D_MOVEMENT_TYPE_SELECTION"
 msgstr "Styl pohybu 3D:"
+
+#, fuzzy
+msgid "A"
+msgstr "ATP"
 
 msgid "ABILITIES"
 msgstr "Schopnosti"
@@ -411,6 +415,10 @@ msgstr "Fáze Probuzení"
 msgid "AWARE_STAGE"
 msgstr "Mikrobiální Období"
 
+#, fuzzy
+msgid "B"
+msgstr "Podle:"
+
 msgid "BACK"
 msgstr "Zpět"
 
@@ -447,6 +455,10 @@ msgstr "Základní pohyblivost"
 
 msgid "BASE_MOVEMENT"
 msgstr "Základní pohyb"
+
+#, fuzzy
+msgid "BASIC"
+msgstr "Základní"
 
 msgid "BASIC_VIEW"
 msgstr "Základní"
@@ -569,11 +581,17 @@ msgstr "Sestavení fronty"
 msgid "BUILD_STRUCTURE"
 msgstr "Vybudování struktury"
 
+msgid "BUTANOL"
+msgstr ""
+
 msgid "BY"
 msgstr "Podle:"
 
 msgid "BY_REVOLUTIONARY_GAMES"
 msgstr "Vytvořeno týmem Revolutionary Games Studio"
+
+msgid "C"
+msgstr ""
 
 msgid "CACHE_DISK_MAX_TIME"
 msgstr "maximální čas pro uchování věcí na disku před smazáním"
@@ -2776,6 +2794,13 @@ msgstr "Zahrnout prototypy pozdějších období"
 msgid "INCLUDE_MULTICELLULAR_PROTOTYPE_EXPLANATION"
 msgstr "(některé funkce možná nebudou přístupné jakmile se dostanete do dalších období)"
 
+msgid "INCLUSION"
+msgstr ""
+
+#, fuzzy
+msgid "INCLUSION_DESCRIPTION"
+msgstr "Definující rys eukaryotických buněk. Jádro také zahrnuje endoplazmatické retikulum a golgiho aparát. Jde o evoluci prokaryotických buněk, které vyvinuly systém vnitřních membrán, a to provedením asimilace dalšího prokaryota uvnitř sebe. To jim umožňuje rozdělit nebo odvrátit různé procesy probíhající uvnitř buňky a zabránit jim v překrývání. To umožňuje, aby jejich nové organely vázané na membránu byly mnohem složitější, účinnější a specializovanější, než kdyby volně plovaly v cytoplazmě. To však přichází za cenu toho, že se buňka zvětší a vyžaduje mnoho energie, aby se udržovala."
+
 #, fuzzy
 msgid "INCREASE_ITEM_SIZE"
 msgstr "Vytvořit nový"
@@ -3199,6 +3224,21 @@ msgstr "Num ."
 
 msgid "KPSUBTRACT"
 msgstr "Num -"
+
+msgid "LACTATE"
+msgstr ""
+
+#, fuzzy
+msgid "LACTATE_DEHYDROGENASE"
+msgstr "Sirovodík"
+
+#, fuzzy
+msgid "LACTATE_DEHYDROGENASE_DESCRIPTION"
+msgstr "Nitrogenáza je protein schopný využít plynný [thrive:compound type=\"nitrogen\"][/thrive:compound] a buněčnou energii ve formě [thrive:compound type=\"atp\"][/thrive:compound] k produkci [thrive:compound type=\"ammonia\"][/thrive:compound], klíčové růstové živiny pro buňky. Tento proces se nazíva [b]anaerobní fixace dusíku[/b]. Jelikož jsou nitrogenázy obaleny cytoplazmou, tato okolní tekutina stále provádí nějakou [b]glykolýzu[/b]."
+
+#, fuzzy
+msgid "LACTATE_SYNTHESIS"
+msgstr "Syntéza slizů"
 
 msgid "LANGUAGE"
 msgstr "Jazyk:"
@@ -5177,6 +5217,9 @@ msgstr "Protoplazma"
 msgid "PULL_REQUESTS_PROGRAMMING"
 msgstr "Externí programátoři"
 
+msgid "PYRUVATE"
+msgstr ""
+
 #, fuzzy
 msgid "QUADRILLION_ABBREVIATION"
 msgstr "{0} mld"
@@ -5280,6 +5323,9 @@ msgstr "Reprodukce:"
 
 msgid "REPRODUCTION_METHOD"
 msgstr "Reprodukce:"
+
+msgid "REQUIRED_RIBOSOME"
+msgstr ""
 
 msgid "REQUIRES_NUCLEUS"
 msgstr "Potřebuje jádro"
@@ -5388,6 +5434,39 @@ msgstr "rozšířen do prostředí:"
 #, fuzzy
 msgid "REVOLUTIONARY_GAMES_SOCIAL_TOOLTIP"
 msgstr "Vytvořeno týmem Revolutionary Games Studio"
+
+msgid "RIBOSOME_A"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_A_DESCRIPTION"
+msgstr "Lysozom je organela připojena na membránu, která obsahuje hydrolytické enzymy, které mohou rozkládat různé biomolekuly. Lysozomy umožnují buňce strávit materiály vstřebány skrze endocytózu a čistit odpadní látky buňky skrze proces zvaný [b]autofagie[/b]."
+
+#, fuzzy
+msgid "RIBOSOME_A_PROCESSES_DESCRIPTION"
+msgstr "Obsahuje trávící enzymy. Může být modifikován pro změnu typu enzymu, který obsahuje. Lysozomy jsou schopny obsahovat pouze jeden typ enzymu najednou. Enzymy zrychlují a zvyšují efektivitu trávení."
+
+msgid "RIBOSOME_B"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_B_DESCRIPTION"
+msgstr "Lysozom je organela připojena na membránu, která obsahuje hydrolytické enzymy, které mohou rozkládat různé biomolekuly. Lysozomy umožnují buňce strávit materiály vstřebány skrze endocytózu a čistit odpadní látky buňky skrze proces zvaný [b]autofagie[/b]."
+
+#, fuzzy
+msgid "RIBOSOME_B_PROCESSES_DESCRIPTION"
+msgstr "Obsahuje trávící enzymy. Může být modifikován pro změnu typu enzymu, který obsahuje. Lysozomy jsou schopny obsahovat pouze jeden typ enzymu najednou. Enzymy zrychlují a zvyšují efektivitu trávení."
+
+msgid "RIBOSOME_C"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_C_DESCRIPTION"
+msgstr "Lysozom je organela připojena na membránu, která obsahuje hydrolytické enzymy, které mohou rozkládat různé biomolekuly. Lysozomy umožnují buňce strávit materiály vstřebány skrze endocytózu a čistit odpadní látky buňky skrze proces zvaný [b]autofagie[/b]."
+
+#, fuzzy
+msgid "RIBOSOME_C_PROCESSES_DESCRIPTION"
+msgstr "Obsahuje trávící enzymy. Může být modifikován pro změnu typu enzymu, který obsahuje. Lysozomy jsou schopny obsahovat pouze jeden typ enzymu najednou. Enzymy zrychlují a zvyšují efektivitu trávení."
 
 msgid "RIGHT_ARROW"
 msgstr "→"
@@ -6063,9 +6142,6 @@ msgstr "Mikrobiální Období"
 msgid "STRICT_NICHE_COMPETITION"
 msgstr "Přísné soupeření ve specializacích (rozdíly ve vhodnosti jsou přehnány)"
 
-msgid "STRUCTURAL"
-msgstr "Strukturální"
-
 msgid "STRUCTURE"
 msgstr "Struktura"
 
@@ -6111,6 +6187,9 @@ msgstr "Výsledek indikovat úspěch, ale nebylo vráceno žádné ID"
 
 msgid "SUICIDE_BUTTON_TOOLTIP"
 msgstr "Spáchat sebevraždu"
+
+msgid "SULFUR"
+msgstr ""
 
 msgid "SUNLIGHT"
 msgstr "Sluneční svit"
@@ -7040,6 +7119,10 @@ msgid "UNLOCK_CONDITION_EXCESS_ATP_ABOVE"
 msgstr ""
 
 #, fuzzy
+msgid "UNLOCK_CONDITION_HAVE_COMPOUND_ABOVE"
+msgstr "Rychlost trávení:"
+
+#, fuzzy
 msgid "UNLOCK_CONDITION_PLAYER_DAMAGE_RECEIVED"
 msgstr "Rychlost trávení:"
 
@@ -7173,13 +7256,6 @@ msgstr "Vakuola"
 
 msgid "VACUOLE_DESCRIPTION"
 msgstr "Vakuola je vnitřní membránová organela používaná pro skladování v buňce. Skládají se z několika vezikul, menších membránových struktur široce používaných v buňkách pro skladování, které se spojily. Je naplněna vodou, která obsahuje molekuly, enzymy, pevné látky a další látky. Jejich tvar je tekutý a může se mezi buňkami lišit."
-
-msgid "VACUOLE_IS_SPECIALIZED"
-msgstr ""
-
-#, fuzzy
-msgid "VACUOLE_NOT_SPECIALIZED_DESCRIPTION"
-msgstr "Zvyšuje úložný prostor buňky."
 
 msgid "VACUOLE_PROCESSES_DESCRIPTION"
 msgstr "Zvyšuje úložný prostor buňky."
@@ -9207,6 +9283,13 @@ msgstr "Přiblížit"
 msgid "ZOOM_OUT"
 msgstr "Oddálit"
 
+#~ msgid "STRUCTURAL"
+#~ msgstr "Strukturální"
+
+#, fuzzy
+#~ msgid "VACUOLE_NOT_SPECIALIZED_DESCRIPTION"
+#~ msgstr "Zvyšuje úložný prostor buňky."
+
 #~ msgid "PASSIVE_REPRODUCTION_PROGRESS_EXPLANATION"
 #~ msgstr "(pasivní příjem reprodukčních sloučenin z prostředí bez toho aniž byste něco museli dělat)"
 
@@ -9842,10 +9925,6 @@ msgstr "Oddálit"
 #, fuzzy
 #~ msgid "SEMICOLON"
 #~ msgstr "Velikost:"
-
-#, fuzzy
-#~ msgid "AT"
-#~ msgstr "ATP"
 
 #, fuzzy
 #~ msgid "BRACKETRIGHT"

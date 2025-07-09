@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-05-28 14:54+0300\n"
+"POT-Creation-Date: 2025-07-09 11:50+0200\n"
 "PO-Revision-Date: 2025-04-26 10:58+0000\n"
 "Last-Translator: Samuel Haššo <snurka1999@gmail.com>\n"
 "Language-Team: Slovak <https://translate.revolutionarygamesstudio.com/projects/thrive/thrive-game/sk/>\n"
@@ -30,6 +30,9 @@ msgstr "3D Pohyb"
 
 msgid "3D_MOVEMENT_TYPE_SELECTION"
 msgstr "3D štýl pohybu:"
+
+msgid "A"
+msgstr ""
 
 msgid "ABILITIES"
 msgstr "Schopnosti"
@@ -391,6 +394,9 @@ msgstr ""
 msgid "AWARE_STAGE"
 msgstr "Fáza Mikróbov"
 
+msgid "B"
+msgstr ""
+
 msgid "BACK"
 msgstr "Späť"
 
@@ -425,6 +431,10 @@ msgstr "Základná mobilita"
 
 msgid "BASE_MOVEMENT"
 msgstr "Základný pohyb"
+
+#, fuzzy
+msgid "BASIC"
+msgstr "Základné"
 
 msgid "BASIC_VIEW"
 msgstr "Základné"
@@ -557,11 +567,17 @@ msgstr "Štruktúra"
 msgid "BUILD_STRUCTURE"
 msgstr "Štruktúra"
 
+msgid "BUTANOL"
+msgstr ""
+
 msgid "BY"
 msgstr ""
 
 msgid "BY_REVOLUTIONARY_GAMES"
 msgstr "Od Revolutionary Games Studio"
+
+msgid "C"
+msgstr ""
 
 msgid "CACHE_DISK_MAX_TIME"
 msgstr ""
@@ -2615,6 +2631,13 @@ msgstr "Zahrnúť prototypy neskoršej fázy"
 msgid "INCLUDE_MULTICELLULAR_PROTOTYPE_EXPLANATION"
 msgstr "(akonáhle sa dostaneš do ďalšej fázy, niektoré funkcie môžu byť nedostupné)"
 
+msgid "INCLUSION"
+msgstr ""
+
+#, fuzzy
+msgid "INCLUSION_DESCRIPTION"
+msgstr "Chýba popis"
+
 #, fuzzy
 msgid "INCREASE_ITEM_SIZE"
 msgstr "Vytvoriť nový"
@@ -3026,6 +3049,21 @@ msgstr "Num ."
 
 msgid "KPSUBTRACT"
 msgstr "Num -"
+
+msgid "LACTATE"
+msgstr ""
+
+#, fuzzy
+msgid "LACTATE_DEHYDROGENASE"
+msgstr "Sírovodík"
+
+#, fuzzy
+msgid "LACTATE_DEHYDROGENASE_DESCRIPTION"
+msgstr "Premieňa [thrive:compound type=\"atp\"][/thrive:compound] na [thrive:compound type=\"ammonia\"][/thrive:compound]. Množstvo závisí od koncentrácie[thrive:compound type=\"nitrogen\"]dusíka[/thrive:compound]."
+
+#, fuzzy
+msgid "LACTATE_SYNTHESIS"
+msgstr "Chemosyntéza"
 
 msgid "LANGUAGE"
 msgstr "Jazyk:"
@@ -4870,6 +4908,9 @@ msgstr "Protoplazma"
 msgid "PULL_REQUESTS_PROGRAMMING"
 msgstr "Externí programátori"
 
+msgid "PYRUVATE"
+msgstr ""
+
 #, fuzzy
 msgid "QUADRILLION_ABBREVIATION"
 msgstr "{0} mld"
@@ -4973,6 +5014,9 @@ msgstr "Reprodukcia:"
 
 msgid "REPRODUCTION_METHOD"
 msgstr "Reprodukcia:"
+
+msgid "REQUIRED_RIBOSOME"
+msgstr ""
 
 msgid "REQUIRES_NUCLEUS"
 msgstr "Vyžaduje jadro"
@@ -5082,6 +5126,39 @@ msgstr "rozšírenie do oblastí:"
 #, fuzzy
 msgid "REVOLUTIONARY_GAMES_SOCIAL_TOOLTIP"
 msgstr "Od Revolutionary Games Studio"
+
+msgid "RIBOSOME_A"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_A_DESCRIPTION"
+msgstr "Popis módu:"
+
+#, fuzzy
+msgid "RIBOSOME_A_PROCESSES_DESCRIPTION"
+msgstr "Premieňa [thrive:compound type=\"glucose\"]glukózu[/thrive:compound] na [thrive:compound type=\"atp\"][/thrive:compound]. Množstvo závisí od koncentrácie [thrive:compound type=\"oxygen\"]kyslíka[/thrive:compound]."
+
+msgid "RIBOSOME_B"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_B_DESCRIPTION"
+msgstr "Popis módu:"
+
+#, fuzzy
+msgid "RIBOSOME_B_PROCESSES_DESCRIPTION"
+msgstr "Premieňa [thrive:compound type=\"glucose\"]glukózu[/thrive:compound] na [thrive:compound type=\"atp\"][/thrive:compound]. Množstvo závisí od koncentrácie [thrive:compound type=\"oxygen\"]kyslíka[/thrive:compound]."
+
+msgid "RIBOSOME_C"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_C_DESCRIPTION"
+msgstr "Popis módu:"
+
+#, fuzzy
+msgid "RIBOSOME_C_PROCESSES_DESCRIPTION"
+msgstr "Premieňa [thrive:compound type=\"glucose\"]glukózu[/thrive:compound] na [thrive:compound type=\"atp\"][/thrive:compound]. Množstvo závisí od koncentrácie [thrive:compound type=\"oxygen\"]kyslíka[/thrive:compound]."
 
 msgid "RIGHT_ARROW"
 msgstr "→"
@@ -5742,9 +5819,6 @@ msgstr "Fáza Mikróbov"
 msgid "STRICT_NICHE_COMPETITION"
 msgstr ""
 
-msgid "STRUCTURAL"
-msgstr "Štrukturálny"
-
 msgid "STRUCTURE"
 msgstr "Štruktúra"
 
@@ -5790,6 +5864,9 @@ msgstr ""
 
 msgid "SUICIDE_BUTTON_TOOLTIP"
 msgstr "Samovražda"
+
+msgid "SULFUR"
+msgstr ""
 
 msgid "SUNLIGHT"
 msgstr "Slnečné žiarenie"
@@ -6515,6 +6592,10 @@ msgid "UNLOCK_CONDITION_EXCESS_ATP_ABOVE"
 msgstr ""
 
 #, fuzzy
+msgid "UNLOCK_CONDITION_HAVE_COMPOUND_ABOVE"
+msgstr "Rýchlosť trávenia:"
+
+#, fuzzy
 msgid "UNLOCK_CONDITION_PLAYER_DAMAGE_RECEIVED"
 msgstr "Rýchlosť trávenia:"
 
@@ -6648,13 +6729,6 @@ msgstr "Vakuola"
 
 msgid "VACUOLE_DESCRIPTION"
 msgstr ""
-
-msgid "VACUOLE_IS_SPECIALIZED"
-msgstr ""
-
-#, fuzzy
-msgid "VACUOLE_NOT_SPECIALIZED_DESCRIPTION"
-msgstr "Zväčšuje úložný priestor bunky."
 
 msgid "VACUOLE_PROCESSES_DESCRIPTION"
 msgstr "Zväčšuje úložný priestor bunky."
@@ -8603,6 +8677,13 @@ msgstr "Priblížiť"
 
 msgid "ZOOM_OUT"
 msgstr "Oddialiť"
+
+#~ msgid "STRUCTURAL"
+#~ msgstr "Štrukturálny"
+
+#, fuzzy
+#~ msgid "VACUOLE_NOT_SPECIALIZED_DESCRIPTION"
+#~ msgstr "Zväčšuje úložný priestor bunky."
 
 #, fuzzy
 #~ msgid "PASSIVE_REPRODUCTION_PROGRESS_EXPLANATION"

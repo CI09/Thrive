@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-05-28 14:54+0300\n"
+"POT-Creation-Date: 2025-07-09 11:50+0200\n"
 "PO-Revision-Date: 2025-05-25 15:00+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Korean <https://translate.revolutionarygamesstudio.com/projects/thrive/thrive-game/ko/>\n"
@@ -30,6 +30,10 @@ msgstr "3차원 이동"
 
 msgid "3D_MOVEMENT_TYPE_SELECTION"
 msgstr "3차원 움직임 방식:"
+
+#, fuzzy
+msgid "A"
+msgstr "ATP"
 
 msgid "ABILITIES"
 msgstr "능력"
@@ -426,6 +430,10 @@ msgstr "의식 단계"
 msgid "AWARE_STAGE"
 msgstr "미생물 단계"
 
+#, fuzzy
+msgid "B"
+msgstr "요인:"
+
 msgid "BACK"
 msgstr "뒤로"
 
@@ -463,6 +471,10 @@ msgstr "기동성"
 
 msgid "BASE_MOVEMENT"
 msgstr "기초 이동"
+
+#, fuzzy
+msgid "BASIC"
+msgstr "기본"
 
 msgid "BASIC_VIEW"
 msgstr "기본"
@@ -597,11 +609,17 @@ msgstr "구조"
 msgid "BUILD_STRUCTURE"
 msgstr "구조"
 
+msgid "BUTANOL"
+msgstr ""
+
 msgid "BY"
 msgstr "요인:"
 
 msgid "BY_REVOLUTIONARY_GAMES"
 msgstr "Revolutionary Games Studio 제작"
+
+msgid "C"
+msgstr ""
 
 msgid "CACHE_DISK_MAX_TIME"
 msgstr ""
@@ -2749,6 +2767,13 @@ msgstr "세포 기관 배치"
 msgid "INCLUDE_MULTICELLULAR_PROTOTYPE_EXPLANATION"
 msgstr ""
 
+msgid "INCLUSION"
+msgstr ""
+
+#, fuzzy
+msgid "INCLUSION_DESCRIPTION"
+msgstr "진핵 세포의 특징. 핵은 소포체와 골지체를 포함합니다. 원핵 세포의 진화는 내부 막의 시스템을 개발하는 것이며, 내부의 다른 원핵 생물을 동화시킴으로써 이루어집니다. 이를 통해 세포 내부에서 발생하는 여러 프로세스를 구분하거나 겹치는 것을 방지 할 수 있습니다. 이것은 그들의 새로운 세포막 기관이 세포질에서 자유롭게 떠 다니는 것보다 훨씬 더 복잡하고 효율적이며 전문화되도록합니다. 그러나 이 일은 세포를 훨씬 더 크게 만들고 유지하기 위해 많은 에너지를 필요로 하게 만듭니다."
+
 #, fuzzy
 msgid "INCREASE_ITEM_SIZE"
 msgstr "새 저장 생성"
@@ -3173,6 +3198,21 @@ msgstr ""
 
 msgid "KPSUBTRACT"
 msgstr ""
+
+msgid "LACTATE"
+msgstr ""
+
+#, fuzzy
+msgid "LACTATE_DEHYDROGENASE"
+msgstr "황화수소"
+
+#, fuzzy
+msgid "LACTATE_DEHYDROGENASE_DESCRIPTION"
+msgstr "니트로게나아제는 ATP 형태의 기체 질소와 세포 에너지를 사용하여 세포의 핵심 성장 영양소 인 암모니아를 생성 할 수있는 단백질입니다. 이것은 혐기성 질소 고정이라고하는 과정입니다. 질소 분해 효소가 세포질에 의해 직접 둘러싸이면 주변 유체가 일부 발효를 수행합니다."
+
+#, fuzzy
+msgid "LACTATE_SYNTHESIS"
+msgstr "점액 합성"
 
 msgid "LANGUAGE"
 msgstr "언어:"
@@ -5133,6 +5173,9 @@ msgstr "원형질"
 msgid "PULL_REQUESTS_PROGRAMMING"
 msgstr ""
 
+msgid "PYRUVATE"
+msgstr ""
+
 #, fuzzy
 msgid "QUADRILLION_ABBREVIATION"
 msgstr "{0} 십억"
@@ -5243,6 +5286,9 @@ msgstr "생산"
 #, fuzzy
 msgid "REPRODUCTION_METHOD"
 msgstr "생산"
+
+msgid "REQUIRED_RIBOSOME"
+msgstr ""
 
 #, fuzzy
 msgid "REQUIRES_NUCLEUS"
@@ -5355,6 +5401,39 @@ msgstr "다음 지역으로 퍼짐:"
 #, fuzzy
 msgid "REVOLUTIONARY_GAMES_SOCIAL_TOOLTIP"
 msgstr "새로운 키 배치 추가"
+
+msgid "RIBOSOME_A"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_A_DESCRIPTION"
+msgstr "대사체는 단백질 껍질에 싸인 단백질 집합입니다. 그들은 호기성 호흡이라는 과정을 통해 세포질에서 할 수있는 것보다 훨씬 더 빠른 속도로 포도당을 ATP로 전환 할 수 있습니다. 그러나 이를 위해 산소가 필요하며 산소가 적은 환경에선 ATP 생산 속도가 느려집니다. 대사체가 세포질에 의해 직접 둘러싸이면 주변 유체가 일부 발효를 수행합니다."
+
+#, fuzzy
+msgid "RIBOSOME_A_PROCESSES_DESCRIPTION"
+msgstr "대사체는 단백질 껍질에 싸인 단백질 집합입니다. 그들은 호기성 호흡이라는 과정을 통해 세포질에서 할 수있는 것보다 훨씬 더 빠른 속도로 포도당을 ATP로 전환 할 수 있습니다. 그러나 이를 위해 산소가 필요하며 산소가 적은 환경에선 ATP 생산 속도가 느려집니다. 대사체가 세포질에 의해 직접 둘러싸이면 주변 유체가 일부 발효를 수행합니다."
+
+msgid "RIBOSOME_B"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_B_DESCRIPTION"
+msgstr "대사체는 단백질 껍질에 싸인 단백질 집합입니다. 그들은 호기성 호흡이라는 과정을 통해 세포질에서 할 수있는 것보다 훨씬 더 빠른 속도로 포도당을 ATP로 전환 할 수 있습니다. 그러나 이를 위해 산소가 필요하며 산소가 적은 환경에선 ATP 생산 속도가 느려집니다. 대사체가 세포질에 의해 직접 둘러싸이면 주변 유체가 일부 발효를 수행합니다."
+
+#, fuzzy
+msgid "RIBOSOME_B_PROCESSES_DESCRIPTION"
+msgstr "대사체는 단백질 껍질에 싸인 단백질 집합입니다. 그들은 호기성 호흡이라는 과정을 통해 세포질에서 할 수있는 것보다 훨씬 더 빠른 속도로 포도당을 ATP로 전환 할 수 있습니다. 그러나 이를 위해 산소가 필요하며 산소가 적은 환경에선 ATP 생산 속도가 느려집니다. 대사체가 세포질에 의해 직접 둘러싸이면 주변 유체가 일부 발효를 수행합니다."
+
+msgid "RIBOSOME_C"
+msgstr ""
+
+#, fuzzy
+msgid "RIBOSOME_C_DESCRIPTION"
+msgstr "대사체는 단백질 껍질에 싸인 단백질 집합입니다. 그들은 호기성 호흡이라는 과정을 통해 세포질에서 할 수있는 것보다 훨씬 더 빠른 속도로 포도당을 ATP로 전환 할 수 있습니다. 그러나 이를 위해 산소가 필요하며 산소가 적은 환경에선 ATP 생산 속도가 느려집니다. 대사체가 세포질에 의해 직접 둘러싸이면 주변 유체가 일부 발효를 수행합니다."
+
+#, fuzzy
+msgid "RIBOSOME_C_PROCESSES_DESCRIPTION"
+msgstr "대사체는 단백질 껍질에 싸인 단백질 집합입니다. 그들은 호기성 호흡이라는 과정을 통해 세포질에서 할 수있는 것보다 훨씬 더 빠른 속도로 포도당을 ATP로 전환 할 수 있습니다. 그러나 이를 위해 산소가 필요하며 산소가 적은 환경에선 ATP 생산 속도가 느려집니다. 대사체가 세포질에 의해 직접 둘러싸이면 주변 유체가 일부 발효를 수행합니다."
 
 #, fuzzy
 msgid "RIGHT_ARROW"
@@ -6059,9 +6138,6 @@ msgstr "미생물 단계"
 msgid "STRICT_NICHE_COMPETITION"
 msgstr "엄격한 생태적 지위 경쟁 (적합도 차이가 과장됨)"
 
-msgid "STRUCTURAL"
-msgstr "구조의"
-
 msgid "STRUCTURE"
 msgstr "구조"
 
@@ -6108,6 +6184,9 @@ msgstr ""
 #, fuzzy
 msgid "SUICIDE_BUTTON_TOOLTIP"
 msgstr "새로운 키 배치 추가"
+
+msgid "SULFUR"
+msgstr ""
 
 msgid "SUNLIGHT"
 msgstr "햇빛"
@@ -7021,6 +7100,10 @@ msgid "UNLOCK_CONDITION_EXCESS_ATP_ABOVE"
 msgstr ""
 
 #, fuzzy
+msgid "UNLOCK_CONDITION_HAVE_COMPOUND_ABOVE"
+msgstr "속도:"
+
+#, fuzzy
 msgid "UNLOCK_CONDITION_PLAYER_DAMAGE_RECEIVED"
 msgstr "속도:"
 
@@ -7156,13 +7239,6 @@ msgid "VACUOLE"
 msgstr "액포"
 
 msgid "VACUOLE_DESCRIPTION"
-msgstr "액포는 세포 내부 공간 저장에 사용되는 내부 막질 소기관입니다. 그들은 여러 개의 소낭, 저장을 위해 세포에서 널리 사용되는 작은 막 구조로 구성되어 합쳐졌습니다. 이 물질은 분자, 효소, 고체 및 기타 물질을 포함하는 데 사용되는 물로 채워져 있습니다. 액포의 모양은 유동적이며 세포마다 다를 수 있습니다."
-
-msgid "VACUOLE_IS_SPECIALIZED"
-msgstr ""
-
-#, fuzzy
-msgid "VACUOLE_NOT_SPECIALIZED_DESCRIPTION"
 msgstr "액포는 세포 내부 공간 저장에 사용되는 내부 막질 소기관입니다. 그들은 여러 개의 소낭, 저장을 위해 세포에서 널리 사용되는 작은 막 구조로 구성되어 합쳐졌습니다. 이 물질은 분자, 효소, 고체 및 기타 물질을 포함하는 데 사용되는 물로 채워져 있습니다. 액포의 모양은 유동적이며 세포마다 다를 수 있습니다."
 
 #, fuzzy
@@ -9187,6 +9263,13 @@ msgstr "확대"
 msgid "ZOOM_OUT"
 msgstr "축소"
 
+#~ msgid "STRUCTURAL"
+#~ msgstr "구조의"
+
+#, fuzzy
+#~ msgid "VACUOLE_NOT_SPECIALIZED_DESCRIPTION"
+#~ msgstr "액포는 세포 내부 공간 저장에 사용되는 내부 막질 소기관입니다. 그들은 여러 개의 소낭, 저장을 위해 세포에서 널리 사용되는 작은 막 구조로 구성되어 합쳐졌습니다. 이 물질은 분자, 효소, 고체 및 기타 물질을 포함하는 데 사용되는 물로 채워져 있습니다. 액포의 모양은 유동적이며 세포마다 다를 수 있습니다."
+
 #~ msgid "PASSIVE_REPRODUCTION_PROGRESS_EXPLANATION"
 #~ msgstr "(번식에 필요한 화합물을 아무 것도 하지 않아도 환경에서 자동으로 수집)"
 
@@ -9776,10 +9859,6 @@ msgstr "축소"
 #, fuzzy
 #~ msgid "SEMICOLON"
 #~ msgstr "크기:"
-
-#, fuzzy
-#~ msgid "AT"
-#~ msgstr "ATP"
 
 #, fuzzy
 #~ msgid "BRACKETRIGHT"
